@@ -1,0 +1,49 @@
+
+:root {
+  --lime: #d4b24a;   
+  --dark: #13305a;   
+}
+.pv-banner {
+  position: fixed; left: 50%; bottom: 12px; z-index: 100; transform: translateX(-50%);
+  max-width: calc(100% - 24px); padding: 8px 16px; border-radius: 999px;
+  background: rgba(20, 22, 28, .86); color: #fff; font: 500 12px/1.4 var(--sans); text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .18); pointer-events: none;
+}
+.hdr__logo .pv-logo { width: auto; height: 34px; }
+.pv-ftr-logo { width: auto; height: auto; }
+.pv-ftr-logo img { width: 150px; height: auto; }
+.hero__media { display: flex; align-items: center; justify-content: center; height: auto; padding: 140px 0 80px; }
+.hero__girl.pv-hero-photo { position: relative; left: auto; bottom: auto; width: 100%; max-width: 560px; transform: translateY(calc(60px * var(--p, 0))); }
+.hero__girl.pv-hero-photo img { aspect-ratio: 1; object-fit: cover; border-radius: 24px; box-shadow: 0 0 0 12px #ffffff40; }
+.s-hero { padding-bottom: 40px; }
+.s-about__pin { padding-top: 120px; }
+.s-about__art .pv-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.pv-checks { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+.pv-checks .s-about__check svg { width: 21px; height: 21px; }
+.pv-contact .ct__side { justify-content: center; }
+.pv-details { display: grid; gap: 20px; width: 100%; max-width: 540px; margin-top: 16px; }
+.pv-details dt { color: var(--ink-50); }
+.pv-details dd { margin: 4px 0 0; color: var(--ink); }
+.pv-details a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--ink-25); }
+.pv-notice { width: 100%; color: var(--ink-50); text-wrap: pretty; }
+.ftr__links { gap: 48px; }
+@media (max-width: 1199.98px) {
+  .hero__media { padding: 48px 0 0; }
+  .hero__girl.pv-hero-photo { max-width: 480px; }
+}
+@media (max-width: 809.98px) {
+  .hdr__logo .pv-logo { height: 28px; }
+  .hero__girl.pv-hero-photo { --tx: 0px; width: 100%; max-width: 360px; }
+  .s-about__pin { padding-top: 64px; }
+  .s-about__art { min-height: 220px; }
+  .pv-banner { font-size: 11px; bottom: 8px; }
+}
+.pv-art-mark { display: flex; align-items: center; justify-content: center; }
+.pv-art-mark img { width: 34%; height: auto; filter: drop-shadow(0 12px 24px rgba(19, 48, 90, .25)); }
+.pv-spacer { height: 52px; background: var(--ink); }
+@media (max-width: 809.98px) {
+  .pv-banner { left: 0; right: 0; bottom: 0; transform: none; max-width: none; border-radius: 0; padding: 6px 12px; font-size: 10.5px; }
+  .pv-spacer { height: 40px; }
+  .pv-notice { order: 2; }
+  .pv-art-mark img { width: 28%; }
+}

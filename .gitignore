@@ -1,0 +1,3 @@
+# never publish the raw scrape or the build kit
+*/source/
+_kit/

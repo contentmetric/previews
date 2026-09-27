@@ -1,0 +1,112 @@
+
+.s-hero {
+  --p: 0; --q: 0; --k: calc(1 - var(--p));
+  display: flex; flex-direction: column; align-items: center; padding: 0 40px; background: var(--mist);
+}
+.hero__fade { position: absolute; left: 0; right: 0; bottom: 0; z-index: 0; height: 379px; background: linear-gradient(180deg, var(--mist) 0%, var(--white) 100%); }
+.hero__row { position: relative; display: flex; align-items: center; width: 100%; max-width: 1200px; }
+.hero__head { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 48px; flex: 1 0 0; min-width: 0; }
+.hero__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; width: 100%; }
+.hero__tag { height: 28px; }
+.hero__tag .tag { --tag-bg: var(--white); --tag-ic: var(--mist); --tag-fg: var(--ink); }
+.hero__title { width: 100%; color: var(--ink); }
+.hero__text { width: 100%; max-width: 540px; color: var(--ink-75); text-wrap: balance; }
+.hero__actions { display: flex; align-items: center; gap: 16px; }
+.hero__trust { display: flex; flex-direction: column; gap: 8px; align-self: stretch; width: min-content; overflow: hidden; }
+.hero__trust-text { color: var(--ink-50); white-space: pre; }
+.hero__ticker {
+  --av: 35px; --loop: calc(5 * (var(--av) + 4px));
+  flex: 1 0 0; min-height: 0; display: flex; align-items: center; overflow: hidden; contain: inline-size;   
+  -webkit-mask: linear-gradient(270deg, #0000 0%, #000 33% 66%, #0000000a 100%);
+  mask: linear-gradient(270deg, #0000 0%, #000 33% 66%, #0000000a 100%);
+}
+.hero__ticker ul { display: flex; gap: 4px; flex: none; animation: hero-ticker 7.8s linear infinite; }   
+.hero__ticker li { position: relative; flex: none; width: var(--av); height: var(--av); border-radius: 509px; overflow: hidden; }
+.hero__ticker li::after { content: ""; position: absolute; inset: 0; border: 1px solid var(--white); border-radius: inherit; }
+.hero__ticker img { width: 100%; height: 100%; object-fit: cover; }
+@keyframes hero-ticker { to { transform: translateX(calc(-1 * var(--loop))); } }
+.hero__media { position: relative; flex: 1 0 0; min-width: 0; height: 860px; }
+.hero__girl {
+  --tx: -50%;
+  position: absolute; left: 47%; bottom: -37px; width: 719px;
+  opacity: var(--k); transform: translateX(var(--tx)) translateY(calc(139px * var(--p)));
+}
+.hero__girl img { width: 100%; height: auto; }
+.hero__stage { position: relative; display: flex; width: 100%; max-width: 1200px; }
+.hero__stage-in { flex: 1 0 0; min-width: 0; opacity: calc(1 - var(--q)); transform: translateY(calc(460px * var(--q))); }
+.hero__ui {
+  position: relative; z-index: 1; width: 100%; aspect-ratio: 1.33333; border-radius: 24px; box-shadow: 0 0 0 12px #ffffff40;
+  transform: perspective(1200px) rotateX(calc(10deg * var(--k)));
+}
+.hero__ui-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.hero__ui-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 66px; background: linear-gradient(180deg, var(--white-0) 0%, var(--white) 100%); }
+.hero__grid { position: absolute; top: 55%; left: 54%; width: 80%; display: flex; align-items: flex-start; gap: 16px; transform: translate(-50%, -50%); }
+.hero__grid > * { flex: 1 0 0; min-width: 0; }
+.hero__col { display: flex; flex-direction: column; gap: 16px; }
+.hero__pair { display: flex; align-items: center; gap: 16px; width: 100%; }
+.hero__pair > * { flex: 1 0 0; min-width: 0; }
+.hero__slot { position: relative; display: flex; border-radius: 12px; }
+.hero__slot::after { content: ""; position: absolute; inset: 0; border: 1px dashed var(--ink-25); border-radius: inherit; pointer-events: none; }
+.hero__card {
+  --x: 0px; --y: 0px; --s: 1; --r: 0deg; --rx: 0deg; --ry: 0deg; --persp: 1200px;
+  position: relative; z-index: 1; flex: 1 0 0; min-width: 0; border-radius: 12px; overflow: clip;
+  transform: perspective(var(--persp)) translate(calc(var(--x) * var(--k)), calc(var(--y) * var(--k))) scale(calc(1 + (var(--s) - 1) * var(--k)))
+             rotate(calc(var(--r) * var(--k))) rotateX(calc(var(--rx) * var(--k))) rotateY(calc(var(--ry) * var(--k)));
+}
+.hero__card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero__veil { position: absolute; inset: 0; background: linear-gradient(180deg, var(--white-75) 0%, #fff0 100%); opacity: var(--k); }
+.hero__card--income { aspect-ratio: 944 / 1134; --r: -3deg; --x: -40px; --y: -16px; }                 
+.hero__card--income .hero__veil { background: linear-gradient(180deg, var(--white-50) 0%, #fff0 100%); }
+.hero__card--liquidity { aspect-ratio: 1; --persp: 2342px; --r: -10deg; --rx: 5deg; --ry: -8deg; --s: .9; --x: -72px; --y: -534px; }   
+.hero__card--reduction { aspect-ratio: 1; --r: 10deg; --rx: 1deg; --ry: 10deg; --s: 1.1; --x: 168px; --y: -743px; }
+.hero__card--sources { aspect-ratio: 944 / 646; --r: 3deg; --s: 1.1; --x: 36px; --y: -24px; }
+.hero__card--liquidity::after, .hero__card--sources::after { content: ""; position: absolute; inset: 0; z-index: 1; border: 1px solid var(--white); border-radius: inherit; pointer-events: none; }
+.js .s-hero .hero__head, .js .s-hero .hero__tag, .js .s-hero .hero__title, .js .s-hero .hero__text, .js .s-hero .hero__actions,
+.js .s-hero .hero__girl img, .js .s-hero .hero__stage { opacity: .001; }
+.js .s-hero .hero__head { transform: translateY(48px) skewY(1deg); }
+.js .s-hero .hero__tag { transform: translateY(24px); }
+.js .s-hero .hero__title { transform: translateY(48px); }
+.js .s-hero .hero__text { transform: translateY(72px); }
+.js .s-hero .hero__actions { transform: translateY(96px); }
+.js .s-hero .hero__stage { transform: translateY(128px) scale(.9); }
+.is-loaded .s-hero .hero__head, .is-loaded .s-hero .hero__tag, .is-loaded .s-hero .hero__title, .is-loaded .s-hero .hero__text,
+.is-loaded .s-hero .hero__actions, .is-loaded .s-hero .hero__stage {
+  opacity: 1; transform: none; transition: opacity 1.042s var(--ease-1b2) var(--dl, 0s), transform 1.042s var(--ease-1b2) var(--dl, 0s);
+}
+.s-hero .hero__title { --dl: .2s; }
+.s-hero .hero__text { --dl: .4s; }
+.s-hero .hero__actions, .s-hero .hero__stage { --dl: .6s; }
+.is-loaded .s-hero .hero__girl img {
+  opacity: 1;
+  transition: opacity 1.61s linear(0, 0.0108, 0.0389, 0.0808, 0.1325, 0.1897, 0.2518, 0.3159, 0.3789, 0.442, 0.5028, 0.5596, 0.614, 0.6646, 0.7103, 0.7527, 0.791, 0.8248, 0.8553, 0.8822, 0.9053, 0.9257, 0.9432, 0.9579, 0.9705, 0.9809, 0.9894, 0.9964, 1.0019, 1.0061, 1.0094, 1.0118, 1.0134, 1.0144, 1.0149, 1.015, 1.0147, 1.0142, 1.0136, 1.0128, 1.0119, 1.011, 1.01, 1.009, 1.0081, 1.0072, 1.0064, 1.0056, 1.0048, 1.0042, 1.0036, 1.003, 1.0025, 1.0021, 1.0017, 1.0013, 1.001, 1.0008, 1.0006, 1.0004, 1) .4s;
+}
+@media (max-width: 1199.98px) {
+  .s-hero { padding: 0 24px; }
+  .hero__row { flex-direction: column; padding-top: 120px; }
+  .hero__head { flex: none; width: 100%; align-items: center; }
+  .hero__copy { align-items: center; max-width: 480px; }
+  .hero__title, .hero__text { text-align: center; }
+  .hero__trust { gap: 0; }
+  .hero__ticker { --av: 27px; }
+  .hero__ticker ul { animation-duration: 6.2s; }   
+  .hero__media { flex: none; width: 100%; height: 560px; }
+  .hero__girl { left: 50%; width: 441px; }
+  .hero__card--liquidity { --s: 1; --x: -314px; --y: -484px; }
+  .hero__card--reduction { --s: 1.2; --x: 22px; --y: -463px; }
+  .hero__btn-mob { --inpad: 16px; }
+  .hero__btn-mob .btn__label { letter-spacing: -.01em; }
+}
+@media (max-width: 809.98px) {
+  .hero__fade { height: 225px; }
+  .hero__head { gap: 24px; }
+  .hero__media { display: flex; flex-direction: column; align-items: center; height: auto; }
+  .hero__girl { --tx: 0px; position: relative; left: auto; bottom: auto; width: 323px; }
+  .hero__ui { max-width: 480px; margin: 0 auto; border-radius: 4px; box-shadow: none; }
+  .hero__grid, .hero__col, .hero__pair { gap: 4px; }
+  .hero__card { border-radius: 4px; }
+  .hero__card--liquidity { --s: .9; --x: -17px; --y: -69px; }
+  .hero__card--reduction { --s: 1.1; --x: 17px; --y: -57px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__ticker ul { animation: none; }
+}
