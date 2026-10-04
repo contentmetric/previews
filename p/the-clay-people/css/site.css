@@ -23,9 +23,9 @@ main { display: flex; flex-direction: column; width: 100%; position: relative; o
   --e1: cubic-bezier(.44, 0, .56, 1);
   --e2: cubic-bezier(.44, 0, 0, 1);
   --e3: cubic-bezier(.16, 1, .3, 1);
-  --rust: #3f2455;
-  --rust-hover: #54316b;
-  --cream: #f1eee1;
+  --rust: #8A3A12;
+  --rust-hover: #5A1C04;
+  --cream: #F6EFE6;
   --spring-a: linear(0, .0221, .0782, .1559, .2455, .3396, .4329, .5219, .6041, .6781, .7433, .7996, .8474, .8872, .9197, .9459, .9664, .9822, .994, 1.0025, 1.0083, 1.0121, 1.0142, 1.0151, 1.0151, 1.0144, 1.0134, 1.0121, 1.0107, 1.0093, 1.0079, 1.0066, 1.0054, 1.0044, 1.0034, 1.0026, 1);
 }
 section[id] { scroll-margin-top: 20px; }
@@ -58,13 +58,13 @@ html.menu-open, html.menu-open body { overflow: hidden; }
   .site-header.is-open .phone-panel { display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 3; width: 100%; flex: 1 1 auto; padding: 60px 20px 59px; }
   .phone-links ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
   .phone-links a { display: block; }
-  .phone-links p { font: 400 40px/1 "Instrument Serif", serif; letter-spacing: -1.2px; color: var(--cream); text-transform: none; }
+  .phone-links p { font: 400 40px/1 "Young Serif", Georgia, serif; letter-spacing:-0.015em; color: var(--cream); text-transform: none; }
   .phone-bottom { display: flex; flex-direction: column; gap: 28px; }
   .phone-block { display: flex; flex-direction: column; gap: 8px; }
-  .phone-block > p { font: 400 16px/1.35 Inter, sans-serif; letter-spacing: -1.12px; color: var(--cream); }
+  .phone-block > p { font: 400 16px/1.35 Jost, "Century Gothic", "Avenir Next", sans-serif; letter-spacing:0; color: var(--cream); }
   .phone-block > p:first-child { text-transform: uppercase; }
   .phone-emails { display: flex; flex-direction: column; gap: 4px; }
-  .phone-emails p { font: 400 16px/1.35 Inter, sans-serif; letter-spacing: -1.12px; color: var(--cream); }
+  .phone-emails p { font: 400 16px/1.35 Jost, "Century Gothic", "Avenir Next", sans-serif; letter-spacing:0; color: var(--cream); }
   .phone-social { display: flex; gap: 8px; }
   .phone-social a { width: 32px; height: 32px; border-radius: 160px; background: var(--cream); display: flex; align-items: center; justify-content: center; }
   .phone-social a:nth-child(1) svg { width: 7px; height: 16px; }
