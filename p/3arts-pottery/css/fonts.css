@@ -1,0 +1,4 @@
+/* DM Sans + Shippori Mincho are the fonts 3arts.sg itself uses (Google Fonts, SIL OFL). */
+@font-face{font-family:"DM Sans";src:url(../fonts/dm-sans-latin.woff2) format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
+/* only the 600 weight is shipped; it is registered for 400-700 so every heading rule resolves to it */
+@font-face{font-family:"Shippori Mincho";src:url(../fonts/shippori-mincho-600-latin.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
