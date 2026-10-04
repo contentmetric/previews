@@ -1,0 +1,102 @@
+/* v3: ARRT.INC STUDIO brand (see BRAND-TOKENS.md). Loaded after v2. Colours from the logo; no photo tints. */
+:root {
+  --charcoal: #262020;
+  --cream: #FFF6FA;
+  --bisque: #F8DAE8;
+  --copper: #FAD735;          /* primary button fill: logo yellow (ink text) */
+  --copper-hover: #F2C81A;
+  --kiln: #EE77AF;            /* logo pink */
+  --amber: #FAD735;
+  --pink: #EE77AF;
+  --pink-soft: #EC94BE;
+  --magenta: #B01E66;
+  --muted: #55464D;
+  --on-dark: rgba(255, 246, 250, .88);
+  --brush: #FAD735;
+  --rust: #B01E66;
+  --rust-hover: #8E154F;
+}
+body { background: var(--cream); color: var(--charcoal); }
+body.home ::selection { background: var(--pink); color: var(--charcoal); }
+:focus-visible { outline-color: var(--magenta); }
+.section-hero :focus-visible, .section-about-workshop :focus-visible, .site-header:not(.is-light) :focus-visible, footer :focus-visible { outline-color: var(--amber); }
+
+/* ---------- type: chunky rounded headings (Fredoka) like the logo letters ---------- */
+h1, h2, h3, h4, .section-hero-headline-2, .section-hero .heading, .wordmark, .desktop-text-2-span,
+[class*="-heading"], .section-plans-text-4, .section-plans-text-5, .section-about-instructor-text-8 { font-weight: 600; }
+.section-hero-headline-2 { font-size: clamp(44px, 6.4vw, 96px); line-height: 1.02; letter-spacing: -.01em; max-width: 13ch; color: #fff; }
+.section-hero-text { font-weight: 500; }
+
+/* ---------- buttons: logo yellow, ink text, ink outline + hard shadow like the logo's offset shadow ---------- */
+.l-primary .section-hero-wrap, a.primary .section-create-wrap, .transparent-dark-button-wrap-primary, .s-primary .wrap,
+.section-plans-wrap-2, .section-plans-wrap, .desktop-default, .disabled {
+  background-color: var(--amber); box-shadow: 0 0 0 2px var(--charcoal) inset, 3px 3px 0 var(--charcoal);
+}
+@media (min-width: 810px) { .site-header .transparent-dark-button-wrap, .site-header.is-light .transparent-dark-button-wrap { background-color: var(--amber); box-shadow: 0 0 0 2px var(--charcoal) inset, 3px 3px 0 var(--charcoal); } }
+a[data-kind="primary"]:hover > :first-child, a.primary:hover .section-create-wrap, .l-primary:hover .section-hero-wrap,
+a.secondary:hover .section-plans-wrap-2, .plan-cards-div:nth-child(n+2) a.secondary:hover .section-plans-wrap-2, .desktop-default:hover, .disabled.is-ready:hover { background-color: #FFE066; }
+.section-hero-text-6, .section-create-text-13, .s-primary .section-hero-text-4, .section-plans-text-8, .section-plans-text-7,
+.plan-cards-div:nth-child(n+2) .section-plans-text-8, .plan-cards-div:nth-child(n+2) .section-plans-text-7,
+.disabled p, .disabled [class*="text"], .desktop-text-5, .transparent-dark-button-text-4 { color: var(--charcoal) !important; font-weight: 600; }
+.plan-cards-div:nth-child(n+2) .section-plans-wrap-2, .plan-cards-div:nth-child(n+2) .section-plans-wrap { background-color: var(--amber); }
+.section-hero-wrap svg path, .section-create-wrap svg path, .section-plans-wrap-2 svg path, .plan-cards-div:nth-child(n+2) .section-plans-wrap-2 svg path,
+.s-primary svg path, .desktop-default svg path, .transparent-dark-button-wrap svg path { stroke: var(--charcoal) !important; }
+.disabled:not(.is-ready) { opacity: .5; box-shadow: none; }
+.badge, .badge-phone { background-color: var(--amber); }
+
+/* ---------- header: logo is wide, not a square mark ---------- */
+.transparent-dark-button-logo-image-light { width: 150px !important; aspect-ratio: 1278 / 442 !important; }
+.logo-image-light { width: 124px !important; aspect-ratio: 1278 / 442 !important; }
+.transparent-dark-button-img, .transparent-dark-button-img-2 { object-fit: contain !important; }
+.site-header .logo-dark, .site-header img.logo-light { object-fit: contain !important; }
+@media (max-width: 809.98px) { .logo-image-light { width: 116px !important; } }
+
+/* ---------- hero ---------- */
+.section-hero-img { object-position: 50% 45%; }
+.section-hero .container { text-shadow: 0 1px 18px rgba(38, 32, 32, .5); }
+.section-hero-text, .section-hero-text-2 { color: #fff; }
+
+/* ---------- about: logo pink band, ink text ---------- */
+.section-about-workshop { background-color: var(--pink); }
+.section-about-workshop .pot-image { width: min(300px, 70vw); height: auto; aspect-ratio: 1278 / 442; }
+.section-about-workshop-img { object-fit: contain; }
+.section-about-workshop-heading, .section-about-workshop-text-3 { color: var(--charcoal); }
+.section-about-workshop-text-3 { font-size: 20px; }
+.section-about-workshop-headline::after { background: var(--charcoal); height: 4px; border-radius: 2px; }
+.pot-image img { object-fit: contain; }
+
+/* ---------- classes cards: ink / pink / ink ---------- */
+.section-create-card-wrap-1-div .card, .section-create-card-wrap-3-div .card { background-color: var(--charcoal); }
+.section-create-card-wrap-2-div .card { background-color: var(--pink); }
+.section-create-card-wrap-2-div .section-create-heading-4, .section-create-card-wrap-2-div .section-create-text-8, .section-create-card-wrap-2-div .section-create-text-9 { color: var(--charcoal); }
+.section-create-card-wrap-2-div .badge, .section-create-card-wrap-2-div .badge-phone { background-color: var(--amber); box-shadow: 0 0 0 2px var(--charcoal) inset; }
+.section-create-text-10, .section-create-text-7 { color: var(--charcoal); font-weight: 600; }
+
+/* ---------- teachers: ink band stays; accents yellow ---------- */
+.section-about-instructor-text-6 { color: var(--amber); }
+
+/* ---------- reviews ---------- */
+.section-testimonial-desktop p { color: var(--charcoal) !important; }
+.section-testimonial-desktop-2 p { color: #fff !important; }
+.avatar { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: var(--pink); color: var(--charcoal); font: 600 24px/1 Fredoka, "Trebuchet MS", sans-serif; box-shadow: 0 0 0 2px var(--charcoal) inset; }
+
+/* ---------- plans ---------- */
+.plan-cards-div:nth-child(n+2) .section-plans-card { background-color: var(--bisque); }
+.plan-cards-div:first-child .section-plans-text-5 { color: var(--amber); }
+
+/* ---------- apply form ---------- */
+.section-apply input[type="text"], .section-apply textarea, .section-apply-form-add-you-input { border-color: rgba(38, 32, 32, .45); }
+.section-apply input:focus, .section-apply textarea:focus { border-color: var(--magenta); outline-color: var(--magenta); }
+input[type="radio"] { accent-color: var(--magenta); }
+
+/* ---------- FAQ ---------- */
+.section-faqs [class*="item"], .section-faqs details, .section-faqs summary { min-height: 44px; }
+
+/* ---------- footer ---------- */
+.desktop-heading-2 { color: var(--amber); }
+.desktop-text-2-span { font-family: Fredoka, "Trebuchet MS", sans-serif; font-weight: 600; letter-spacing: -.01em; }
+
+.wordmark { font-weight: 600; letter-spacing: -.01em; }
+.section-about-instructor-text-12 { color: var(--on-dark); }
+
+@media (min-width: 810px) { .site-header .transparent-dark-button-wrap p { color: var(--charcoal) !important; font-weight: 600; } }

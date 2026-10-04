@@ -1,0 +1,107 @@
+/* Shared base (resets, page frame, smooth scroll). Section styles are generated into sections.css and
+   pages/*.css. Breakpoints: desktop >= 1200 (the default rules), tablet 810-1199.98, phone < 810. Notes: BUILD.md. */
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+body { -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+a { color: inherit; text-decoration: none; }
+img, video, svg { display: block; }
+button, input, textarea, select { font: inherit; }
+
+.page-frame { position: relative; width: 100%; min-height: 100vh; display: flex; flex-direction: column; overflow: clip; }
+.site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 10; }
+
+main { display: flex; flex-direction: column; width: 100%; position: relative; overflow: clip; }
+
+/* curves from the motion spec, one spring for the button arrows */
+:root {
+  --e1: cubic-bezier(.44, 0, .56, 1);
+  --e2: cubic-bezier(.44, 0, 0, 1);
+  --e3: cubic-bezier(.16, 1, .3, 1);
+  --rust: #B01E66;
+  --rust-hover: #262020;
+  --cream: #FFF6FA;
+  --spring-a: linear(0, .0221, .0782, .1559, .2455, .3396, .4329, .5219, .6041, .6781, .7433, .7996, .8474, .8872, .9197, .9459, .9664, .9822, .994, 1.0025, 1.0083, 1.0121, 1.0142, 1.0151, 1.0151, 1.0144, 1.0134, 1.0121, 1.0107, 1.0093, 1.0079, 1.0066, 1.0054, 1.0044, 1.0034, 1.0026, 1);
+}
+section[id] { scroll-margin-top: 20px; }
+html.menu-open, html.menu-open body { overflow: hidden; }
+
+/* header: hides on scroll down, cream bar after 44px (home), burger panel on phones */
+.site-header { transition: transform .4s var(--e1); }
+.site-header.is-hidden { transform: translateY(-90px); }
+.transparent-dark-button-bg { transition: background-color .38s var(--e1); }
+.transparent-dark-button::after { transition: border-color .38s var(--e1); }
+.transparent-dark-button-text-3, .transparent-dark-button-text, .transparent-dark-button-text-2 { transition: color .38s var(--e1), opacity .38s var(--e1); }
+.transparent-dark-button-text-2:hover { opacity: .7; }
+.site-header.is-light .transparent-dark-button-bg { background-color: var(--cream); }
+.site-header.is-light .transparent-dark-button::after { border-color: var(--rust); }
+.site-header.is-light .transparent-dark-button-text-3, .site-header.is-light .transparent-dark-button-text { color: var(--rust); }
+.site-header img.logo-dark, .site-header.is-light img.logo-light { display: none !important; }
+.site-header.is-light img.logo-dark { display: block !important; }
+.site-header .logo-dark { width: 100%; height: 100%; border-radius: inherit; object-fit: cover; }
+.phone-panel { display: none; }
+.menu-toggle { cursor: pointer; overflow: clip; height: 16px; width: 60px; position: relative; }
+.menu-label, .close-label { transition: transform .4s var(--e1); }
+.site-header.is-open .menu-label, .site-header.is-open .close-label { transform: translateY(-18px); }
+.bg-phone { height: 100%; }
+@media (max-width: 1199.98px) { .site-header.is-hidden { transform: translateY(-80px); } }
+@media (max-width: 809.98px) {
+  .site-header.is-hidden { transform: translateY(-70px); }
+  .bg-phone { height: 58px; opacity: 0; transition: height .4s var(--e1), opacity .4s var(--e1); }
+  .site-header.is-open .bg-phone { height: calc(100vh + 3px); opacity: 1; }
+  .site-header.is-open .phone-close { height: calc(100vh + 3px); justify-content: flex-start; }
+  .site-header.is-open .phone-panel { display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 3; width: 100%; flex: 1 1 auto; padding: 60px 20px 59px; }
+  .phone-links ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .phone-links a { display: block; }
+  .phone-links p { font: 400 40px/1 Fredoka, "Trebuchet MS", sans-serif; letter-spacing:-0.015em; color: var(--cream); text-transform: none; }
+  .phone-bottom { display: flex; flex-direction: column; gap: 28px; }
+  .phone-block { display: flex; flex-direction: column; gap: 8px; }
+  .phone-block > p { font: 400 16px/1.35 Jost, "Century Gothic", "Avenir Next", sans-serif; letter-spacing:0; color: var(--cream); }
+  .phone-block > p:first-child { text-transform: uppercase; }
+  .phone-emails { display: flex; flex-direction: column; gap: 4px; }
+  .phone-emails p { font: 400 16px/1.35 Jost, "Century Gothic", "Avenir Next", sans-serif; letter-spacing:0; color: var(--cream); }
+  .phone-social { display: flex; gap: 8px; }
+  .phone-social a { width: 32px; height: 32px; border-radius: 160px; background: var(--cream); display: flex; align-items: center; justify-content: center; }
+  .phone-social a:nth-child(1) svg { width: 7px; height: 16px; }
+  .phone-social a:nth-child(2) svg { width: 17px; height: 16px; }
+  .phone-social a:nth-child(3) svg { width: 15px; height: 14px; }
+  .phone-social a:nth-child(4) svg { width: 18px; height: 12px; }
+  .site-header.is-open .phone-links li a, .site-header.is-open .phone-block { animation: phone-in 1s var(--e2) both; animation-delay: var(--d, 0s); }
+  .site-header.is-open { transition: none; }
+}
+@keyframes phone-in { from { opacity: .001; transform: translateY(60px); } to { opacity: 1; transform: none; } }
+
+/* reveal text (characters slide up inside a clip box) */
+.rv-w { display: inline-block; vertical-align: top; white-space: nowrap; }
+.rv-m { display: inline-block; vertical-align: top; overflow: hidden; white-space: nowrap; padding: .08em .04em; margin: -.08em -.04em; }
+.rv-c { display: inline-block; vertical-align: top; white-space: nowrap; transform: translateY(110%); opacity: 0; }
+.rv-in .rv-c { transform: none; opacity: 1; }
+.js [data-reveal]:not(.rv-ready) { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .rv-c { transform: none; opacity: 1; } }
+
+/* buttons: colour hover on the pill, arrows swap with the spring (arrow 2 comes in from the lower left) */
+a[data-kind="primary"] > :first-child { transition: background-color .4s var(--e1); }
+a[data-kind="primary"]:hover > :first-child { background-color: var(--rust-hover); }
+a[data-btn] svg { transition: top .357s var(--spring-a), right .357s var(--spring-a); }
+@media (hover: hover) {
+  a[data-btn="s"]:hover svg:first-of-type { top: -12px; right: -12px; }
+  a[data-btn="s"]:hover svg:last-of-type { top: 0; right: 0; }
+  a[data-btn="l"]:hover svg:first-of-type { top: -14px; right: -14px; }
+  a[data-btn="l"]:hover svg:last-of-type { top: 0; right: 0; }
+}
+
+/* paragraph entrance (see site.js: lines) */
+.ln-w { display: inline-block; opacity: 0; transform: translateY(10px); }
+.ln-in .ln-w { opacity: 1; transform: none; }
+.js [data-lines]:not(.ln-ready) { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .ln-w { opacity: 1; transform: none; } }
+
+/* legal pages: the header keeps its transparent look and the button is a cream pill */
+body.legal .site-header .primary > .section-create-wrap { background-color: var(--cream); }
+body.legal .site-header .primary .section-create-text-13 { color: var(--rust); }
+body.legal .site-header a[data-kind="primary"]:hover > :first-child { background-color: var(--cream); }
