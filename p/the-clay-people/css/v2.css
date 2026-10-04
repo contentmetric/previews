@@ -215,3 +215,17 @@ a.primary, a.secondary, a.s-primary, a.s-secondary, a.l-primary { min-height: 44
 .menu-toggle { height: 44px; padding: 14px 0; overflow: visible; clip-path: inset(14px 0 14px 0); box-sizing: border-box; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 .desktop-left { gap: 40px; }
+
+/* fix 2026-10-04 (main): hero text legibility over the light clay photo, and the phone menu label */
+.overlay { background:
+  linear-gradient(90deg, rgba(42,37,34,.62) 0%, rgba(42,37,34,.38) 42%, rgba(42,37,34,0) 70%),
+  linear-gradient(to top, rgba(42,37,34,.55) 0%, rgba(42,37,34,.2) 45%, rgba(42,37,34,0) 75%); }
+@media (max-width: 809px) {
+  .overlay { background: linear-gradient(to top, rgba(42,37,34,.82) 0%, rgba(42,37,34,.62) 45%, rgba(42,37,34,.15) 75%, rgba(42,37,34,0) 100%); }
+}
+.site-header:not(.is-open) .close-label { visibility: hidden; }
+.site-header:not(.is-open) .menu-label { visibility: visible; transform: none; }
+.site-header.is-open .menu-label { visibility: hidden; }
+.site-header.is-open .close-label { visibility: visible; }
+/* the 44px tap target shows a 14px-inset window: line the labels up with it */
+@media (max-width: 809px) { .menu-toggle .menu-label { top: 14px; } .menu-toggle .close-label { top: 32px; } }
