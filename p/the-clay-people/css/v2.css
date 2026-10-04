@@ -235,3 +235,4 @@ a.primary, a.secondary, a.s-primary, a.s-secondary, a.l-primary { min-height: 44
 .desktop-wrap-div .desktop-default-div { position: static !important; transform: none !important; display: flex; align-items: center; justify-content: center; width: 100%; }
 .desktop-wrap-div .desktop-default, .desktop-wrap-div .desktop-default-div { border: 0 !important; box-shadow: none !important; outline: 0; }
 .desktop-wrap-div .desktop-default:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+.desktop-wrap-div .form::after { display: none !important; }
