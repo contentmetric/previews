@@ -1008,7 +1008,7 @@ input:focus, textarea:focus { outline: none; }
 .form-add-you-div::after, .section-apply-form-add-you-div-2::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; border: 1px solid var(--rust); }
 .section-apply-form-textarea { padding: 22px 24px; }
 
-/* The Clay People: logo is a square mark, footer button, hours icon */
+/* logo, footer button, hours icon */
 .transparent-dark-button-logo-image-light { width:66px !important; aspect-ratio:1 / 1 !important; }
 .logo-image-light { width:56px !important; aspect-ratio:1 / 1 !important; }
 .transparent-dark-button-img, .transparent-dark-button-img-2 { object-fit:contain !important; }
