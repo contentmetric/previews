@@ -239,3 +239,6 @@ a.primary, a.secondary, a.s-primary, a.s-secondary, a.l-primary { min-height: 44
 .section-hero .desktop { overflow: visible; }
 .desktop-wrap-div .form::after { display: none !important; }
 .desktop-text-4-span { text-wrap: balance; }
+
+/* phone: the headline box was 336px max and centred, which put it 7px right of the eyebrow, copy and button */
+@media (max-width: 809.98px) { .section-hero .clip-text-for-phone { max-width: none; } }
