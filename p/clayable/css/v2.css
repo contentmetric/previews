@@ -249,3 +249,10 @@ a.primary, a.secondary, a.s-primary, a.s-secondary, a.l-primary { min-height: 44
 .section-testimonial-text, .section-testimonial-text-2 { color: var(--charcoal); }
 .section-testimonial-text-3 { color: var(--muted); }
 .section-testimonial-text-4 { color: var(--cream); }
+
+/* one left edge on phones: the hero headline block must not be centred inside its wrapper */
+@media (max-width: 809.98px) {
+  .section-hero .headline, .section-hero .text-for-phone, .section-hero .clip-text-for-div, .section-hero-clip-text-for-div { width: 100%; align-self: flex-start; }
+  .section-hero .heading { width: 100%; margin: 0; text-align: left; }
+}
+@media (max-width: 809.98px) { .section-hero .clip-text-for-phone { max-width: 100%; margin: 0; } }
