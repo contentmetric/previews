@@ -229,3 +229,9 @@ a.primary, a.secondary, a.s-primary, a.s-secondary, a.l-primary { min-height: 44
 .site-header.is-open .close-label { visibility: visible; }
 /* the 44px tap target shows a 14px-inset window: line the labels up with it */
 @media (max-width: 809px) { .menu-toggle .menu-label { top: 14px; } .menu-toggle .close-label { top: 32px; } }
+/* footer CTA: the template's newsletter field wrapper is gone, so drop its outline and centre the button */
+.desktop-wrap-div .form, .desktop-wrap-div .form-div { border: 0 !important; outline: 0 !important; box-shadow: none !important; background: none !important; padding: 0 !important; }
+.desktop-wrap-div .desktop-default { position: static !important; inset: auto !important; transform: none !important; margin: 0 !important; width: 100%; max-width: 420px; border-radius: 999px; display: flex; align-items: center; justify-content: center; }
+.desktop-wrap-div .desktop-default-div { position: static !important; transform: none !important; display: flex; align-items: center; justify-content: center; width: 100%; }
+.desktop-wrap-div .desktop-default, .desktop-wrap-div .desktop-default-div { border: 0 !important; box-shadow: none !important; outline: 0; }
+.desktop-wrap-div .desktop-default:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
