@@ -100,3 +100,7 @@ input[type="radio"] { accent-color: var(--magenta); }
 .section-about-instructor-text-12 { color: var(--on-dark); }
 
 @media (min-width: 810px) { .site-header .transparent-dark-button-wrap p { color: var(--charcoal) !important; font-weight: 600; } }
+
+/* one left edge on phones: the heading box was centred in a wider column */
+@media (max-width: 809.98px) { .section-hero .heading { width: 100%; align-self: flex-start; margin-left: 0; } .section-hero .headline, .section-hero .text-for-phone { width: 100%; align-items: flex-start; justify-content: flex-start; } }
+@media (max-width: 809.98px) { .section-hero .desktop, .section-hero .top { justify-content: flex-start; } }
