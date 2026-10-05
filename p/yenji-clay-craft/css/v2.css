@@ -240,3 +240,11 @@ a.primary, a.secondary, a.s-primary, a.s-secondary, a.l-primary { min-height: 44
 
 /* fix 2026-10-05: on phones show the plain wood wall and the Yenji sign letters behind the headline, not the busy shop interior */
 @media (max-width: 809px) { .section-hero-img { object-position: 84% 50%; } }
+
+/* founder block: no public portrait of Master Chris, so the circle shows the team photo; paddings follow the smaller circle */
+.section-about-instructor-content { padding-top:235px; }
+.section-about-instructor-content .main-image { height:470px; top:-235px; }
+.section-about-instructor-wrap { padding-top:283px; }
+.yj-photo-note { margin:0; font-size:14px; line-height:1.4; color:#F8E7D3; opacity:.8; text-align:center; }
+@media (max-width:1199.98px){ .section-about-instructor-content { padding-top:190px; } .section-about-instructor-content .main-image { height:380px; top:-190px; } .section-about-instructor-wrap { padding-top:243px; } }
+@media (max-width:809.98px){ .section-about-instructor-content { padding-top:140px; } .section-about-instructor-content .main-image { height:auto; aspect-ratio:1; top:-140px; } .section-about-instructor-wrap { padding-top:180px; } }
