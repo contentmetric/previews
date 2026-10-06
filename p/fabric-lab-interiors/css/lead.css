@@ -275,3 +275,9 @@ html[lang="ar"] .fl-rev:not(:has([data-only="ar"])) .fl-rev-src{unicode-bidi:pla
   .services-section-title-block{justify-content:center}
   .services-section-title-block .services-section-title-div>div,.services-section-title-block>div:not(.services-section-title-div){max-width:none!important;width:100%!important;flex:1 1 auto!important}
 }
+
+/* Arabic reaches further below the baseline than Latin. The template's slide-up text masks (overflow: clip,
+   exactly N lines tall) cut the dots off the last line of big headings in RTL, so give those masks room
+   below without moving anything (padding grows the clip box, the negative margin cancels it in the layout). */
+[dir=rtl] .title-block{padding-bottom:24px;margin-bottom:-24px}
+[dir=rtl] .services-section-title-block,[dir=rtl] .our-guarantee-title-block{padding-bottom:29px;margin-bottom:-24px} /* keeps their own 5px */
