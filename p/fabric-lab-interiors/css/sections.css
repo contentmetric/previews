@@ -1,0 +1,389 @@
+.banner-section { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.banner-part { overflow:clip; height:min-content; align-items:center; width:1px; display:flex; position:relative; padding:8px 8px 0px; gap:10px; flex:1 0 0px; place-content:center; }
+.banner-image-block { overflow:clip; height:min-content; align-items:center; width:1px; display:flex; position:relative; padding:0px; gap:10px; flex:1 0 0px; place-content:center; }
+.img { display:block; width:100%; height:100%; border-radius:inherit; object-position:center; object-fit:cover; }
+.text { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.heading { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:500; color:rgb(255, 252, 247); font-size:64px; letter-spacing:-0.01em; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:110%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.banner-section-text-2 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(255, 252, 247); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.variant-1 { cursor:pointer; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; background-color:rgb(255, 252, 247); border-radius:30px; box-shadow:rgba(35, 31, 32,  0.4) 0px 7px 20px 0px; padding:4px 4px 4px 16px; gap:8px; place-content:center; }
+.contact-us { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.banner-section-text-3 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(35, 31, 32); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.arrow-block { overflow:clip; height:32px; flex-direction:column; align-items:center; width:32px; display:flex; position:relative; background-color:rgb(35, 31, 32); border-radius:50%; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.arrow { -webkit-mask:none; mask:none; display:block; aspect-ratio:1 / 1; width:20px; height:auto; position:relative; flex:0 0 auto; }
+.banner-section-text-4 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(255, 252, 247); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.banner-section-text-5 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.ticker-section-img { display:block; width:100%; height:100%; border-radius:inherit; object-position:center; object-fit:contain; }
+.container { align-items:center; width:1px; max-width:1400px; height:min-content; display:flex; position:relative; padding:0px 40px; gap:10px; flex:1 0 0px; place-content:center; }
+.sub-title-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.sub-title-block-div { display:contents; }
+.services-section-sub-title-block-div { width:1px; height:auto; position:relative; flex:1 0 0px; }
+.variant-2 { display:none; }
+.services-section-text { display:none; }
+.services-section-text-2 { display:none; }
+.services-section-variant-1 { overflow:clip; height:min-content; align-items:center; display:flex; position:relative; width:100%; padding:0px; gap:10px; place-content:center; }
+.services-section-text-3 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.services-section-text-4 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(112, 101, 95); font-size:14px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(112, 101, 95); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(112, 101, 95); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.services-section-title-block { overflow:clip; height:min-content; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px 0px 5px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.services-section-heading { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:500; color:rgb(35, 31, 32); font-size:48px; letter-spacing:-0.01em; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:110%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.services-section-description-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.services-section-text-6 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(112, 101, 95); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(112, 101, 95); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(112, 101, 95); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.services-section-button-block { align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.services-section-button-div { width:auto; height:auto; position:relative; flex:0 0 auto; }
+.services-section-variant-2 { cursor:pointer; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; background-color:rgb(35, 31, 32); border-radius:30px; box-shadow:rgba(35, 31, 32,  0.4) 0px 7px 20px 0px; padding:4px 4px 4px 16px; gap:8px; place-content:center; }
+.services-section-arrow-block { overflow:clip; height:32px; flex-direction:column; align-items:center; width:32px; display:flex; position:relative; background-color:rgb(247, 241, 233); border-radius:50%; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.phone { display:none; }
+.services-image { display:none; }
+.services-image-div { display:none; }
+.services-section-img { display:none; }
+.services-categories { display:none; }
+.category-block { display:none; }
+.circle { display:none; }
+.popular { display:none; }
+.services-section-text-7 { display:none; }
+.sevices-detail-block { display:none; }
+.services-detail-title-with-description { display:none; }
+.service-detail-title-block { display:none; }
+.services-section-text-8 { display:none; }
+.service-detail-description-block { display:none; }
+.services-section-text-9 { display:none; }
+.simple-button-block { display:none; }
+.simple-button-block-div { display:none; }
+.services-section-variant-1-2 { display:none; }
+.services-section-text-10 { display:none; }
+.services-section-text-11 { display:none; }
+.services-section-arrow-block-2 { display:none; }
+.services-section-arrow { display:none; }
+.black-bg { display:none; }
+.services-section-variant-1-3 { flex-direction:column; align-items:flex-start; display:flex; position:relative; background-color:rgb(255, 252, 247); height:100%; width:100%; border-radius:16px; box-shadow:rgba(35, 31, 32,  0.1) 0px 0px 20px 0px; padding:6px; gap:6px; place-content:flex-start; }
+.services-section-services-image { overflow:clip; height:226px; align-items:flex-start; width:100%; display:flex; position:relative; border-radius:12px; padding:12px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.services-section-services-div { position:absolute; border-radius:inherit; inset:0; }
+.services-section-img-2 { display:block; width:100%; height:100%; border-radius:inherit; object-position:center; object-fit:cover; }
+.services-section-services-categories { overflow:clip; height:65px; align-items:flex-start; width:1px; display:flex; position:relative; padding:0px; gap:10px; flex:1 0 0px; place-content:flex-start; }
+.services-section-category-block { align-items:center; width:min-content; height:min-content; display:flex; position:relative; backdrop-filter:blur(5px); background-color:rgba(255, 252, 247,  0.4); border-radius:30px; padding:2px 14px 4px; gap:6px; flex:0 0 auto; place-content:center; }
+.services-section-category-block::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 1px 1px 1px; border-color:rgba(255, 252, 247,  0.2); }
+.services-section-circle { aspect-ratio:1 / 1; width:5px; height:auto; position:relative; background-color:rgb(255, 252, 247); border-radius:100%; flex:0 0 auto; }
+.services-section-popular { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.services-section-text-12 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(255, 252, 247); font-size:14px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.services-section-sevices-detail-block { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:100%; display:flex; position:relative; padding:16px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.services-section-services-detail-title-with-description { flex-direction:column; align-items:flex-start; width:100%; height:min-content; min-height:90px; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.services-section-service-detail-title-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px 0px 4px; gap:10px; flex:0 0 auto; place-content:center; }
+.services-section-text-13 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(35, 31, 32); font-size:20px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.services-section-service-detail-description-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.services-section-text-14 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(112, 101, 95); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(112, 101, 95); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(112, 101, 95); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.services-section-simple-button-block { overflow:clip; height:min-content; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.services-section-simple-div { width:auto; height:auto; position:relative; flex:0 0 auto; }
+.services-section-variant-1-4 { cursor:pointer; align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; display:flex; position:relative; padding:5px 0px; gap:11px; }
+.services-section-text-15 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; z-index:5; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.services-section-text-16 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(35, 31, 32); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.services-section-arrow-block-3 { overflow:clip; height:24px; z-index:5; align-items:center; width:24px; display:flex; position:relative; background-color:rgb(35, 31, 32); border-radius:50%; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.services-section-arrow-2 { -webkit-mask:none; mask:none; display:block; aspect-ratio:1 / 1; width:18px; height:auto; position:relative; flex:0 0 auto; }
+.services-section-black-bg { z-index:1; align-items:center; width:24px; display:flex; position:absolute; top:0px; bottom:0px; right:0px; background-color:rgb(35, 31, 32); opacity:0; padding:0px; gap:10px; flex:0 0 auto; place-content:center; border-radius:0px; }
+.our-services { display:none; }
+.result-section-our-services { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.result-section-text-3 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(214, 205, 196); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(214, 205, 196); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(214, 205, 196); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.variant-5 { cursor:pointer; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; background-color:rgb(232, 210, 179); border-radius:30px; box-shadow:rgba(35, 31, 32,  0.4) 0px 7px 20px 0px; padding:4px 4px 4px 16px; gap:8px; place-content:center; }
+.variant-5::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 1px 1px 1px; border-color:rgba(255, 252, 247,  0); }
+.why-choose-us-section-description-block { overflow:clip; height:min-content; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.why-choose-us-div { display:contents; }
+.ratings { align-content:center; justify-content:flex-start; align-items:center; width:100%; height:min-content; display:flex; position:relative; padding:0px; gap:8px; flex:0 0 auto; }
+.n5-0 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.why-choose-us-section-text { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(255, 252, 247); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:center; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.vector { width:17px; height:16px; position:relative; image-rendering:pixelated; background-size:100% 100%; background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 17 16%22><path d=%22M 8.5 12.859 L 13.753 16 L 12.359 10.08 L 17 6.097 L 10.889 5.583 L 8.5 0 L 6.112 5.583 L 0 6.097 L 4.641 10.08 L 3.247 16 Z%22 fill=%22rgb(255, 252, 247)%22></path></svg>'); flex:0 0 auto; }
+.why-choose-us-section-text-2 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:100%; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.icon-block { overflow:clip; height:42px; align-items:center; width:42px; display:flex; position:relative; background-color:rgb(35, 31, 32); border-radius:8px; box-shadow:rgba(35, 31, 32,  0.4) 0px 7px 20px 0px; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.icon-image { overflow:clip; height:20px; align-items:center; width:20px; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.icon-image-div { position:absolute; border-radius:inherit; inset:0; }
+.title-with-description-block { overflow:clip; height:min-content; flex-direction:column; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:11px; flex:0 0 auto; place-content:center; }
+.why-choose-us-section-title-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.why-choose-us-section-text-3 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(35, 31, 32); font-size:18px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.why-choose-us-section-text-4 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(112, 101, 95); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(112, 101, 95); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(112, 101, 95); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.on-time-on-budget { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.we-give-you-a-clear { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.plans-available-our-services { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.our-guarantee-title-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px 0px 5px; gap:10px; flex:0 0 auto; place-content:center; }
+.faq-wrp { flex-direction:column; align-items:flex-start; width:1px; max-width:874px; height:min-content; display:flex; position:relative; padding:0px; gap:50px; flex:1 0 0px; place-content:flex-start; }
+.faq-heading { overflow:clip; height:min-content; flex-direction:column; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:16px; flex:0 0 auto; place-content:center; }
+.faq-variant-2 { overflow:clip; height:min-content; align-items:center; display:flex; position:relative; width:100%; padding:0px; gap:10px; place-content:center; }
+.faq-text { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(112, 101, 95); font-size:14px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(112, 101, 95); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:center; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(112, 101, 95); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.faq-heading-2 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:500; color:rgb(35, 31, 32); font-size:48px; letter-spacing:-0.01em; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:110%; text-align:center; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.faq-part { overflow:clip; height:min-content; flex-direction:column; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:20px; flex:0 0 auto; place-content:center; }
+.faq-item { width:100%; height:auto; position:relative; flex:0 0 auto; }
+.open { overflow:clip; cursor:pointer; height:min-content; flex-direction:column; align-content:flex-start; justify-content:center; align-items:flex-start; display:flex; position:relative; background-color:rgb(35, 31, 32); width:100%; border-radius:10px; padding:20px; gap:8px; }
+.open::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 1px 1px 1px; border-color:rgba(35, 31, 32,  0.1); }
+.title { user-select:none; align-items:center; width:100%; height:min-content; display:flex; position:relative; padding:0px; gap:20px; flex:0 0 auto; place-content:center; }
+.site-header { height:auto; position:fixed; z-index:10; order:-999; width:100%; top:0px; left:0px; flex:0 0 auto; }
+.site-header-inner { display:contents; }
+.desktop { align-content:center; justify-content:space-between; align-items:center; height:min-content; display:flex; position:relative; width:100%; border-radius:0px; padding:8px; }
+.header-block { align-content:center; justify-content:space-between; align-items:center; width:1px; height:min-content; display:flex; position:relative; backdrop-filter:blur(0px); background-color:rgba(35, 31, 32,  0); border-radius:0px; padding:16px 38px; flex:1 0 0px; }
+.header-logo-with-humberger-block { align-items:center; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:0px; flex:0 0 auto; place-content:center; }
+.logo-block { align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.humberger-block { display:none; }
+.humberger-block-div { display:none; }
+.block-open { display:none; }
+.line { display:none; }
+.block-line { display:none; }
+.header-menu-with-button { align-content:center; justify-content:space-between; align-items:center; width:1px; height:min-content; display:flex; position:relative; padding:0px; flex:1 0 0px; }
+.header-menu-main-block { align-items:center; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:10px; flex:1 0 0px; place-content:center; }
+.header-menu-block { align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; display:flex; position:relative; backdrop-filter:blur(20px); background-color:rgba(255, 252, 247,  0.2); border-radius:30px; padding:8px; gap:10px; flex:0 0 auto; }
+.header-menu-block::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 1px 1px 1px; border-color:rgba(255, 252, 247,  0.2); }
+.header-menu-block-div { width:auto; height:auto; position:relative; flex:0 0 auto; }
+.about { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.block-text-2 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgba(255, 252, 247,  0.92); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgba(255, 252, 247,  0.92); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgba(255, 252, 247,  0.92); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.block-variant-1 { cursor:pointer; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; background-color:rgba(35, 31, 32,  0); border-radius:20px; padding:6px 17px; gap:10px; place-content:center; }
+.header-button-block { align-items:center; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.header-button-block-div { width:auto; height:auto; position:relative; flex:0 0 auto; }
+.block-variant-1-2 { cursor:pointer; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; background-color:rgb(255, 252, 247); border-radius:30px; box-shadow:rgba(35, 31, 32,  0.4) 0px 7px 20px 0px; padding:4px 4px 4px 16px; gap:8px; place-content:center; }
+.block-text-3 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.block-text-4 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(35, 31, 32); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.block-arrow-block { overflow:clip; height:32px; flex-direction:column; align-items:center; width:32px; display:flex; position:relative; background-color:rgb(35, 31, 32); border-radius:50%; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.block-arrow { -webkit-mask:none; mask:none; display:block; aspect-ratio:1 / 1; width:20px; height:auto; position:relative; flex:0 0 auto; }
+.cta { z-index:5; order:1003; width:100%; height:auto; position:relative; flex:0 0 auto; }
+.cta-inner { display:contents; }
+.block-desktop { overflow:clip; height:min-content; align-items:center; display:flex; position:relative; width:100%; padding:0px; gap:10px; place-content:center; }
+.block-container { overflow:clip; max-width:1400px; height:min-content; align-items:center; width:1px; display:flex; position:relative; padding:0px 40px; gap:10px; flex:1 0 0px; place-content:center; }
+.get-started-content { overflow:clip; height:min-content; align-items:center; width:1px; display:flex; position:relative; background-color:rgb(232, 210, 179); border-radius:16px; padding:48px; gap:30px; flex:1 0 0px; place-content:center; }
+.get-started-left { overflow:clip; height:min-content; flex-direction:column; align-items:center; width:1px; display:flex; position:relative; padding:0px; gap:16px; flex:1 0 0px; place-content:center; }
+.block-everything-we-can-build-for { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; max-width:450px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.get-started-right { flex-direction:column; align-items:center; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:24px; flex:1 0 0px; place-content:center; }
+.block-whatever-the-room-whatever-the { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.get-started-info { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.free-obligation-response-within-24 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.block-text-5 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(35, 31, 32); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.site-footer { order:1004; width:100%; height:auto; position:relative; flex:0 0 auto; }
+.site-footer-inner { display:contents; }
+.block-desktop-2 { align-items:center; height:min-content; display:flex; position:relative; width:100%; padding:0px 8px 8px; gap:10px; place-content:center; }
+.footer-block { align-items:center; width:1px; height:min-content; display:flex; position:relative; background-color:rgb(35, 31, 32); border-radius:16px; padding:0px; gap:10px; flex:1 0 0px; place-content:center; }
+.block-container-2 { overflow:clip; max-width:1400px; height:min-content; align-items:center; width:1px; display:flex; position:relative; padding:0px 40px; gap:10px; flex:1 0 0px; place-content:center; }
+.footer-content { overflow:clip; height:min-content; z-index:5; flex-direction:column; align-items:center; width:1px; display:flex; position:relative; padding:40px 0px 30px; gap:0px; flex:1 0 0px; place-content:center; }
+.footer-top { overflow:clip; height:min-content; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px 0px 30px; gap:30px; flex:0 0 auto; place-content:flex-start; }
+.footer-top::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgba(255, 252, 247,  0.2); }
+.footer-top-left { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:46%; display:flex; position:relative; padding:0px; gap:73px; flex:0 0 auto; place-content:flex-start; }
+.footer-logo-with-description { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px; gap:16px; flex:0 0 auto; place-content:flex-start; }
+.block-logo-block { overflow:clip; height:min-content; flex-direction:column; align-items:center; width:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.block-text-7 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; max-width:298px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+.social-block { overflow:clip; height:min-content; align-content:flex-end; justify-content:flex-start; align-items:flex-end; width:100%; list-style-position:initial; list-style-image:initial; list-style-type:none; display:flex; position:relative; padding:0px; margin:0px; gap:8px; flex:0 0 auto; }
+.social-block-li { width:36px; height:36px; position:relative; flex:0 0 auto; }
+.block-variant-1-3 { overflow:clip; cursor:pointer; align-items:center; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; background-color:rgb(232, 210, 179); height:100%; width:100%; border-radius:5px; padding:0px; gap:10px; place-content:center; }
+.block-variant-1-3::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 1px 1px 1px; border-color:rgba(33, 33, 33, 0); }
+.social-icon { overflow:clip; height:20px; align-items:center; width:20px; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.social-icon-div { position:absolute; border-radius:inherit; inset:0; }
+.footer-top-right { overflow:clip; height:min-content; flex-wrap:wrap; align-content:flex-start; justify-content:space-between; align-items:flex-start; width:1px; display:flex; position:relative; padding:0px; flex:1 0 0px; }
+.footer-menu-block { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:30%; display:flex; position:relative; padding:0px 15px 0px 0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.footer-menu-title { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.block-text-9 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.block-text-10 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(255, 252, 247); font-size:18px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.footer-menu-link-block { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:100%; list-style-position:initial; list-style-image:initial; list-style-type:none; display:flex; position:relative; padding:0px; margin:0px; gap:4px; flex:0 0 auto; place-content:flex-start; }
+.footer-menu-link-li { width:auto; height:auto; position:relative; flex:0 0 auto; }
+.home { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.block-variant-1-4 { overflow:clip; cursor:pointer; height:min-content; align-items:flex-start; width:min-content; display:flex; position:relative; padding:0px 2px; gap:10px; place-content:flex-start; }
+.block-text-12 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(214, 205, 196); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(214, 205, 196); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(214, 205, 196); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.block-text-12-a { border-radius:0px; corner-shape:round; padding:0px; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; font-size:16px; text-transform:none; cursor:pointer; color:rgb(214, 205, 196); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(214, 205, 196); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(35, 31, 32,  0); transition-behavior:normal; transition-duration:0.2s; transition-timing-function:ease-in-out; transition-delay:0s; transition-property:color; }
+.block-footer-menu-block { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:36%; display:flex; position:relative; padding:0px 15px 0px 0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.block-footer-menu-title { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.quick-links { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+.block-text-13 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(255, 252, 247); font-size:18px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; }
+.block-footer-menu-block-2 { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:1px; display:flex; position:relative; padding:0px 15px 0px 0px; gap:10px; flex:1 0 0px; place-content:flex-start; }
+.location-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+.footer-bottom { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:30px 0px 0px; gap:10px; flex:0 0 auto; place-content:center; }
+.footer-bottom-content { overflow:clip; height:min-content; align-content:center; justify-content:flex-start; align-items:center; width:1px; display:flex; position:relative; padding:0px; gap:30px; flex:1 0 0px; }
+.footer-copyright { overflow:clip; height:min-content; align-items:flex-start; width:1px; display:flex; position:relative; padding:0px; gap:10px; flex:1 0 0px; place-content:flex-start; }
+.footer-bottom-link-block { overflow:clip; height:min-content; align-content:center; justify-content:flex-end; align-items:center; width:1px; display:flex; position:relative; padding:0px; gap:20px; flex:1 0 0px; }
+.footer-bottom-link-div { width:auto; height:auto; position:relative; flex:0 0 auto; }
+.footer-bg { overflow:clip; height:100%; z-index:1; width:100%; position:absolute; top:-70px; left:0px; background-color:rgb(35, 31, 32); border-radius:16px; flex:0 0 auto; }
+.duration { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+@media (max-width: 1199.98px) {
+.heading { font-size:50px; letter-spacing:-1.5px; }
+  .services-section-heading { font-size:36px; letter-spacing:-1.08px; }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .faq-wrp { gap:30px; }
+  .faq-heading-2 { font-size:36px; letter-spacing:-1.08px; }
+  .desktop { flex-direction:column; border-radius:20px; gap:0px; place-content:center; align-content:initial; justify-content:initial; }
+  .header-block { flex-direction:column; align-items:flex-start; width:100%; border-radius:12px; padding:25px 20px; gap:10px; flex:0 0 auto; place-content:flex-start; align-content:initial; justify-content:initial; }
+  .header-logo-with-humberger-block { align-content:center; justify-content:space-between; width:100%; gap:unset; place-content:initial; }
+  .humberger-block { align-items:center; width:min-content; height:min-content; display:flex; position:relative; cursor:pointer; min-height:unset; min-width:unset; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+  .humberger-block-div { width:30px; height:30px; position:relative; flex:0 0 auto; display:initial; }
+  .block-open { cursor:pointer; flex-direction:column; align-content:flex-end; justify-content:center; align-items:flex-end; display:flex; position:relative; height:100%; width:100%; padding:0px; gap:8px; }
+  .line { z-index:1; width:28px; height:2px; position:relative; background-color:rgb(255, 252, 247); border-radius:20px; flex:0 0 auto; display:initial; }
+  .block-line { z-index:1; width:28px; height:2px; position:relative; background-color:rgb(255, 252, 247); flex:0 0 auto; border-radius:20px; display:initial; }
+  .header-menu-with-button { display:none; }
+  .header-menu-main-block { display:none; }
+  .header-menu-block { display:none; }
+  .header-menu-block-div { display:none; }
+  
+  .about { display:none; }
+  .block-text-2 { display:none; }
+  .block-variant-1 { display:none; }
+  .header-button-block { display:none; }
+  .header-button-block-div { display:none; }
+  .block-variant-1-2 { display:none; }
+  .block-text-3 { display:none; }
+  .block-text-4 { display:none; }
+  .block-arrow-block { display:none; }
+  .block-arrow { display:none; }
+  .get-started-content { padding:35px; }
+  .block-text-5 { font-size:15px; letter-spacing:-0.6px; }
+  .footer-top { flex-direction:column; }
+  .footer-top-left { width:100%; gap:30px; }
+  .footer-top-right { width:100%; flex:0 0 auto; }
+}
+@media (max-width: 809.98px) {
+.heading { font-size:36px; letter-spacing:-1.08px; }
+  .container { padding:0px 20px; }
+  .variant-2 { overflow:clip; height:min-content; align-items:center; display:flex; position:relative; width:100%; padding:0px; gap:10px; place-content:center; }
+  .services-section-text { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+  .services-section-text-2 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(112, 101, 95); font-size:14px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(112, 101, 95); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:center; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(112, 101, 95); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; display:initial; }
+  .services-section-variant-1 { display:none; }
+  .services-section-text-3 { display:none; }
+  .services-section-text-4 { display:none; }
+  .services-section-title-block { align-content:flex-start; justify-content:center; place-content:initial; }
+  .services-section-heading { font-size:30px; letter-spacing:-0.9px; text-align:center; }
+  .services-section-text-6 { text-align:center; }
+  .services-section-button-block { align-items:center; place-content:center; }
+  .phone { flex-direction:column; align-items:flex-start; display:flex; position:relative; background-color:rgb(255, 252, 247); height:100%; width:100%; border-radius:16px; box-shadow:rgba(35, 31, 32,  0.1) 0px 0px 20px 0px; padding:6px; gap:6px; place-content:flex-start; }
+  .services-image { overflow:clip; align-items:flex-start; width:100%; display:flex; position:relative; height:225px; border-radius:12px; padding:12px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+  .services-image-div { position:absolute; border-radius:inherit; inset:0; display:initial; }
+  .services-section-img { display:block; width:100%; height:100%; border-radius:inherit; object-position:center; object-fit:cover; }
+  .services-categories { overflow:clip; height:65px; align-items:flex-start; width:1px; display:flex; position:relative; padding:0px; gap:10px; flex:1 0 0px; place-content:flex-start; }
+  .category-block { align-items:center; width:min-content; height:min-content; display:flex; position:relative; backdrop-filter:blur(5px); background-color:rgba(255, 252, 247,  0.4); border-radius:30px; padding:3px 14px 4px; gap:6px; flex:0 0 auto; place-content:center; }
+  .category-block::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 1px 1px 1px; border-color:rgba(255, 252, 247,  0.2); }
+  .circle { aspect-ratio:1 / 1; width:5px; height:auto; position:relative; background-color:rgb(255, 252, 247); border-radius:100%; flex:0 0 auto; display:initial; }
+  .popular { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+  .services-section-text-7 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(255, 252, 247); font-size:12px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 252, 247); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 252, 247); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; display:initial; }
+  .sevices-detail-block { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; width:100%; display:flex; position:relative; padding:14px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+  .services-detail-title-with-description { flex-direction:column; align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; min-height:80px; padding:0px; gap:5px; flex:0 0 auto; place-content:flex-start; }
+  .service-detail-title-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px 0px 4px; gap:10px; flex:0 0 auto; place-content:center; }
+  .services-section-text-8 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(35, 31, 32); font-size:20px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; display:initial; }
+  .service-detail-description-block { overflow:clip; height:min-content; align-items:center; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+  .services-section-text-9 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:400; color:rgb(112, 101, 95); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(112, 101, 95); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(112, 101, 95); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; display:initial; }
+  .simple-button-block { overflow:clip; height:min-content; align-items:flex-start; width:100%; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+  .simple-button-block-div { width:auto; height:auto; position:relative; flex:0 0 auto; display:initial; }
+  .services-section-variant-1-2 { cursor:pointer; align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; display:flex; position:relative; padding:5px 0px; gap:11px; }
+  .services-section-text-10 { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; z-index:5; width:auto; height:auto; position:relative; justify-content:center; flex:0 0 auto; }
+  .services-section-text-11 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Jost, "Noto Kufi Arabic", system-ui, sans-serif; font-style:normal; font-weight:600; color:rgb(35, 31, 32); font-size:16px; letter-spacing:0; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(35, 31, 32); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(35, 31, 32); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(35, 31, 32,  0); margin:0px; display:initial; }
+  .services-section-arrow-block-2 { overflow:clip; height:24px; z-index:5; align-items:center; width:24px; display:flex; position:relative; background-color:rgb(35, 31, 32); border-radius:50%; padding:0px; gap:10px; flex:0 0 auto; place-content:center; }
+  .services-section-arrow { -webkit-mask:none; mask:none; display:block; aspect-ratio:1 / 1; width:18px; height:auto; position:relative; flex:0 0 auto; }
+  .black-bg { z-index:1; align-items:center; width:24px; display:flex; position:absolute; top:0px; bottom:0px; right:0px; background-color:rgb(35, 31, 32); opacity:0; padding:0px; gap:10px; flex:0 0 auto; place-content:center; border-radius:0px; }
+  .services-section-variant-1-3 { display:none; }
+  .services-section-services-image { display:none; }
+  .services-section-services-div { display:none; }
+  .services-section-img-2 { display:none; }
+  .services-section-services-categories { display:none; }
+  .services-section-category-block { display:none; }
+  .services-section-circle { display:none; }
+  .services-section-popular { display:none; }
+  .services-section-text-12 { display:none; }
+  .services-section-sevices-detail-block { display:none; }
+  .services-section-services-detail-title-with-description { display:none; }
+  .services-section-service-detail-title-block { display:none; }
+  .services-section-text-13 { display:none; }
+  .services-section-service-detail-description-block { display:none; }
+  .services-section-text-14 { display:none; }
+  .services-section-simple-button-block { display:none; }
+  .services-section-simple-div { display:none; }
+  .services-section-variant-1-4 { display:none; }
+  .services-section-text-15 { display:none; }
+  .services-section-text-16 { display:none; }
+  .services-section-arrow-block-3 { display:none; }
+  .services-section-arrow-2 { display:none; }
+  .services-section-black-bg { display:none; }
+  
+  
+  
+  
+  .our-services { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; justify-content:center; flex:1 0 0px; }
+  
+  .result-section-our-services { display:none; }
+  
+  
+  .result-section-text-3 { text-align:center; }
+  .why-choose-us-section-description-block { align-items:center; place-content:center; }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .faq-heading { gap:12px; }
+  .faq-heading-2 { font-size:30px; letter-spacing:-0.9px; }
+  .faq-part { gap:16px; }
+  .block-container { padding:0px 20px; }
+  .get-started-content { flex-direction:column; padding:20px; }
+  .get-started-left { width:100%; gap:12px; flex:0 0 auto; }
+  .block-everything-we-can-build-for { max-width:300px; }
+  .get-started-right { width:100%; flex:0 0 auto; }
+  .block-whatever-the-room-whatever-the { max-width:400px; }
+  .block-text-5 { font-size:16px; letter-spacing:-0.64px; text-align:center; }
+  .block-container-2 { padding:0px 15px; }
+  .footer-top { align-items:center; padding:0px 0px 16px; place-content:center; }
+  .footer-top-left { align-items:center; gap:16px; place-content:center; }
+  .footer-logo-with-description { align-items:center; gap:12px; place-content:center; }
+  
+  
+  .social-block { align-items:center; place-content:center; align-content:initial; justify-content:initial; }
+  .footer-top-right { flex-direction:column; align-items:center; gap:20px; place-content:center; align-content:initial; justify-content:initial; }
+  .footer-menu-block { align-items:center; width:100%; padding:0px; place-content:center; }
+  .block-text-9 { text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:100%; }
+  .block-text-10 { text-wrap:wrap; text-align:center; }
+  .footer-menu-link-block { align-items:center; place-content:center; }
+  .block-footer-menu-block { width:100%; padding:0px; }
+  .block-footer-menu-title { align-items:center; place-content:center; }
+  .block-text-13 { text-align:center; }
+  .block-footer-menu-block-2 { align-items:center; width:100%; padding:0px; flex:0 0 auto; place-content:center; }
+  .footer-bottom { padding:16px 0px 0px; }
+  .footer-bottom-content { flex-direction:column; align-items:flex-start; gap:12px; place-content:flex-start; align-content:initial; justify-content:initial; }
+  .footer-copyright { order:1; align-items:center; width:100%; flex:0 0 auto; place-content:center; }
+  .footer-bottom-link-block { order:0; width:100%; flex:0 0 auto; place-content:center; align-content:initial; justify-content:initial; }
+}
