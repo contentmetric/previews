@@ -1,0 +1,119 @@
+/* CuteCats Shah Alam — brand palette over the pet-wellness base template. Tokens: BRAND-TOKENS.md.
+   apricot is a FILL (ink text on it); ink carries the dark bands; body copy is muted. */
+:root,html[data-mode="cat"]{
+  --ink:#0C0C0D; --ground:#FBF5EE; --tint:#F8E7D2; --muted:#5B524A;
+  --apc:#F9B577; --apc-deep:#E08A3C;
+  --forest:#0C0C0D; --forest-deep:#0C0C0D;
+  --cream:#FFFFFF;
+  --sand:#FBF5EE; --sand-deep:#F8E7D2;
+  --moss:#5B524A;
+  --terra:#F9B577; --terra-dark:#E08A3C; --terra-deep:#E79A5C; --terra-light:#F9B577;
+  --terra-soft:#F2C49D; --terra-mid:#F9B577; --terra-glow:#FBC392;
+  --sage:#F9B577; --sage-light:#FBC392; --sage-deep:#E79A5C; --sage-soft:#F2C49D;
+  --sage-dark:#E08A3C; --sage-mid:#E08A3C; --sage-glow:#FBC392; --sage-shade:#E79A5C; --sage-darker:#E08A3C;
+  --leaf:#F9B577;
+}
+body{background:var(--ground)}
+.fx-nav-bar.fx-compact{background:rgba(251,245,238,.92)}
+.fx-nav-a:hover{color:var(--ink);opacity:.62}
+.fx-nav-a::after{background:var(--ink)}
+.fx-menu-a:hover{color:var(--muted)}
+/* buttons: white or apricot pill, ink text */
+.fx-cta{background:var(--cream);color:var(--ink)}
+.fx-cta:hover{background:var(--apc);color:var(--ink);box-shadow:0 10px 24px -10px rgba(12,12,13,.45)}
+.fx-cta svg{color:var(--ink)}
+.fiv-cta{background:var(--apc);color:var(--ink)}
+.fiv-cta:hover{background:var(--apc-deep);color:var(--ink);box-shadow:0 16px 34px -12px rgba(12,12,13,.4)}
+.fiv-cta svg{color:var(--ink)}
+.fxf-up:hover{color:var(--ink)}
+.cc-badge{width:38px;height:38px;border-radius:50%;flex:0 0 auto;display:inline-block;vertical-align:middle}
+.fx-home>.cc-badge{margin-right:10px}
+.fxf-brand .cc-badge{width:46px;height:46px;margin-bottom:2px}
+/* hero: apricot band, ink type. mode.css sets these on .fxp[data-hero="cat"], so match that specificity. */
+.fxp[data-hero="cat"]{--hero-paw:var(--apc);--hero-paw-cta:var(--ink);--hero-dot:var(--ink)}
+.fxp-h1{color:var(--ink);text-shadow:0 3px 30px rgba(255,255,255,.28)}
+.fxw-bigin{color:rgba(12,12,13,.11);text-shadow:none}
+@media (max-width:809px){.fxw-eyeb{white-space:normal;font-size:10.5px;letter-spacing:1.8px;max-width:290px}}
+.fxw-acc{background:var(--ink);color:var(--apc)}
+.fxw-eyeb{color:var(--ink)}
+.fxw-sub{color:rgba(12,12,13,.86);text-shadow:none}
+.fxw-trust{color:var(--ink);text-shadow:none}
+.fxw-star{color:var(--ink)}
+.fxw-tdot{background:rgba(12,12,13,.4)}
+.fxw-ghost{color:var(--ink);border-color:rgba(12,12,13,.4)}
+.fxw-ghost:hover{background:rgba(12,12,13,.08);border-color:var(--ink)}
+.fxw-scroll{color:rgba(12,12,13,.72)}
+.fxw-togwrap{display:none}
+.fxw-cut img{filter:drop-shadow(0 30px 40px rgba(12,12,13,.28))}
+.fxp-halo{border-color:rgba(12,12,13,.25)}
+/* statement */
+.fst-eyeb{color:var(--muted)}
+.fst-ghost{color:transparent;-webkit-text-stroke:2px rgba(12,12,13,.09)}
+.fst-w.fst-acc,.fst-w.fst-acc.fst-onw{color:var(--ink);background:var(--apc);border-radius:.14em;padding:0 .1em}
+html[data-mode="cat"] .fst-loop path{stroke:var(--ink)}
+.fst-cap{color:var(--muted)}
+.fst-cap-rule{background:var(--ink)}
+/* services (ink band) */
+.fsv-eyeb{color:var(--apc)}
+.fsv-no{color:rgba(255,255,255,.62)}
+.fsv-t{color:var(--ink)}
+.fsv-l{color:var(--muted)}
+.fsv-back{color:#fff}
+html[data-mode="cat"] .fsv-bscrim{background:linear-gradient(180deg,rgba(12,12,13,0) 18%,rgba(12,12,13,.82) 60%,#0C0C0D 78%)}
+/* moods band (was the bilingual slider) */
+.fmm{background:var(--apc)}
+html[data-mode="cat"] .fmm{--fmm-paw:var(--ink)}
+.fmm-l-a{background:linear-gradient(160deg,var(--apc-deep),var(--apc) 62%,#FBC392)}
+.fmm-catw{background:linear-gradient(160deg,#FBC392,var(--apc) 48%,var(--tint))}
+.fmm-say-a{left:8%;color:var(--ink)}
+.fmm-catsay{right:8%;color:var(--ink);text-align:right}
+.fmm-big{color:var(--ink);text-shadow:0 6px 34px rgba(255,255,255,.35)}
+.fmm-sub{color:rgba(12,12,13,.88);text-shadow:none}
+.fmm-cta{color:var(--ink);text-decoration:none}
+.fmm-div{background:var(--ink);box-shadow:0 0 24px rgba(12,12,13,.35)}
+.fmm-handle{background:var(--ink);color:var(--apc)}
+.fmm-pol{background:#fff}
+.fmm-pol p{color:var(--muted)}
+/* story */
+.fsy-no{color:var(--muted)}
+.fsy-p3 .fsy-no{color:var(--apc)}
+.fsy-dim{background:#0C0C0D}
+/* roster + standards */
+.fpt-eyeb{color:var(--muted)}
+.ftm-eyeb,.ftm-rl{color:var(--muted)}
+.ftm-sq path{stroke:var(--apc)}
+.ftm-chip{background:var(--ink);color:var(--apc)}
+/* numbers */
+.fnm-eyeb{color:var(--apc)}
+.fnm-star{color:var(--apc)}
+.fnm-v .cc-word{font-size:clamp(30px,3vw,46px);letter-spacing:-.02em}
+/* reviews */
+.fvc-eyeb{color:var(--muted)}
+.fvc-ph{background:var(--tint)}
+/* invitation */
+.fiv-eyeb{color:var(--muted)}
+.fiv-sub em{color:var(--ink)}
+html[data-mode="cat"] .fiv-arch1{background:rgba(249,181,119,.34)}
+.fiv-arch2{background:rgba(249,181,119,.16)}
+.fiv-dot{background:var(--apc-deep)}
+.fiv-hint{color:rgba(91,82,74,.7)}
+/* footer */
+.fxf-h{color:var(--apc)}
+.fxf-col a:hover{color:var(--apc)}
+.fxf-dot{background:var(--apc)}
+.fxf-ltr:hover{color:var(--apc)}
+/* faq */
+.ccfaq{background:var(--ground);padding:120px 0 130px;font-family:var(--body)}
+.ccfaq-in{max-width:900px;margin:0 auto;padding:0 32px}
+.ccfaq-eyeb{font-weight:700;font-size:13px;letter-spacing:2.6px;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+.ccfaq-h{font-family:var(--display);font-weight:800;font-size:clamp(38px,4.4vw,64px);line-height:1.02;letter-spacing:-.03em;color:var(--ink);margin:0 0 44px}
+.ccfaq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ccfaq-item{background:var(--tint);border-radius:18px;padding:22px 24px;align-self:start}
+.ccfaq-item summary{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.2px;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.ccfaq-item summary::-webkit-details-marker{display:none}
+.ccfaq-item summary::after{content:"+";font-weight:700;color:var(--apc-deep);flex:0 0 auto}
+.ccfaq-item[open] summary::after{content:"–"}
+.ccfaq-item p{margin:12px 0 0;font-weight:500;font-size:15.5px;line-height:1.6;color:var(--muted)}
+.ccfaq-cta{margin:34px 0 0;font-weight:600;font-size:15.5px;color:var(--muted)}
+.ccfaq-cta a{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--apc);text-underline-offset:3px}
+@media (max-width:809px){.ccfaq{padding:84px 0 96px}.ccfaq-in{padding:0 20px}.ccfaq-grid{grid-template-columns:1fr}.ccfaq-h{margin-bottom:32px}}

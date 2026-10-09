@@ -1,0 +1,149 @@
+/* Dog mode (default) and cat mode. <html data-mode="cat"> flips the accent colours and which copy / photo shows.
+   Copy that differs by mode is in the page twice (.m-dog / .m-cat); the hero keeps its own [data-hero] state
+   so its text can swap halfway through its slide animation. */
+html:not([data-mode="cat"]) .m-cat,html[data-mode="cat"] .m-dog{display:none !important}
+html{--a1:var(--terra);--a2:var(--terra);--soft:var(--terra-soft)}
+html[data-mode="cat"]{--a1:var(--sage-dark);--a2:var(--sage);--soft:var(--sage-soft)}
+
+/* header toggle */
+html:not([data-mode="cat"]) .fx-dogside,html[data-mode="cat"] .fx-catside{opacity:1;color:var(--cream)}
+.fx-mini-puck{background:var(--terra)}
+html[data-mode="cat"] .fx-mini-puck{transform:translateX(calc(100% + 7px));background:var(--sage-mid)}
+
+/* footer */
+.fxf{--fxfacc:var(--terra)}
+html[data-mode="cat"] .fxf{--fxfacc:var(--sage)}
+.fxf-ball-cat{opacity:0}
+html[data-mode="cat"] .fxf-ball-dog{opacity:0}
+html[data-mode="cat"] .fxf-ball-cat{opacity:1}
+
+/* hero */
+.fxp{--hero-paw:var(--terra);--hero-paw-cta:var(--terra);--hero-dot:var(--terra)}
+.fxp[data-hero="cat"]{--hero-paw:var(--sage);--hero-paw-cta:var(--sage-dark);--hero-dot:var(--sage-dark)}
+.fxp[data-hero="dog"] .h-cat,.fxp[data-hero="cat"] .h-dog{display:none}
+.fxw-catw{opacity:0}
+.fxp[data-hero="cat"] .fxw-dogw{opacity:0}
+.fxp[data-hero="cat"] .fxw-catw{opacity:1}
+.fxp[data-hero="dog"] .t-cat,.fxp[data-hero="cat"] .t-dog{opacity:0;transform:scale(.5) rotate(28deg)}
+.fxp[data-hero="dog"] .fxw-cut-cat,.fxp[data-hero="cat"] .fxw-cut-dog{opacity:0;transform:translateY(48px) scale(.94);transition:opacity .3s cubic-bezier(.22,1,.36,1),transform .3s cubic-bezier(.22,1,.36,1)}
+.fxp[data-hero="dog"] .fxw-cut-dog,.fxp[data-hero="cat"] .fxw-cut-cat{transition-delay:.16s}
+.fxw-capdot{background:var(--hero-dot)}
+.fxw-trust{transition:opacity .4s}
+.fxp.is-out .fxw-sub,.fxp.is-out .fxw-trust{opacity:0}
+.fxp.is-out .fxw-cap{opacity:0;transform:translateY(10px)}
+.fxp.is-out .fxw-big{}
+.fxp[data-hero="dog"] .fxp-dogside,.fxp[data-hero="cat"] .fxp-catside{opacity:1;color:var(--cream)}
+.fxp-puck{background:var(--terra)}
+.fxp[data-hero="cat"] .fxp-puck{transform:translateX(calc(100% + 9px));background:var(--sage-mid)}
+.fxw-tickset{display:inline-flex;align-items:center;gap:26px}
+.fxw-tickitem{display:inline-flex;align-items:center;gap:26px}
+.home-hero{position:relative;width:100%;height:100vh;min-height:660px}
+
+/* statement */
+.fst{--fstacc:var(--terra)}
+html[data-mode="cat"] .fst{--fstacc:var(--sage-dark)}
+.fst-eyeb{color:var(--fstacc)}
+.fst-ghost span:nth-child(2){opacity:0}
+html[data-mode="cat"] .fst-ghost span:nth-child(1){opacity:0}
+html[data-mode="cat"] .fst-ghost span:nth-child(2){opacity:1}
+.fst-badge text{font-family:var(--body);font-weight:700;font-size:12.5px;letter-spacing:2px;fill:var(--moss);opacity:.75}
+html:not([data-mode="cat"]) .fst-toy-cat,html[data-mode="cat"] .fst-toy-dog{opacity:0;transform:scale(.5) rotate(30deg)}
+.fst-loop path{stroke:var(--sage)}
+html[data-mode="cat"] .fst-loop path{stroke:var(--terra)}
+html[data-mode="cat"] .fst-step svg{width:15px;height:15px}
+.fst-cap-rule{width:34px;height:1.5px;background:var(--sage);display:inline-block}
+
+/* services cards */
+.fsv-eyeb{color:var(--a2)}
+.fsv-back{background:var(--a1)}
+.fsv-bimg-cat{opacity:0}
+html[data-mode="cat"] .fsv-bimg-dog{opacity:0}
+html[data-mode="cat"] .fsv-bimg-cat{opacity:1}
+.fsv-bscrim{background:linear-gradient(180deg,color-mix(in srgb,var(--terra-deep) 0%,transparent) 20%,color-mix(in srgb,var(--terra-deep) 92%,transparent) 62%,var(--terra-deep) 78%)}
+html[data-mode="cat"] .fsv-bscrim{background:linear-gradient(180deg,color-mix(in srgb,var(--sage-dark) 0%,transparent) 20%,color-mix(in srgb,var(--sage-dark) 92%,transparent) 62%,var(--sage-darker) 78%)}
+
+/* bilingual */
+.fmm{--fmm-paw:var(--sage-dark)}
+html[data-mode="cat"] .fmm{--fmm-paw:var(--terra)}
+
+/* story */
+.fsy-p1{background:var(--cream)}
+.fsy-p2{background:var(--sand)}
+.fsy-p3{background:var(--forest)}
+.fsy-p1 .fsy-copy,.fsy-p2 .fsy-copy{color:var(--forest)}
+.fsy-p3 .fsy-copy{color:var(--cream)}
+.fsy-no{color:var(--a1)}
+html[data-mode="cat"] .fsy-p3 .fsy-no{color:var(--sage)}
+.fsy-p{opacity:.85}
+.fsy-img-cat{opacity:0}
+html[data-mode="cat"] .fsy-img-dog{opacity:0}
+html[data-mode="cat"] .fsy-img-cat{opacity:1}
+.fsy-up{transform:translate3d(0,100%,0)}
+@media (max-width:809px){.fsy-panel,.fsy-up{transform:none !important}}
+
+/* patients wall */
+.fpt{--fptacc:var(--soft)}
+.fpt-eyeb{color:var(--a1)}
+
+/* team */
+.ftm{--tmacc:var(--a1)}
+.ftm-eyeb,.ftm-rl{color:var(--a1)}
+
+/* numbers */
+.fnm-eyeb{color:var(--a2)}
+.fnm-star{color:var(--a2);font-size:.5em;vertical-align:.35em;margin-left:6px}
+
+/* voices */
+.fvc-eyeb{color:var(--a1)}
+
+/* invitation */
+.fiv-arch1{background:rgba(212,121,78,.12)}
+html[data-mode="cat"] .fiv-arch1{background:rgba(168,184,158,.2)}
+.fiv-eyeb,.fiv-sub em{color:var(--a1)}
+.fiv-dot{background:var(--a1)}
+
+/* ---------- inner pages ---------- */
+/* hero gradient (snaps when the mode changes) */
+.grad{background:linear-gradient(160deg,var(--terra-light),var(--terra-deep))}
+html[data-mode="cat"] .grad{background:linear-gradient(160deg,var(--sage-light),var(--sage-deep))}
+html{--paw-soft:var(--a2);--trail:var(--a2)}
+/* call-to-action band at the foot of several pages */
+.band-wrap{max-width:1280px;margin:0 auto}
+.band{border-radius:30px;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden}
+.band-h{font-family:var(--display);font-weight:800;font-size:clamp(28px,3vw,44px);letter-spacing:-.02em;color:var(--cream);margin:0 0 8px}
+.band-p{font-family:var(--body);font-weight:500;font-size:15.5px;color:rgba(251,247,240,.8);margin:0}
+.band-btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-weight:700;font-size:16px;border-radius:999px;padding:18px 32px;text-decoration:none;flex-shrink:0;transition:background .6s}
+.band-paw{position:absolute;right:-30px;bottom:-34px}
+
+/* services index and service pages */
+.fsi,.fsd{--svcacc:var(--soft)}
+.fsi-cat,.fsd-cat{opacity:0}
+html[data-mode="cat"] .fsi-dog,html[data-mode="cat"] .fsd-dog{opacity:0}
+html[data-mode="cat"] .fsi-cat,html[data-mode="cat"] .fsd-cat{opacity:1}
+html:not([data-mode="cat"]) .fsi-row:hover .fsi-ph img.fsi-dog,html[data-mode="cat"] .fsi-row:hover .fsi-ph img.fsi-cat{transform:scale(1.06)}
+.fsd-stepno{background:var(--cream);color:var(--forest)}
+.fsd-stepno.fsd-stepno-last{background:var(--a1);color:var(--cream)}
+
+/* patients */
+.fpp{--fppacc:var(--soft)}
+.fpp-back{background:var(--a1)}
+.fpp-star{color:var(--a2);font-size:.5em;vertical-align:.35em;margin-left:6px}
+
+/* practice */
+.fpr-street{font-family:var(--body);font-weight:700;font-size:13px;fill:var(--moss);opacity:.7;letter-spacing:2px}
+.fpr-map-pulse{border-color:var(--a1)}
+.fpr-loc-card .fpr-parking{color:var(--a1);font-weight:700}
+.fpr-wing-dog{background:var(--terra);color:var(--cream)}
+.fpr-wing-cat{background:var(--sage-dark);color:var(--cream)}
+html:not([data-mode="cat"]) .fpr-wing-dog,html[data-mode="cat"] .fpr-wing-cat{transform:scale(1.02)}
+html:not([data-mode="cat"]) .fpr-wing-cat,html[data-mode="cat"] .fpr-wing-dog{opacity:.55}
+html:not([data-mode="cat"]) .fpr-wing-cat:hover,html[data-mode="cat"] .fpr-wing-dog:hover{opacity:.85}
+
+/* booking */
+.fbk{--bkacc:var(--a1)}
+.fbk-sdot{--paw-step:var(--moss)}
+.fbk-sdot.fbk-on{--paw-step:var(--a1)}
+.fbk-sline i{background:var(--a1)}
+.fbk-errm[hidden]{display:none}
+.fbk-card [hidden]{display:none}
+.fbk-hero{transition:none}

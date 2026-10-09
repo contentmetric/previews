@@ -1,0 +1,22 @@
+/* Scroll reveal and card flip. Loaded after the page styles on purpose: where a section also sets a transform on a revealed element, the reveal state has to win. */
+.fk-rv{opacity:0;transform:translate3d(0,36px,0);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1)}
+.fk-rv.fk-left{transform:translate3d(-38px,0,0)}
+.fk-rv.fk-right{transform:translate3d(38px,0,0)}
+.fk-rv.fk-pop{transform:translate3d(0,20px,0) scale(.92)}
+.fk-rv.fk-on{opacity:1;transform:translate3d(0,0,0) scale(1)}
+.fk-iris{clip-path:circle(0% at 50% 58%);transition:clip-path 1.05s cubic-bezier(.22,1,.36,1)}
+.fk-iris.fk-on{clip-path:circle(135% at 50% 58%)}
+.fk-draw path,.fk-draw circle,.fk-draw line{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.1s cubic-bezier(.22,1,.36,1) .15s}
+.fk-draw.fk-on path,.fk-draw.fk-on circle,.fk-draw.fk-on line{stroke-dashoffset:0}
+@media (prefers-reduced-motion:reduce){
+.fk-rv,.fk-iris{opacity:1;transform:none;transition:none;clip-path:none}
+.fk-draw path,.fk-draw circle,.fk-draw line{stroke-dashoffset:0;transition:none}
+}
+
+/* card flip */
+.fk-flip{position:relative;perspective:1100px;-webkit-tap-highlight-color:transparent}
+.fk-flip-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.34,1.56,.64,1)}
+.fk-flip.fk-go .fk-flip-in{transform:rotateY(180deg)}
+.fk-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.fk-face.fk-back{transform:rotateY(180deg)}
+@media (prefers-reduced-motion:reduce){.fk-flip-in{transition:none}}
