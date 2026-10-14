@@ -177,3 +177,7 @@ section[id] { scroll-margin-top: 104px; }
 .bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
 .bottom-div { width: 100%; flex: 0 0 auto; justify-content: flex-start; }
 .bottom-div-div, .block-text-3 { width: auto; max-width: 100%; }
+
+/* their real logo (the Facebook profile picture, trimmed to a badge) replaces the text lockup */
+.lg-logo { display: block; height: 48px; width: auto; border-radius: 10px; }
+@media (max-width: 809.98px) { .lg-logo { height: 42px; } }
