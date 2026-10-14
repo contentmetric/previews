@@ -181,3 +181,24 @@ section[id] { scroll-margin-top: 104px; }
 /* their real logo (the Facebook profile picture, trimmed to a badge) replaces the text lockup */
 .lg-logo { display: block; height: 48px; width: auto; border-radius: 10px; }
 @media (max-width: 809.98px) { .lg-logo { height: 42px; } }
+
+/* 14 Oct, Felix: the logo without its orange ground (Runware background removal), and the header bar full width */
+.lg-logo { height: 52px; border-radius: 0; }
+@media (max-width: 809.98px) { .lg-logo { height: 44px; } }
+.block-container { max-width: none; width: 100%; }
+
+/* nav check (14 Oct): four links instead of five (Reviews in, Our approach and How it works out, both still on the
+   page), and a logo big enough to read */
+a[href="#how-it-works"] { display: none; }
+.lg-logo { height: 68px; }
+@media (max-width: 1199.98px) { .lg-logo { height: 60px; } }
+@media (max-width: 809.98px) { .lg-logo { height: 52px; } }
+
+/* nav check (14 Oct): the burger turns into a close X while the phone menu is open (lines 6px apart) */
+.navigation-div-div-div { transition: transform .25s ease, opacity .2s ease; }
+.mobile-closed.is-open .navigation-div-div-div:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.mobile-closed.is-open .navigation-div-div-div:nth-child(2) { opacity: 0; }
+.mobile-closed.is-open .navigation-div-div-div:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+@media (prefers-reduced-motion: reduce) { .navigation-div-div-div { transition: none; } }
+.nav-menu-div:has(> a[href="#how-it-works"]) { display: none; }
+@media (min-width: 810px) and (max-width: 1199.98px) { .nav-menu-div + .nav-menu-div { margin-left: 14px; } }
