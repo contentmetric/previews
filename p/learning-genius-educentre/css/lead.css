@@ -1,0 +1,190 @@
+/* lead.css — the few things the base stylesheet has no rule for. */
+
+/* 1. the business name where the base showed a logo image */
+.site-header .logo-image-light,
+.site-header .transparent-dark-button-logo-image-light {
+  width: auto;
+  aspect-ratio: auto;
+  max-width: 56vw;
+}
+.site-header .logo-image-light-div,
+.site-header .transparent-dark-button-transparent-dark-button-div {
+  position: static;
+  display: block;
+}
+.lead-logo {
+  display: block;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  color: var(--cream);
+}
+.site-header.is-light .lead-logo { color: var(--rust); }
+/* the phone panel behind it is rust, whatever the header state */
+.site-header.is-open .lead-logo { color: var(--cream); }
+@media (max-width: 809.98px) { .lead-logo { font-size: 18px; } }
+
+/* 2. the mark on a review card: a star, never a stock face */
+.lead-avatar {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+  background: var(--rust);
+  color: var(--cream);
+  font-family: Inter, sans-serif;
+  font-size: 26px;
+  line-height: 1;
+}
+.section-testimonial-desktop-2 .lead-avatar { background: var(--cream); color: var(--rust); }
+@media (max-width: 809.98px) { .lead-avatar { font-size: 22px; } }
+
+/* 3. the panel that replaced the booking form, and its button */
+.lead-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  max-width: 560px;
+  padding: 40px 36px;
+  border-radius: 12px;
+  background: var(--cream);
+}
+.lead-panel-text {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3f3a37;
+}
+.lead-panel-text p { margin: 0; }
+@media (max-width: 809.98px) {
+  .lead-panel { padding: 30px 24px; }
+}
+
+/* 4. the buttons this build adds: .primary is phone-hidden in the base */
+.lead-footer-cta,
+.lead-panel .primary { display: flex; }
+.lead-footer-cta > .section-create-wrap,
+.lead-panel .primary > .section-create-wrap { display: flex; }
+.lead-panel .primary .section-create-text-13 { display: block; }
+
+/* 5. hero headline: the base sets one nowrap line at 10.154cqw for a short headline,
+   which clips even its own ("Make something worth keeping" is 1637px in a 1360px box).
+   24 characters at 7.9cqw come out at 97cqw of the box, so it fits at every width. */
+.section-hero .section-hero-headline-2 { font-size: 7.9cqw; }
+
+/* 6. footer wordmark: the base sets an overflowing display size for a short name */
+.logo .desktop-text-7 {
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 1.12;
+  letter-spacing: -.02em;
+  white-space: normal;
+}
+.logo .skillclass {
+  font-size: 8.4cqw;
+  line-height: 9.8cqw;
+  letter-spacing: -.02em;
+  white-space: normal;
+}
+
+/* 7. Fix 1 — every panel that used to hold a pottery photo now holds type instead, so no
+   panel is left as a flat block of colour that reads as an image that failed to load.
+   Each panel is its own query container, so the type is sized off the panel and follows
+   it at every width (1440 / 1024 / 768 / 375) with no extra breakpoints. */
+.card .image,
+.main-image,
+.section-location-variant-1,
+.left-image,
+.section-studio-image,
+.section-faqs-image { container-type: inline-size; }
+
+/* a. the three "What we teach" panels: one display word each, cream panel / rust type,
+      the same pairing the base uses for its badges */
+.card .image { background: var(--cream); }
+.lead-card-word,
+.lead-oval-letter,
+.lead-faq-mark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.03em;
+  text-align: center;
+}
+.lead-card-word { font-size: clamp(72px, 40cqw, 190px); color: var(--rust); }
+
+/* b. the teacher's oval: a monogram on the paper texture the base already had there */
+.lead-oval-letter { font-size: clamp(110px, 58cqw, 300px); color: var(--rust); }
+
+/* c. the class-hours cards: the day name and its hours, centred in the card, printed once */
+.section-location-variant-1 { justify-content: center; }
+.section-location-content { align-items: center; text-align: center; }
+.lead-hours-day,
+.lead-hours-time { text-wrap: balance; white-space: normal; }
+.lead-hours-day { font-size: clamp(26px, 9cqw, 64px); line-height: 1.04; }
+.lead-hours-time { font-size: clamp(13px, 3.2cqw, 22px); line-height: 1.35; }
+
+/* d. "Where to find us": the address in the rust panel, the week's hours in the dark one */
+.left-image,
+.section-studio-image { cursor: default; }
+.left-image { background: var(--rust); }
+.section-studio-image { background: rgb(0, 0, 0); }
+.lead-find-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.lead-address {
+  margin: 0;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-size: clamp(24px, 6.6cqw, 46px);
+  line-height: 1.14;
+  letter-spacing: -.02em;
+  color: var(--cream);
+  text-align: center;
+  text-wrap: balance;
+}
+.lead-week {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 380px;
+  font-family: Inter, sans-serif;
+  font-size: clamp(12px, 2.9cqw, 18px);
+  color: var(--cream);
+}
+.lead-week li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(241, 238, 225, .22);
+}
+.lead-week li:first-child { border-top: 1px solid rgba(241, 238, 225, .22); }
+.lead-week-day { font-family: "Instrument Serif", serif; font-size: 1.5em; }
+.lead-week-time { color: rgba(241, 238, 225, .85); }
+
+/* e. the FAQ panel: one large question mark */
+.lead-faq-mark { font-size: clamp(150px, 66cqw, 340px); color: var(--cream); }
+
+@media (max-width: 809.98px) {
+  .lead-find-inner { padding: 24px; }
+  .lead-week li { padding: 4px 0; }
+}
+
