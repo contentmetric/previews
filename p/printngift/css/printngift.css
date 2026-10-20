@@ -1,0 +1,10 @@
+.pg-logo{height:40px;width:auto;display:block}
+.logo-block,.block-logo-block{display:inline-flex;align-items:center;background:#fff;border-radius:999px;padding:4px 16px}
+.pg-client{font-family:Satoshi,Inter,sans-serif;font-weight:700;font-size:22px;line-height:1;letter-spacing:-.01em;color:#4e637e;white-space:nowrap}
+.reviews-reviews-reviews-responsive-div-3,.reviews-img-2,.tooltip-block-div{display:none!important}
+.services-section .sub-title-block p,.why-choose-us-section .sub-title-block p,.reviews-text .sub-title-block p{color:#2364b0}
+.reviews-reviews-responsive-review-div,.reviews-reviews-responsive-div,.reviews-reviews-responsive-article{min-height:230px!important}
+.category-block,.services-section-category-block{background:rgba(15,42,77,.78)!important}
+.reviews-reviews-reviews-reviews-div-4,.reviews-img-3,.reviews-img-4{display:none!important}
+.pg-br{display:none}
+@media (max-width:809.98px){.pg-br{display:inline}}
