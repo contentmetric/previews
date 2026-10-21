@@ -1,0 +1,28 @@
+/* la Lessons hand CSS: the reset the reference runs on top of the browser defaults, plus the page shell. */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: sans-serif; font-size: 12px; background: rgb(251, 247, 239); color: rgb(0, 0, 0); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+/* Page shell, measured on the reference: the layout root is a centred flex column, clipped; the nav sticks to the top. */
+#main { position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; overflow: clip; }
+#main > main { display: contents; }
+
+/* Form fields (the converter cannot see the template's input component styles): measured on the reference. */
+.fld { position: relative; overflow: hidden; background: rgb(251, 247, 239); border-radius: 14px; transition: background 0.2s, box-shadow 0.2s; }
+.fld::after { content: ""; position: absolute; inset: 0; box-sizing: border-box; pointer-events: none; border: 1px solid rgb(230, 220, 201); border-radius: 14px; transition: border-color 0.2s; }
+.fld:focus-within::after { border: 1.5px solid #2a7a72; }
+.fld-text { display: flex; align-items: center; padding: 14px 16px; }
+.fld input, .fld select, .fld textarea { font: 16px/22.4px "Rethink Sans", sans-serif; color: rgb(43, 59, 58); background: transparent; border: 0; outline: none; margin: 0; text-overflow: ellipsis; white-space: nowrap; }
+.fld-text input { flex: 1; width: auto; min-width: 0; padding: 0; height: 22.40625px; }
+.fld-select { display: block; padding: 0 16px 0 0; }
+.fld-select select { appearance: none; -webkit-appearance: none; width: 100%; padding: 14px 16px; height: 50.40625px !important; display: inline-block; }
+.fld-select::before { content: ""; position: absolute; top: 0; right: 0; box-sizing: content-box; width: 16px; height: 22.40625px; padding: 14px 16px 14px 10px; pointer-events: none; background-color: rgb(153, 153, 153); -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><path d='M 3.5 6 L 8 10.5 L 12.5 6' fill='transparent' stroke-width='1.5' stroke='rgb(153, 153, 153)' stroke-linecap='round' stroke-linejoin='round'/></svg>") 10px 50% / 16px no-repeat; mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><path d='M 3.5 6 L 8 10.5 L 12.5 6' fill='transparent' stroke-width='1.5' stroke='rgb(153, 153, 153)' stroke-linecap='round' stroke-linejoin='round'/></svg>") 10px 50% / 16px no-repeat; }
+.fld-select select option { color: #000; }
+.fld-area { display: flex; padding: 0; }
+.fld-area textarea { display: flex; width: 100%; padding: 14px 16px; resize: none; white-space: break-spaces; overflow-y: auto; }
+
+/* Submit button variants of the template (Loading: opacity .8; Success: teal). */
+.trial-form button[type=submit] { transition: opacity 0.3s, background-color 0.3s; }
+.trial-form button[type=submit].is-loading { opacity: 0.8; }
+.trial-form button[type=submit].is-success { background-color: #c9a98f; }

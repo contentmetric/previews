@@ -1,0 +1,28 @@
+/* closing call-to-action block (from the template's home page) */
+.la-cta { background-color:rgb(255, 255, 255); flex-direction:column; align-content:center; justify-content:flex-start; align-items:center; width:100%; height:min-content; display:flex; position:relative; padding:0px 40px 104px; gap:0px; flex:0 0 auto; }
+.cta-box { background-color:#2a7a72; align-content:center; justify-content:space-between; align-items:center; width:100%; max-width:1160px; height:min-content; display:flex; position:relative; padding:56px 64px; flex:0 0 auto; border-radius:36px; }
+.cta-copy { flex-direction:column; align-items:flex-start; width:1px; max-width:620px; height:min-content; display:flex; position:relative; padding:0px; gap:14px; flex:1 0 0px; place-content:flex-start; }
+.cta-copy-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:100%; height:auto; position:relative; flex:0 0 auto; }
+.la-cta-text { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:wrap; font-family:"Rethink Sans", sans-serif; font-style:normal; font-weight:400; color:rgb(255, 255, 255); font-size:20px; letter-spacing:-0.4px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.55em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; }
+.cta-buttons { flex-wrap:wrap; align-items:flex-start; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:12px; flex:0 0 auto; place-content:flex-start; }
+.la-cta-button { background-color:rgb(255, 255, 255); align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:18px 28px; gap:0px; flex:0 0 auto; border-radius:999px; }
+@media (max-width: 1199.98px) {
+  .la-cta { padding:0px 28px 80px; }
+  .cta-box { flex-direction:column; align-items:flex-start; padding:48px; gap:28px; place-content:flex-start; align-content:initial; justify-content:initial; }
+  .cta-copy { width:100%; flex:0 0 auto; }
+  .la-cta-text { font-size:19px; letter-spacing:-0.38px; }
+}
+@media (max-width: 809.98px) {
+  .la-cta { padding:0px 16px 64px; }
+  .cta-box { padding:32px 24px; gap:24px; border-radius:28px; }
+  .la-cta-text { font-size:17px; letter-spacing:-0.34px; }
+}
+.la-cta-heading { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:wrap; font-family:Unbounded, sans-serif; font-style:normal; font-weight:600; color:rgb(255, 255, 255); font-size:40px; letter-spacing:-1px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.12em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; }
+.la-cta-button-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.la-cta-button-2 { background-color:rgb(43, 59, 58); align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:18px 28px; gap:0px; flex:0 0 auto; border-radius:999px; }
+@media (max-width: 1199.98px) {
+  .la-cta-heading { font-size:34px; letter-spacing:-0.85px; }
+}
+@media (max-width: 809.98px) {
+  .la-cta-heading { font-size:27px; letter-spacing:-0.675px; }
+}
