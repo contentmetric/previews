@@ -1,0 +1,193 @@
+/* Singa Educational Services preview: the page-specific layer on top of Beam's own CSS.
+
+   Everything here either (a) swaps a Beam thing the lead has no equivalent for — the logo image becomes a text
+   lockup, the portrait photos become badges, the brand's letter colours go where Beam put stock accents — or
+   (b) re-lays a grid that was sized for Beam's content (3 tracks, 4 teachers) onto ours (2 tracks, 1 teacher).
+   Loaded last, so same-specificity rules win over home.css. */
+
+/* --- 1. the logo lockup: a text wordmark where Beam had a 90x35 image box ---------------- */
+/* Beam puts the logo <img> in an absolutely positioned box inside a fixed 90x35 frame. Text needs the frame to
+   size itself instead, so the whole chain from the header/footer box down to the text goes back into normal flow. */
+.block-black-div, .black-div, .white-div { width: auto; height: auto; }
+.block-black-div-div, .black-div-div, .white-div-div { width: auto; flex: 0 0 auto; }
+.block-block-black-div-div, .black-div-div-div, .white-div-div-div { position: static; }
+
+.bw-brand { display: flex; align-items: center; gap: 10px; text-decoration-line: none; }
+.bw-name { display: flex; flex-direction: column; gap: 2px; font-family: "Space Grotesk", sans-serif; color: #1F0010; white-space: nowrap; }
+.bw-name b { font-weight: 700; font-size: 25px; line-height: 1.1; letter-spacing: -0.02em; }
+.bw-name small { font-weight: 600; font-size: 12px; line-height: 1.1; letter-spacing: 0.08em; color: #254487; }
+.bw-dark .bw-name { color: #fff; }
+.bw-dark .bw-name small { color: #FFD23F; }
+
+/* Beam's header pill and hero buttons were <div role="button">; here they are real links, so they lose the
+   browser's link underline and keep the template's own typography. */
+a.buttons-div-div, a.block-container-div-div, a.tracks-colored, a.colored, a.tracks-card, a.tracks-tracks-card { text-decoration-line: none; }
+
+/* --- 2. the tablet header: Beam's nav was four short labels, ours are five longer ones ---- */
+/* At <=1199.98px Beam caps the header at 746px. Five labels at Beam's 14px do not fit that, so the nav text and
+   the pill step down one size at that width only; the layout (logo left, nav middle, pill right) is unchanged. */
+@media (max-width: 1199.98px) {
+  .bw-name b { font-size: 20px; } .bw-name small { font-size: 10px; }
+  .nav-menu { gap: 10px; }
+  .block-text { font-size: 11px; }
+  .block-container-div-div { font-size: 11px; padding: 11px 16px; }
+}
+
+/* --- 3. the star avatars in the hero: a review cluster, not people ---------------------- */
+/* Beam stacks four portrait photos here. We show four stars in the same circles instead. */
+.avatar, .avater, .hero-header-avatar, .hero-header-avatar-2 { display: flex; align-items: center; justify-content: center; }
+.avatar > div, .avater > div, .hero-header-avatar > div, .hero-header-avatar-2 > div {
+  position: static; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+}
+.hero-header-text-3, .hero-header-text-4 { font-size: 15px; line-height: 1; color: #1F0010; }
+
+/* --- 4. tracks: one card (or two) where Beam had three --------------------------------- */
+/* Two cards in a 3-column grid leaves the section looking half-built, so it becomes a 2-column grid and the
+   cards keep Beam's own widths: at 1200px that is 586px each, close to the template's card proportions. */
+.tracks-wrapper-div { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+@media (max-width: 1199.98px) {
+  .tracks-wrapper-div { grid-template-columns: repeat(1, minmax(0px, 1fr)); }
+}
+
+/* --- 5. our teachers: one card, centred, with a P badge in place of the portrait ---------- */
+.our-teachers-wrapper-div { grid-template-columns: repeat(2, minmax(0px, 380px)); justify-content: center; }
+.our-teachers-desktop-2 { height: auto; }
+/* Beam's portrait is a 90px circle with a white 3px ring; the badge is bigger, filled with their orange and
+   ringed in their ink so it reads on the white card. */
+.lg-badge { width: 120px; background-color: #254487; display: flex; align-items: center; justify-content: center; }
+.lg-badge::after { border-color: #1F0010; }
+.lg-badge .our-teachers-our-teachers-desktop-div { display: flex; align-items: center; justify-content: center; }
+.lg-badge-letter { font-family: "Unbounded", sans-serif; font-weight: 700; font-size: 52px; line-height: 1; color: #fff; }
+@media (max-width: 809.98px) {
+  .our-teachers-wrapper-div { grid-template-columns: minmax(0px, 380px); justify-content: center; }
+}
+
+/* --- 6. testimonials: six cards, three to a row ---------------------------------------- */
+/* Beam's tablet/mobile rules turn this grid into a flex row whose children each get an equal share, which was
+   written for three cards; with six they would all be squeezed onto one line. Keep it a grid at every width. */
+.testimonials-wrapper-div { display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 24px; }
+/* the cards are grandchildren: Beam wraps every grid item in a `display: contents` div, so `> *` would land on
+   a box that does not exist and leave the cards at the tablet rule's 1px */
+.testimonials-testimonials-wrapper-div-div,
+.testimonials-testimonials-wrapper-div-div-2 { width: 100%; align-self: start; }
+.lg-star { background-color: #FBEBE2; display: flex; align-items: center; justify-content: center; }
+.lg-star::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  border: 3px solid #1F0010;
+}
+.lg-star-letter { font-size: 18px; line-height: 1; color: #C85A2B; }
+/* the last card is a link out to the Google reviews: its pill sits on the card's bottom edge, in line with the
+   other cards' review rows */
+.lg-review-link { justify-content: space-between; }
+@media (max-width: 1199.98px) {
+  .testimonials-wrapper-div { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+}
+@media (max-width: 809.98px) {
+  .testimonials-wrapper-div { grid-template-columns: minmax(0px, 1fr); }
+}
+
+/* --- 7. the column of stats: "P3–PSLE" is a word, not a 40px number ---------------------- */
+/* At 375 the four stats run two to a row, about 160px each, and P3–PSLE at Beam's 32px would not fit. */
+@media (max-width: 809.98px) {
+  .stats-number-counter-div-2 { font-size: 22px; }
+}
+
+/* --- 8. FAQs: open one at a time, answers folded away ------------------------------------ */
+/* Beam's FAQ boxes are static; only the first item ever had its answer visible. With scripting on, every answer
+   is folded until its row is tapped, and the plus beside a closed row loses its upright bar to become a minus.
+   Without scripting, every answer is simply shown - the page is still complete. */
+html.js .n1-div .faqs-opened-div { display: none; }
+html.js .n1-div.is-open .faqs-opened-div { display: flex; }
+html.js .n1-div.is-open .faqs-faqs-closed-div-div,
+html.js .n1-div.is-open .faqs-faqs-closed-div { display: none; }
+.n1-div > * > *:first-child { cursor: pointer; }
+
+/* Beam's tablet rule makes the FAQ list one column of a two-column grid, which left it half-width and off to
+   the left. One column, centred, is what the section means. */
+@media (max-width: 1199.98px) {
+  .faqs-wrapper-div { display: flex; flex-direction: column; align-items: center; }
+  .faqs-faqs-wrapper-div-div { width: 100%; }
+}
+
+/* --- 9. the phone menu ------------------------------------------------------------------ */
+/* Beam's phone header has a burger with nothing behind it. This is the panel: it hangs off the fixed header so
+   it covers content instead of pushing the whole page down while it is open. */
+@media (max-width: 809.98px) {
+  .lg-menu {
+    display: none;
+    position: absolute; top: 100%; left: 0; right: 0; z-index: 6;
+    flex-direction: column; align-items: stretch;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid #1F0010;
+    box-shadow: #1F0010 0px 6px 0px 0px;
+    padding: 4px 20px 20px;
+  }
+  .mobile-closed.is-open .lg-menu { display: flex; }
+  .lg-menu a {
+    font-family: "Space Mono", monospace; font-weight: 700; font-size: 14px; text-transform: uppercase;
+    letter-spacing: 0.03em; color: #1F0010; text-decoration-line: none;
+    padding: 14px 0; border-top: 1px solid rgba(37, 30, 33, 0.15);
+  }
+  .lg-menu a:first-child { border-top: 0; }
+  .lg-menu-wa {
+    margin-top: 12px; text-align: center;
+    background-color: #254487; color: #fff; border: 3px solid #1F0010; border-radius: 999px;
+    box-shadow: #1F0010 4px 4px 0px 0px; padding: 13px 0;
+  }
+}
+
+/* --- 10. the footer's bottom line --------------------------------------------------------- */
+/* Beam's two footer lines are short and sit 573px apart, each on one line. Our class hours and our address are
+   long, so the row would run 500px past the page at desktop width. It wraps instead, and the two lines share
+   the row until there is no room for both. */
+.bottom { flex-wrap: wrap; gap: 6px 40px; }
+.bottom-div { width: auto; flex: 1 1 320px; justify-content: flex-start; }
+.bottom-div-div { width: auto; text-wrap-mode: wrap; }
+/* Beam centred two short lines; ours wrap to two, and a wrapped line reads better starting at its own edge */
+.block-text-3 { text-wrap-mode: wrap; text-align: start; }
+
+/* --- 11. anchors under a fixed header ---------------------------------------------------- */
+/* Jumping to #faqs would otherwise put the section's first line under the header. */
+section[id] { scroll-margin-top: 104px; }
+@media (max-width: 809.98px) {
+  section[id] { scroll-margin-top: 88px; }
+}
+
+/* --- 12. card titles that are longer than Beam's ------------------------------------------ */
+/* Beam's track titles are two or three words and never wrap. "Primary Science, P3 to PSLE" is one line too
+   long for a card at 375, so titles may wrap; on the wide cards they still fit on one line. */
+
+/* --- 13. the footer phone number --------------------------------------------------------- */
+.lg-tel { color: #FFD23F; text-decoration-line: none; }
+
+/* footer bottom: Beam's two short lines became the hours and the address, too long to share a row: stack them */
+.bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+.bottom-div { width: 100%; flex: 0 0 auto; justify-content: flex-start; }
+.bottom-div-div, .block-text-3 { width: auto; max-width: 100%; }
+
+/* the badge logo: 44px tall on desktop, 38px on the phone */
+.lg-logo { display: block; height: 44px; width: auto; }
+@media (max-width: 809.98px) { .lg-logo { height: 38px; } .bw-name b { font-size: 22px; } .bw-name small { font-size: 11px; } }
+.block-container { max-width: none; width: 100%; }
+
+/* primary buttons: Singa blue with white text */
+.buttons-div-div, .block-container-div-div, .tracks-colored { background-color: #254487; color: #fff; }
+.tracks-colored p, .tracks-colored-div p { color: #fff; }
+.tracks-text-3 { text-wrap-mode: wrap; }
+/* Chinese accent labels */
+.bw-zh { font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif; }
+
+/* nav check (14 Oct): the burger turns into a close X while the phone menu is open (lines 6px apart) */
+.navigation-div-div-div { transition: transform .25s ease, opacity .2s ease; }
+.mobile-closed.is-open .navigation-div-div-div:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.mobile-closed.is-open .navigation-div-div-div:nth-child(2) { opacity: 0; }
+.mobile-closed.is-open .navigation-div-div-div:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+@media (prefers-reduced-motion: reduce) { .navigation-div-div-div { transition: none; } }
+@media (min-width: 810px) and (max-width: 1199.98px) { .nav-menu-div + .nav-menu-div { margin-left: 14px; } }
+
+/* Singa additions */
+.lg-badge.bw-red { background-color: #C85A2B; }
+.hero-header-hero-header-right-div-4 { width: 76px; }
+.hero-header-text-9 { font-size: 12px; letter-spacing: 0.3px; text-align: center; }
+.stats-number-counter-div-3 { font-family: "Unbounded", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+@media (max-width: 809.98px) { .stats-number-counter-div-3 { font-size: 30px; } }

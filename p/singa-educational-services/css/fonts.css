@@ -1,0 +1,11 @@
+/* The three families the homepage really paints, self-hosted. Same files the template loads: Space Grotesk 400 and
+   600 are the template's own copies (site/assets), Space Mono 400/700 and Unbounded 600/700 come from Google Fonts
+   (the template fetches them from fonts.gstatic.com at runtime), so they are stored here instead.
+   Weights measured on the reference's computed styles: Space Mono 400 + 700, Space Grotesk 400 + 600, Unbounded 600 + 700. */
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/space-mono-400.woff2") format("woff2"); }
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/space-mono-700.woff2") format("woff2"); }
+@font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/space-grotesk-400.woff2") format("woff2"); }
+@font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/space-grotesk-600.woff2") format("woff2"); }
+/* Unbounded is a variable cut: the 600 and 700 rules both use the same Latin file, as the reference's own @font-face rules do. */
+@font-face { font-family: "Unbounded"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/unbounded-600-700.woff2") format("woff2"); }
+@font-face { font-family: "Unbounded"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/unbounded-600-700.woff2") format("woff2"); }

@@ -1,0 +1,65 @@
+/* Beam hand CSS: the reset the reference runs on top of the browser defaults, plus the page shell.
+
+   Everything here is measured on the reference (http://localhost:8290), element by element, at 1440 / 1024 / 390:
+   the reset is the reference's own inline reset, verbatim; the shell is the three boxes the reference wraps the page
+   in (a bare `#main`, the layout-template div inside it, then the page column), with the fixed header and the footer
+   hung off the layout template. See steps/B1-shell.report.md for the numbers. */
+
+/* --- reset: the reference's own rules (`<style>` block 2 of site/index.html), kept as they are --- */
+html, body { box-sizing: border-box; margin: 0; padding: 0; }
+:root { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+* { box-sizing: border-box; -webkit-font-smoothing: inherit; }
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+body { font-family: sans-serif; font-size: 12px; background: rgb(255, 255, 255); color: rgb(0, 0, 0); }
+
+/* --- the page shell --- */
+/* `#main` is the reference's layout template: a centred flex column, at least a viewport tall, clipped, white.
+   The reference has a plain `#main` div around this box; both are style-free there, so they collapse into one here. */
+#main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  overflow: clip;
+  background: rgb(255, 255, 255);
+}
+/* `main` is the reference's page column: full width, centred flex column, clipped, `flex: 0 0 auto`. */
+#main > main {
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: clip;
+}
+/* The header floats: the reference's header container is fixed at the top of the viewport, full width, z-index 5
+   (a fixed box does not take part in the column, so the hero carries the top padding that clears it).
+   The partial wraps the two header variants in a `display: contents` section, so the fixed box is the variant itself. */
+#main > .div > .block-desktop,
+#main > .div > .mobile-closed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+/* The footer needs no shell rules: sections.css already carries the reference's own box for it
+   (dark 39/50/24 padding block, 100% wide), and it is the last child of `#main` as it is on the reference. */
+
+/* --- the "Why parents pick Beam" cards, phone only: the one thing the converter lost ---
+   At <= 809.98px the reference swaps each card to its second variant ("Mobile"), and that variant carries a vertical
+   padding from an inline custom property (`--1iesgjk`) which the converter did not copy: `32px 0` on cards 2 to 5,
+   bottom only on the first card, top only on the last. Without it every card is exactly that much too short and the
+   page ends 320px early at 390. Measured on the reference at 390: cards 120 / 178 / 178 / 178 / 152 / 120 px tall. */
+@media (max-width: 809.98px) {
+  .features-wrapper-div > .features-wrapper-div-div > .features-features-wrapper-div-div > .features-desktop { padding: 32px 0; }
+  .features-wrapper-div > .features-wrapper-div-div:first-child > .features-features-wrapper-div-div > .desktop { padding: 0 0 32px; }
+  .features-wrapper-div > .features-wrapper-div-div:last-child > .features-features-wrapper-div-div > .features-desktop { padding: 32px 0 0; }
+}
