@@ -1,0 +1,12 @@
+/* Mimi's Sweet Bakery: text wordmark (no logo exists) */
+.logo, .block-logo { width: auto; height: 24px; }
+.logo-div, .block-logo-div { position: static !important; }
+.wm { display: block; white-space: nowrap; font: 700 20px/24px "DM Sans", sans-serif; letter-spacing: -0.3px; color: rgb(176,86,43); }
+.cp-inv .wm { color: #fff; }
+.cp-menu-logo { text-decoration: none; }
+/* the business name is longer than the template's two-word headline */
+.heading, .heading-span { font-size: 104px; letter-spacing: -3px; }
+@media (max-width: 1199.98px) { .heading, .heading-span { font-size: 80px; } }
+@media (max-width: 809.98px) { .heading, .heading-span { font-size: 52px; letter-spacing: -2px; } }
+/* "Chocolate brownies" is longer than the template's one-word bake names: scale it to fit on a phone */
+@media (max-width: 809.98px) { .n2-bakes-heading, .n2-bakes-heading-a { font-size: min(56px, 9vw); } }
