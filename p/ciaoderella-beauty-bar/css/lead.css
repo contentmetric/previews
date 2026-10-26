@@ -101,3 +101,26 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
 .cta-section-container-2 { height: auto; flex: 0 0 auto; }
 @media (max-width: 1199.98px) { .cta-section-cta-section { height: auto; min-height: 50vh; padding: 80px 0; } }
 @media (max-width: 809.98px) { .cta-section-cta-section { padding: 64px 0; } }
+
+/* --- 9. diode hair removal section --------------------------------------------------------------- */
+.cd-diode { width: 100%; background: #F3E3D8; padding: 110px 0; }
+.cd-diode-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 80px; align-items: start; }
+.cd-diode-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 36px; }
+.cd-diode-copy .cd-head { margin-bottom: 0; }
+.cd-diode-img { position: sticky; top: 100px; border-radius: 28px; overflow: hidden; aspect-ratio: 4 / 5; }
+.cd-diode-img img { width: 100%; height: 100%; object-fit: cover; }
+.cd-diode-img .cd-new { position: absolute; top: 20px; left: 20px; }
+.cd-small { margin: 14px 0 0; font: 400 14px/1.6 Figtree, sans-serif; color: var(--ink); opacity: 0.8; }
+.cd-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 0; padding: 0; list-style: none; width: 100%; }
+.cd-facts li { padding-top: 22px; border-top: 1px solid var(--sand); }
+.cd-ask { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 32px; border-radius: 24px; background: #fff; width: 100%; box-sizing: border-box; }
+.cd-ask-title { margin: 0; font: 400 28px/1.2 Fraunces, serif; color: var(--ink); }
+@media (max-width: 1199.98px) { .cd-diode { padding: 90px 0; } .cd-diode-grid { gap: 48px; } }
+@media (max-width: 809.98px) {
+  .cd-diode { padding: 64px 0; }
+  .cd-diode-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .cd-diode-img { position: static; aspect-ratio: 3 / 2; order: -1; }
+  .cd-facts { grid-template-columns: minmax(0, 1fr); }
+  .cd-ask { padding: 24px 22px; }
+  .cd-ask-title { font-size: 24px; }
+}
