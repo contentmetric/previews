@@ -2,16 +2,25 @@
 .logo, .block-logo { width: auto; height: auto; }
 .logo-div, .block-logo-div { position: static !important; }
 .wm { display: flex; align-items: center; }
-.wm-mark { height: 48px; width: auto; display: block; }
+.wm-mark { height: 76px; width: auto; display: block; }
 .wm-cream { display: none; }
 .cp-inv .wm-cocoa { display: none; }
 .cp-inv .wm-cream { display: block; }
 .cp-menu-logo { text-decoration: none; }
-.cp-menu-logo .wm-mark { height: 48px; }
-@media (max-width: 1199.98px) { .wm-mark { height: 40px; } }
-@media (max-width: 809.98px) { .wm-mark, .cp-menu-logo .wm-mark { height: 36px; } }
+.cp-menu-logo .wm-mark { height: 76px; }
+@media (max-width: 1199.98px) and (min-width: 1024px) { .wm-mark, .cp-menu-logo .wm-mark { height: 76px; } }
+@media (max-width: 1023.98px) { .wm-mark, .cp-menu-logo .wm-mark { height: 64px; } }
+@media (max-width: 809.98px) { .wm-mark, .cp-menu-logo .wm-mark { height: 56px; } }
 /* hero heading: Montserrat Light, with the last half in the logo's script */
 .heading { font-size: clamp(44px, 7.2vw, 108px); letter-spacing: -0.01em; line-height: 1.02; }
 .heading-span { display: block; font-family: var(--mm-script); font-weight: 400; font-size: 1.25em; line-height: .8; letter-spacing: 0; color: var(--mm-accent); -webkit-text-stroke-width: 0; }
 /* bakes band: latte with cream headings, second bake in script */
 @media (max-width: 809.98px) { .n2-bakes-heading, .n2-bakes-heading-a { font-size: min(56px, 9vw); } }
+/* taller header: 12px above and below the logo mark */
+.div { height: auto; }
+.div-div > nav { padding-block: 12px; }
+.cp-menu-bar { height: auto; padding: 12px 24px; align-items: center; }
+.cp-menu-right { height: auto; }
+@media (max-width: 809.98px) { .cp-menu-bar { padding: 12px 16px; } }
+.headline { padding-top: 56px; }
+@media (max-width: 809.98px) { .headline { padding-top: 40px; } }

@@ -156,20 +156,13 @@ body, .mm-order input, .mm-order textarea { color: var(--mm-cocoa); }
 .desktop .block-text-5, .desktop .block-text-9, .desktop .block-text-6, .desktop .block-text-6-a { color: var(--mm-ink); }
 .desktop .block-text-6-a:hover { color: var(--mm-cream); }
 .desktop .mm-foot-btn { color: var(--mm-ink); font-family: "Montserrat", sans-serif; font-weight: 400; }
-.mm-foot-mark { position: absolute; top: 24px; right: 24px; width: 160px; height: auto; opacity: .9; pointer-events: none; }
-.desktop .mm-sign { font-family: var(--mm-script); font-size: 44px; letter-spacing: 0; text-transform: none; color: var(--mm-cream); line-height: 1; }
-@media (max-width: 809.98px) { .mm-foot-mark { width: 110px; top: 16px; right: 16px; } .n2-bakes-mark { width: 80px; top: 24px; right: 16px; } }
-.mm-foot-mark { top: auto; right: auto; left: 24px; bottom: 96px; }
-.desktop .mm-sign { font-size: 34px; white-space: nowrap; }
 .desktop .block-bottom-wrap .block-text-9 { letter-spacing: .18em; }
-.desktop .block-bottom-wrap .mm-sign { letter-spacing: 0; }
-@media (max-width: 809.98px) { .mm-foot-mark { left: 16px; bottom: auto; top: 24px; right: auto; } }
 .desktop .block-bottom-wrap-div { max-width: 760px; width: 100%; }
 .desktop .block-text-10 { flex-direction: column; align-items: flex-start; gap: 6px; flex: 1 1 auto; width: auto; }
 .desktop .block-text-12 { flex: 0 0 auto; width: auto; }
 .desktop .block-text-12-div { width: auto; height: auto; }
 .desktop .mm-foot-btn { white-space: nowrap; }
-@media (max-width: 809.98px) { .desktop .block-bottom-wrap-div { max-width: unset; } .mm-foot-mark { top: auto; bottom: 16px; left: auto; right: 16px; width: 90px; } .desktop .mm-sign { font-size: 30px; } }
 .desktop .block-bottom-wrap-div { max-width: none; justify-content: space-between; }
-@media (max-width: 809.98px) { .mm-foot-mark { top: 16px; bottom: auto; right: 16px; width: 80px; } }
-@media (min-width: 810px) { .mm-foot-mark { left: 308px; bottom: 120px; top: auto; right: auto; } }
+.mm-foot-logo { height: 120px; width: auto; display: block; opacity: 1; }
+@media (max-width: 809.98px) { .mm-foot-logo { height: 96px; } }
+@media (max-width: 809.98px) { .desktop .mm-foot-btn { white-space: normal; text-align: left; } }
