@@ -1,7 +1,7 @@
 /* Ciaoderella Beauty Bar preview: the page-specific layer on top of the the template base. Loaded last.
    Palette (see the BRAND-TOKENS file): espresso #3A2C28, cream #F8F2EC, skin sand #E2BFA8, clay rose #B0705A. */
 :root { --ink: #3A2C28; --cream: #F8F2EC; --sand: #E2BFA8; --clay: #B0705A; --line: #EADED4; }
-html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 /* --- 1. the logo lockup: emblem image + live words ("Ciaoderella" over "Beauty Bar") ------------------ */
@@ -103,12 +103,12 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
 @media (max-width: 809.98px) { .cta-section-cta-section { padding: 64px 0; } }
 
 /* --- 9. diode hair removal section --------------------------------------------------------------- */
-.cd-diode { width: 100%; background: #F3E3D8; padding: 110px 0; }
+.cd-diode { scroll-margin-top: 30px; width: 100%; background: #F3E3D8; padding: 110px 0; }
 .cd-diode-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 80px; align-items: start; }
 .cd-diode-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 36px; }
 .cd-diode-copy .cd-head { margin-bottom: 0; }
-.cd-diode-img { position: sticky; top: 100px; border-radius: 28px; overflow: hidden; aspect-ratio: 4 / 5; }
-.cd-diode-img img { width: 100%; height: 100%; object-fit: cover; }
+.cd-diode-img { position: sticky; top: 100px; border-radius: 28px; overflow: hidden; aspect-ratio: 1 / 1; }
+.cd-diode-img img { width: 100%; height: 100%; object-fit: cover; object-position: 72% 50%; }
 .cd-diode-img .cd-new { position: absolute; top: 20px; left: 20px; }
 .cd-small { margin: 14px 0 0; font: 400 14px/1.6 Figtree, sans-serif; color: var(--ink); opacity: 0.8; }
 .cd-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 0; padding: 0; list-style: none; width: 100%; }
@@ -124,3 +124,6 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
   .cd-ask { padding: 24px 22px; }
   .cd-ask-title { font-size: 24px; }
 }
+
+/* hero sub-line: keep the longer line to a readable measure */
+.heroslider-text-2, .heroslider-text { max-width: 760px; margin-left: auto; margin-right: auto; text-wrap: balance; }
