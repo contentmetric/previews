@@ -1,0 +1,103 @@
+/* Ciaoderella Beauty Bar preview: the page-specific layer on top of the the template base. Loaded last.
+   Palette (see the BRAND-TOKENS file): espresso #3A2C28, cream #F8F2EC, skin sand #E2BFA8, clay rose #B0705A. */
+:root { --ink: #3A2C28; --cream: #F8F2EC; --sand: #E2BFA8; --clay: #B0705A; --line: #EADED4; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* --- 1. the logo lockup: emblem image + live words ("Ciaoderella" over "Beauty Bar") ------------------ */
+.default-text-3, .tablet-text-2, .tablet-text-4 { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.05; white-space: nowrap; }
+.default-text-3 small, .tablet-text-2 small, .tablet-text-4 small {
+  display: block; margin-top: 3px; font-family: Figtree, sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.34em;
+  text-transform: uppercase; line-height: 1; color: inherit; opacity: 0.85;
+}
+/* the template swaps every header image for a dark flower mark once the page scrolls; ours stays the emblem */
+html.is-scrolled #main > section[name="Header"] img { content: normal; }
+/* keep the clay accent for the scrolled header button, white words on it */
+html.is-scrolled #main > section[name="Header"] .default-default-right-div .white p { color: #fff; }
+
+/* anchors are plain links; no template underline */
+a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-white, a.default-default-2, a.drawer-cta { text-decoration-line: none; }
+
+/* --- 2. about: the badge is gone, so the small icon bar uses the emblem ---------------------------- */
+.about-icon-3-div .default-img { width: 31px; height: 30px; object-fit: contain; }
+
+/* --- 3. shared bits for the sections added below ------------------------------------------------ */
+.cd-wrap { width: 100%; max-width: 1410px; padding: 0 20px; margin: 0 auto; }
+.cd-kicker { margin: 0 0 14px; font: 500 15px/1.1 Figtree, sans-serif; letter-spacing: 0.04em; text-transform: uppercase; color: var(--clay); }
+.cd-h2 { margin: 0; font: 400 52px/1.1 Fraunces, serif; letter-spacing: -0.01em; color: var(--ink); }
+.cd-h3 { margin: 0; font: 400 34px/1.15 Fraunces, serif; color: var(--ink); }
+.cd-h4 { margin: 0 0 8px; font: 400 24px/1.2 Fraunces, serif; color: var(--ink); }
+.cd-lead { margin: 18px 0 0; max-width: 560px; font: 400 17px/1.7 Figtree, sans-serif; color: var(--ink); }
+.cd-text { margin: 0; font: 400 15px/1.73 Figtree, sans-serif; color: var(--ink); }
+.cd-btn {
+  display: inline-flex; align-items: center; gap: 12px; align-self: flex-start; padding: 0 30px; height: 52px; border-radius: 120px;
+  background: var(--clay); color: #fff; font: 500 15px/1 Figtree, sans-serif; cursor: pointer; transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cd-btn:hover { background: var(--ink); }
+.cd-btn-light { background: #fff; color: var(--ink); }
+.cd-btn-light:hover { background: var(--sand); color: var(--ink); }
+.cd-btn svg { flex: 0 0 auto; }
+
+/* --- 4. treatments ------------------------------------------------------------------------------ */
+.cd-treatments { width: 100%; background: #fff; padding: 110px 0; }
+.cd-head { margin-bottom: 56px; }
+.cd-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+.cd-card { display: flex; flex-direction: column; background: var(--cream); border-radius: 28px; overflow: hidden; }
+.cd-card-img { position: relative; aspect-ratio: 3 / 2; overflow: hidden; }
+.cd-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.cd-new { position: absolute; top: 20px; left: 20px; padding: 9px 18px; border-radius: 120px; background: var(--clay); color: #fff; font: 500 13px/1 Figtree, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+.cd-card-body { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding: 36px 36px 40px; flex: 1; }
+.cd-tag { margin: 0; font: 500 13px/1 Figtree, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; color: var(--clay); }
+.cd-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.cd-chips a { display: block; padding: 11px 20px; border-radius: 120px; border: 1px solid var(--sand); background: #fff; color: var(--ink); font: 500 14px/1 Figtree, sans-serif; text-decoration: none; transition: background-color 0.3s, border-color 0.3s; }
+.cd-chips a:hover { background: var(--sand); border-color: var(--sand); }
+.cd-card .cd-btn { margin-top: auto; }
+
+/* --- 5. how it works ---------------------------------------------------------------------------- */
+.cd-how { width: 100%; background: var(--cream); padding: 110px 0; }
+.cd-how-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; align-items: center; }
+.cd-how-img { border-radius: 28px; overflow: hidden; aspect-ratio: 4 / 5; }
+.cd-how-img img { width: 100%; height: 100%; object-fit: cover; }
+.cd-how-copy { display: flex; flex-direction: column; align-items: flex-start; }
+.cd-how-copy .cd-head { margin-bottom: 36px; }
+.cd-steps { display: flex; flex-direction: column; gap: 0; margin: 0 0 40px; padding: 0; list-style: none; width: 100%; }
+.cd-steps li { display: flex; gap: 26px; padding: 28px 0; border-top: 1px solid var(--line); }
+.cd-steps li:last-child { border-bottom: 1px solid var(--line); }
+.cd-num { flex: 0 0 56px; font: 400 40px/1 Fraunces, serif; color: var(--clay); }
+
+/* --- 6. footer: no newsletter form, no address we do not know ------------------------------------ */
+.cd-foot { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; padding: 90px 0 70px; }
+.cd-foot-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: #fff; }
+.cd-foot-name { display: flex; flex-direction: column; font: 400 34px/1.05 Fraunces, serif; color: #fff; }
+.cd-foot-name small { margin-top: 5px; font: 500 11px/1 Figtree, sans-serif; letter-spacing: 0.34em; text-transform: uppercase; opacity: 0.85; }
+.cd-foot-text { margin: 0; max-width: 480px; font: 400 16px/1.7 Figtree, sans-serif; color: rgba(255, 255, 255, 0.85); }
+.cd-foot-links { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 6px 0 0; padding: 0; list-style: none; }
+.cd-foot-links a { font: 400 15px/1.4 Figtree, sans-serif; color: rgba(255, 255, 255, 0.85); text-decoration: none; }
+.cd-foot-links a:hover { color: #fff; text-decoration: underline; }
+
+/* --- 7. tablet and phone ------------------------------------------------------------------------ */
+@media (max-width: 1199.98px) {
+  .cd-treatments, .cd-how { padding: 90px 0; }
+  .cd-h2 { font-size: 44px; }
+  .cd-how-grid { gap: 48px; }
+}
+@media (max-width: 809.98px) {
+  .cd-treatments, .cd-how { padding: 64px 0; }
+  .cd-h2 { font-size: 34px; }
+  .cd-h3 { font-size: 28px; }
+  .cd-head { margin-bottom: 36px; }
+  .cd-cards { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .cd-card-body { padding: 26px 22px 30px; }
+  .cd-how-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .cd-how-img { aspect-ratio: 3 / 2; }
+  .cd-num { flex-basis: 44px; font-size: 32px; }
+  .cd-steps li { gap: 18px; padding: 22px 0; }
+  .cd-foot { padding: 60px 0 40px; }
+  .cd-btn { height: 48px; padding: 0 24px; }
+}
+
+/* --- 8. the call-to-action band grows with its words (the template's was a fixed 70vh / 50vh with a shorter line) ----- */
+.cta-section-cta-section { height: auto; min-height: 70vh; padding: 90px 0; }
+.cta-section-container-2 { height: auto; flex: 0 0 auto; }
+@media (max-width: 1199.98px) { .cta-section-cta-section { height: auto; min-height: 50vh; padding: 80px 0; } }
+@media (max-width: 809.98px) { .cta-section-cta-section { padding: 64px 0; } }
