@@ -13,6 +13,8 @@ function t(t,i,e){return Math.max(t,Math.min(i,e))}var i=class{isRunning=!1;valu
 
   /* ---------- Open menu ---------- */
   var menu = $("#cp-menu");
+  /* The header blur (backdrop-filter) would trap a fixed child in the 100px bar, so the menu lives on body. */
+  if (menu && menu.parentNode !== doc.body) doc.body.appendChild(menu);
   function setMenu(open) {
     if (!menu) return;
     if (open) { menu.hidden = false; menu.setAttribute("aria-hidden", "false"); void menu.offsetWidth; menu.classList.add("is-open"); doc.documentElement.style.overflow = "hidden"; if (win.lenis) win.lenis.stop(); }
