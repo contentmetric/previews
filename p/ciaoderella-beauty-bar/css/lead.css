@@ -126,4 +126,5 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
 }
 
 /* hero sub-line: keep the longer line to a readable measure */
-.heroslider-text-2, .heroslider-text { max-width: 760px; margin-left: auto; margin-right: auto; text-wrap: balance; }
+[class^="heroslider-experience-ultimate"] > p { max-width: 760px; margin-left: auto; margin-right: auto; text-wrap: balance; }
+.heroslider-white-2 p, .heroslider-white p { white-space: nowrap; max-width: none; margin: 0; }
