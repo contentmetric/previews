@@ -191,3 +191,10 @@ section[id] { scroll-margin-top: 104px; }
 .hero-header-text-9 { font-size: 12px; letter-spacing: 0.3px; text-align: center; }
 .stats-number-counter-div-3 { font-family: "Unbounded", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
 @media (max-width: 809.98px) { .stats-number-counter-div-3 { font-size: 30px; } }
+
+/* logo emblem (redrawn from their profile picture) */
+.bw-mark { display: block; height: 48px; width: auto; flex: none; }
+.bw-disc { display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 50%; background: #fff; flex: none; }
+.bw-disc .bw-mark { height: 34px; }
+@media (max-width: 1199.98px) { .bw-mark { height: 38px; } }
+@media (max-width: 809.98px) { .bw-mark { height: 34px; } .bw-disc { width: 48px; height: 48px; } .bw-disc .bw-mark { height: 28px; } }
