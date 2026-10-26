@@ -3,14 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mimi's Sweet Bakery | Brownies made to order, How Sun, Singapore</title>
-<meta name="description" content="Mimi's Sweet Bakery is a home bakery near How Sun, Singapore. Marbled and chocolate brownies made to order. Message us on WhatsApp to order.">
+<title>Mimi's Sweet Bakery | Small-batch brownies, preorder 1st to 14th, Singapore</title>
+<meta name="description" content="Home-baked in Singapore. Small-batch brownies made once a month: preorder 1st to 14th, delivered fresh in the last week of the month.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mimi&#39;s Sweet Bakery">
-<meta property="og:description" content="Mimi's Sweet Bakery is a home bakery near How Sun, Singapore. Marbled and chocolate brownies made to order. Message us on WhatsApp to order.">
+<meta property="og:description" content="Home-baked in Singapore. Small-batch brownies made once a month: preorder 1st to 14th, delivered fresh in the last week of the month.">
 <meta name="robots" content="noindex">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="css/fonts.css">
@@ -18,6 +17,7 @@
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/pages/home.css">
 <link rel="stylesheet" href="css/lead.css">
+<link rel="stylesheet" href="css/mimi.css">
 </head>
 <body id="top">
 <div id="main">
@@ -26,7 +26,7 @@
       <div class="navigation">
         <a class="logo" href="#top">
           <div class="logo-div">
-            <span class="wm">Mimi&#39;s Sweet Bakery</span>
+            <span class="wm"><img class="wm-logo" src="img/logo.png" alt="" width="28" height="28"><span>Mimi&#39;s Sweet Bakery</span></span>
           </div>
         </a>
         <div class="address-menu">
@@ -47,11 +47,11 @@
       <div class="block-navigation">
         <a class="block-logo" href="#top">
           <div class="block-logo-div">
-            <span class="wm">Mimi&#39;s Sweet Bakery</span>
+            <span class="wm"><img class="wm-logo" src="img/logo.png" alt="" width="28" height="28"><span>Mimi&#39;s Sweet Bakery</span></span>
           </div>
         </a>
         <div class="block-address-menu">
-          <div class="address"><p class="block-text">How Sun, Singapore</p></div>
+          <div class="address"><p class="block-text">Singapore</p></div>
           <nav class="block-menu-2">
             <div class="block-menu-3"><p class="block-text">Menu</p></div>
             <div class="block-menu-icon-2">
@@ -67,26 +67,30 @@
     </nav>
     <div class="cp-menu" id="cp-menu" hidden aria-hidden="true">
       <div class="cp-menu-bar">
-        <a class="cp-menu-logo" href="#top"><span class="wm">Mimi&#39;s Sweet Bakery</span></a>
+        <a class="cp-menu-logo" href="#top"><span class="wm"><img class="wm-logo" src="img/logo.png" alt="" width="28" height="28"><span>Mimi&#39;s Sweet Bakery</span></span></a>
         <div class="cp-menu-right">
-          <p class="cp-menu-addr">How Sun, Singapore</p>
+          <p class="cp-menu-addr">Singapore</p>
           <button class="cp-menu-close" type="button" aria-label="Close menu"><span class="cp-menu-close-t">Close</span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.5 L17.5 17.5 M17.5 6.5 L6.5 17.5" fill="none" stroke="rgb(20,20,21)" stroke-width="2"/></svg></button>
         </div>
       </div>
       <nav class="cp-menu-links" aria-label="Main">
         <div class="cp-menu-row"><a href="#top"><span>Home</span></a></div>
-        <div class="cp-menu-row"><a href="#bakes"><span>Brownies</span></a></div>
-        <div class="cp-menu-row"><a href="#how"><span>How to order</span></a></div>
+        <div class="cp-menu-row"><a href="#menu"><span>Menu</span></a></div>
+        <div class="cp-menu-row"><a href="#how"><span>How it works</span></a></div>
         <div class="cp-menu-row"><a href="#order"><span>Order</span></a></div>
+        <div class="cp-menu-row"><a href="#faq"><span>FAQ</span></a></div>
       </nav>
     </div>
   </div></div>
 <main>
 <section class="n1-hero-and-steps">
   <header class="headline">
-    <div class="n1-hero-and-steps-text"><h1 class="heading"><span class="heading-span">Mimi&#39;s Sweet Bakery</span> brownies, made to order!</h1></div>
+    <div class="n1-hero-and-steps-text"><h1 class="heading"><span class="heading-span">Small-batch bakes,</span> made once a month.</h1></div>
     <div class="text-container"><div class="text-container-div">
-        <div class="n1-hero-and-steps-text-2"><p class="n1-hero-and-steps-text-3">A home bakery near How Sun, Singapore. Marbled and chocolate brownies, baked to order. Message us on WhatsApp to place an order.</p></div>
+        <div class="n1-hero-and-steps-text-2"><p class="n1-hero-and-steps-text-3">Everything is baked to order, starting with our brownies. Preorder in the first two weeks of the month and your bakes arrive fresh in the last week.</p>
+          <p class="mm-pill" id="heroPill">Presale opens 1 December</p>
+          <div class="mm-cta"><a class="primary" href="#order"><div class="label"><p id="heroBtnT">Preorder now</p></div><div class="bg-hover"></div></a></div>
+          <p class="mm-note">New here? Take 10% off your first order.</p></div>
       </div></div>
   </header>
   <div class="content-wrap">
@@ -117,15 +121,15 @@
       <div class="make-bake-eat">
         <div class="n1-hero-and-steps-text-wrap">
           <div class="indicator">
-            <div class="n1-hero-and-steps-text-4"><p class="n1-hero-and-steps-text-5">How to order</p></div>
+            <div class="n1-hero-and-steps-text-4"><p class="n1-hero-and-steps-text-5">How it works</p></div>
           </div>
           <div class="steps">
             <div class="step-1"><div class="make">
-                <div class="n1-hero-and-steps-make"><h2 class="n1-hero-and-steps-heading">Ask</h2></div>
+                <div class="n1-hero-and-steps-make"><h2 class="n1-hero-and-steps-heading">Order</h2></div>
                 <div class="n01"><p class="n1-hero-and-steps-text-6">01</p></div>
               </div><div class="content">
-                <div class="block-text-4"><p class="block-text-5">/Message us on WhatsApp</p></div>
-                <div class="n1-hero-and-steps-text-7"><p class="block-text-6">Tell us what you would like, how many, and the date you need it. Every button on this page opens WhatsApp with the message ready to send.</p></div>
+                <div class="block-text-4"><p class="block-text-5">/Preorder, 1st to 14th</p></div>
+                <div class="n1-hero-and-steps-text-7"><p class="block-text-6">Build your order below and send it on WhatsApp. Presale closes early if the month sells out.</p></div>
               </div><div class="step-1-div">
                 <div class="step-1-div-div">
                   <div class="mobile-1">
@@ -143,8 +147,8 @@
                 <div class="n1-hero-and-steps-make"><h2 class="n1-hero-and-steps-heading">Reply</h2></div>
                 <div class="n01"><p class="n1-hero-and-steps-text-6">02</p></div>
               </div><div class="content">
-                <div class="finest-ingredients"><p class="block-text-5">/We confirm the details</p></div>
-                <div class="step-copy"><p class="block-text-6">We reply on WhatsApp to confirm what, how many and when. Brownies are made to order, so a little notice helps.</p></div>
+                <div class="finest-ingredients"><p class="block-text-5">/We confirm</p></div>
+                <div class="step-copy"><p class="block-text-6">After presale closes you get your payment details and the two hand-over days for the month.</p></div>
               </div><div class="step-2-div">
                 <div class="step-2-div-div">
                   <div class="mobile-2">
@@ -159,11 +163,11 @@
                 </div>
               </div></div>
             <div class="step-3"><div class="eat">
-                <div class="n1-hero-and-steps-make"><h2 class="n1-hero-and-steps-heading">Enjoy</h2></div>
+                <div class="n1-hero-and-steps-make"><h2 class="n1-hero-and-steps-heading">Fresh</h2></div>
                 <div class="n01"><p class="n1-hero-and-steps-text-6">03</p></div>
               </div><div class="content">
-                <div class="finest-ingredients"><p class="block-text-5">/Enjoy your brownies</p></div>
-                <div class="step-copy"><p class="block-text-6">Marbled or chocolate, brownies for the date you picked. Questions about size or timing? Just ask us in the same chat.</p></div>
+                <div class="finest-ingredients"><p class="block-text-5">/Fresh in the last week</p></div>
+                <div class="step-copy"><p class="block-text-6">Everything is baked that week, then delivered to you or ready for collection.</p></div>
               </div><div class="step-3-div">
                 <div class="step-3-div-div">
                   <div class="mobile-3">
@@ -215,7 +219,7 @@
               </div>
             </div>
             <div class="n2-bakes-links">
-              <div class="block-text-11"><h2 class="n2-bakes-heading"><a class="n2-bakes-heading-a" href="https://wa.me/6591045582?text=Hi%20Mimi%27s%20Sweet%20Bakery%2C%20we%27d%20like%20to%20order%20marbled%20brownies%20%28quantity%3A%20__%2C%20date%3A%20__%29." target="_blank" rel="noopener">Marbled brownies</a></h2></div>
+              <div class="block-text-11"><h2 class="n2-bakes-heading"><a class="n2-bakes-heading-a" href="#menu">Original Classic</a></h2></div>
             </div>
             <div class="n1-image-wrap">
               <div class="n2-bakes-image-3">
@@ -245,7 +249,7 @@
               </div>
             </div>
             <div class="n2-bakes-links">
-              <div class="sourdough"><h2 class="n2-bakes-heading"><a class="n2-bakes-heading-a" href="https://wa.me/6591045582?text=Hi%20Mimi%27s%20Sweet%20Bakery%2C%20we%27d%20like%20to%20order%20chocolate%20brownies%20%28quantity%3A%20__%2C%20date%3A%20__%29." target="_blank" rel="noopener">Chocolate brownies</a></h2></div>
+              <div class="sourdough"><h2 class="n2-bakes-heading"><a class="n2-bakes-heading-a" href="#menu">Cream Cheese</a></h2></div>
             </div>
             <div class="n1-image-wrap">
               <div class="n2-bakes-image-3">
@@ -306,28 +310,133 @@
       </div>
     </div>
   </div><div class="n4-about-sticky-text">
-    <div class="column"><div class="block-text-4"><h2 class="n4-about-sticky-heading">Home-baked</h2></div><div class="column-div"><p class="n4-about-sticky-text-2">Mimi&#39;s Sweet Bakery is a home bakery near How Sun, Singapore, baking brownies to order. There is no shopfront: message us, tell us what and when, and we confirm.</p></div><div class="n4-about-sticky-column-div">
+    <div class="column"><div class="block-text-4"><h2 class="n4-about-sticky-heading">Home-baked</h2></div><div class="column-div"><p class="n4-about-sticky-text-2">Mimi&#39;s is a one-woman home bakery. Baking everything in one go means every batch is fresh, nothing is wasted and prices stay fair.</p></div><div class="n4-about-sticky-column-div">
         <div class="n4-about-sticky-4-about-sticky-div-3">
-          <a class="secondary" href="https://wa.me/6591045582?text=Hi%20Mimi%27s%20Sweet%20Bakery%2C%20we%27d%20like%20to%20order%20brownies%20%28quantity%3A%20__%2C%20date%3A%20__%29." target="_blank" rel="noopener">
-            <div class="label"><p class="n4-about-sticky-text-3">Order on WhatsApp</p></div>
+          <a class="secondary" href="#order">
+            <div class="label"><p class="n4-about-sticky-text-3">Preorder now</p></div>
             <div class="bg-hover"></div>
           </a>
         </div>
       </div></div>
   </div></section>
-<section class="n5-news" id="order">
-  <div class="n5-news-title-wrap">
-    <div class="title"><h2 class="n5-news-heading">Order</h2></div>
-    <div class="n5-news-text-wrap"><div class="n5-news-text"><p class="block-text-6">Tell us what you would like and when you need it. We reply on WhatsApp to confirm.</p></div><div class="n5-news-text-div">
-        <div class="n5-news-5-news-text-div">
-          <a class="primary" href="https://wa.me/6591045582?text=Hi%20Mimi%27s%20Sweet%20Bakery%2C%20we%27d%20like%20to%20ask%20about%20an%20order%20%28what%3A%20__%2C%20quantity%3A%20__%2C%20date%3A%20__%29." target="_blank" rel="noopener">
-            <div class="label"><p class="n5-news-text-2">Order on WhatsApp</p></div>
-            <div class="bg-hover"></div>
-          </a>
+<section class="mm-sec" id="menu">
+  <div class="mm-wrap">
+    <div class="mm-status rv" aria-live="polite">
+      <img src="img/logo.png" alt="Mimi&#39;s Sweet Bakery logo" width="180" height="180">
+      <div>
+        <p class="mm-eye" id="stEyebrow">Relaunching soon</p>
+        <strong id="stHead">Presale opens 1 December</strong>
+        <p class="mm-p" id="stText">Mimi&#39;s is back, starting with brownies.</p>
+        <dl>
+          <dt>Preorder</dt><dd id="stPre">1 to 14 December</dd>
+          <dt>Baking &amp; delivery</dt><dd id="stDel">21 to 24 December</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="mm-head" data-rv-group>
+      <p class="mm-eye rv">The menu</p>
+      <h2 class="mm-h2 rv">What&#39;s baking</h2>
+      <div class="mm-cat rv"><h3 class="mm-h3">Brownies</h3><span class="mm-badge">Available now</span></div>
+      <p class="mm-p rv">Two flavours, two sizes.</p>
+    </div>
+    <div class="mm-grid" data-rv-group>
+      <article class="mm-card rv">
+        <img class="mm-photo" src="img/original.jpg" alt="Original Classic brownies with a crackly top on a cream plate" width="900" height="900">
+        <h3 class="mm-h3">Original Classic</h3>
+        <p class="mm-p">The original. Dense, dark and fudgy all the way through, with a thin crackly top.</p>
+        <ul class="mm-prices"><li><span>Box of 12 regular</span><b>$36</b></li><li><span>Tub of 10 bites</span><b>$8</b></li></ul>
+      </article>
+      <article class="mm-card rv">
+        <img class="mm-photo" src="img/creamcheese.jpg" alt="Cream Cheese brownies with a marbled swirl, stacked on a cream plate" width="900" height="900">
+        <h3 class="mm-h3">Cream Cheese</h3>
+        <p class="mm-p">The same fudgy brownie with a tangy cream cheese swirl baked into the top.</p>
+        <ul class="mm-prices"><li><span>Box of 12 regular</span><b>$36</b></li><li><span>Tub of 10 bites</span><b>$8</b></li></ul>
+      </article>
+      <article class="mm-card mm-mix rv">
+        <div class="mm-pic"><div class="mm-b"></div><div class="mm-b cc"></div></div>
+        <div>
+          <h3 class="mm-h3">Can&#39;t choose? Go Half &amp; Half</h3>
+          <p class="mm-p">Mix both flavours in one pack at the same price: 6 + 6 in a box of 12, or 5 + 5 in a tub of bites.</p>
         </div>
-      </div></div>
+      </article>
+    </div>
+    <div class="mm-head" data-rv-group>
+      <h3 class="mm-h3 rv">How big is a brownie?</h3>
+      <p class="mm-p rv">Drawn to scale. One regular brownie is the same as four bites.</p>
+    </div>
+    <div class="mm-tray" data-rv-group>
+      <figure class="rv"><div class="mm-b"></div><figcaption>Regular, 5 cm × 5 cm</figcaption></figure>
+      <figure class="rv"><div class="mm-bites4"><div class="mm-b cc bite"></div><div class="mm-b cc bite"></div><div class="mm-b cc bite"></div><div class="mm-b cc bite"></div></div><figcaption>Four bites, 2.5 cm × 2.5 cm each</figcaption></figure>
+    </div>
   </div>
 </section>
+<section class="mm-sec" id="order">
+  <div class="mm-wrap">
+    <div class="mm-head" data-rv-group>
+      <p class="mm-eye rv" id="ordEyebrow">Reminder</p>
+      <h2 class="mm-h2 rv" id="ordHead">Tell us what you&#39;d like</h2>
+      <p class="mm-p rv" id="ordSub">Presale opens 1 December. Pick what you&#39;re interested in and we&#39;ll message you the day it opens.</p>
+    </div>
+    <form class="mm-order rv" id="orderForm" novalidate>
+      <div>
+        <div class="mm-rows" id="rows"></div>
+        <div class="mm-fields">
+          <label for="custName">Your name<input type="text" id="custName" autocomplete="name"></label>
+          <fieldset class="mm-choice">
+            <legend>How would you like to get it?</legend>
+            <label for="fDel"><input type="radio" name="ful" id="fDel" value="delivery" checked> <span>Delivery (+$<span id="feeLbl">8</span>)</span></label>
+            <label for="fCol"><input type="radio" name="ful" id="fCol" value="collection"> Self-collection (free)</label>
+          </fieldset>
+          <label for="custAddr" id="addrWrap">Delivery address and postal code<input type="text" id="custAddr" autocomplete="street-address"></label>
+          <label for="firstOrder" class="mm-check"><input type="checkbox" id="firstOrder"> This is my first order with Mimi&#39;s (10% off)</label>
+          <label for="promo">Family, friends or corporate code (optional)<input type="text" id="promo" autocomplete="off" autocapitalize="characters"><span id="promoMsg" class="mm-p" hidden></span></label>
+          <label for="custNote">Anything we should know? (optional)<textarea id="custNote"></textarea></label>
+        </div>
+      </div>
+      <aside class="mm-summary">
+        <h3 class="mm-h3">Your order</h3>
+        <ul id="sumList"><li class="mm-empty">Nothing added yet</li></ul>
+        <div class="mm-total"><span>Total</span><b id="sumTotal">$0</b></div>
+        <a class="mm-btn" id="waBtn" href="#order" target="_blank" rel="noopener">Get a reminder on WhatsApp</a>
+        <p class="mm-err" id="err" hidden></p>
+        <p class="mm-small">This opens WhatsApp with your order written out. Nothing is charged here; you pay after we confirm.</p>
+        <button type="button" class="mm-link" id="copyBtn">WhatsApp not opening? Copy the order instead</button>
+        <textarea id="msgbox" readonly hidden data-lenis-prevent aria-label="Your order message"></textarea>
+      </aside>
+    </form>
+  </div>
+</section>
+<section class="mm-sec" id="faq">
+  <div class="mm-wrap">
+    <div class="mm-head" data-rv-group><p class="mm-eye rv">Good to know</p><h2 class="mm-h2 rv">Questions</h2></div>
+    <div class="mm-faq" data-rv-group>
+      <details class="rv"><summary>Why only once a month?</summary><p>Mimi&#39;s is a one-woman home bakery. Baking everything in one go means every batch is fresh, nothing is wasted and prices stay fair.</p></details>
+      <details class="rv"><summary>How do I pay?</summary><p>By PayNow, after your order is confirmed on WhatsApp. Your slot is secured once payment is received.</p></details>
+      <details class="rv"><summary>Are there any discounts?</summary><p>Your first order is 10% off. Tick the box when you order. Planning a corporate or bulk order? Message us for a code. Discounts apply to your bakes, not delivery, and can&#39;t be combined.</p></details>
+      <details class="rv"><summary>When exactly will I get my brownies?</summary><p>In the delivery week shown at the top of this page. The two hand-over days for the month are sent to you once presale closes.</p></details>
+      <details class="rv"><summary>How long do brownies keep?</summary><p>Three days at room temperature in the box, a week in the fridge, or a month in the freezer. Cream cheese brownies are best kept chilled.</p></details>
+      <details class="rv"><summary>Can I change my order?</summary><p>Yes, any time before presale closes on the 14th. After that the ingredients are already bought.</p></details>
+      <details class="rv"><summary>Allergens</summary><p>All our bakes contain wheat, eggs and dairy. We don&#39;t add nuts to any bake unless it says so on that item, and anything with nuts will be clearly labelled.</p></details>
+      <details class="rv"><summary>Are your brownies halal?</summary><p>Mimi&#39;s Sweet Bakery is not halal-certified. No alcohol and no lard are used in any of our bakes.</p></details>
+    </div>
+  </div>
+</section>
+<section class="mm-sec" id="secret" hidden>
+  <div class="mm-wrap">
+    <div class="mm-head" data-rv-group>
+      <p class="mm-eye rv">Shh. The secret menu</p>
+      <h2 class="mm-h2 rv">In the test kitchen</h2>
+      <p class="mm-p rv">These flavours aren&#39;t on sale yet. Vote for the one you want first and it moves up the list.</p>
+    </div>
+    <div class="mm-secret3" id="secretGrid" data-rv-group></div>
+    <div class="mm-head" data-rv-group>
+      <h3 class="mm-h3 rv">More than brownies</h3>
+      <p class="mm-p rv">Two new bakes are in the works. Ask for a message when they launch.</p>
+    </div>
+    <div class="mm-grid" id="soonGrid" data-rv-group></div>
+  </div>
+</section>
+
 </main>
 
 <div class="block-div"><div class="block-div-div">
@@ -338,7 +447,7 @@
             <div class="links">
               <div class="links-div">
                 <button class="default">
-                  <div class="bakes"><p class="block-text-2"><a class="block-text-2-a" href="#bakes">Brownies</a></p></div>
+                  <div class="bakes"><p class="block-text-2"><a class="block-text-2-a" href="#menu">Menu</a></p></div>
                 </button>
               </div>
               <div class="links-div">
@@ -348,7 +457,7 @@
               </div>
               <div class="links-div">
                 <button class="default">
-                  <div class="bakes"><p class="block-text-2"><a class="block-text-2-a" href="#how">How to order</a></p></div>
+                  <div class="bakes"><p class="block-text-2"><a class="block-text-2-a" href="#how">How it works</a></p></div>
                 </button>
               </div>
               <div class="links-div">
@@ -356,18 +465,23 @@
                   <div class="bakes"><p class="block-text-2"><a class="block-text-2-a" href="#order">Order</a></p></div>
                 </button>
               </div>
+              <div class="links-div">
+                <button class="default">
+                  <div class="bakes"><p class="block-text-2"><a class="block-text-2-a" href="#faq">FAQ</a></p></div>
+                </button>
+              </div>
             </div>
             <div class="location-info">
               <div class="block-text-3">
                 <div class="block-text-4"><p class="block-text-5">/Contact Info</p></div>
                 <div class="email-and-phone">
-                  <div class="email"><p class="block-text-6"><a class="block-text-6-a" href="https://wa.me/6591045582?text=Hi%20Mimi%27s%20Sweet%20Bakery%2C%20we%27d%20like%20to%20ask%20about%20an%20order%20%28what%3A%20__%2C%20quantity%3A%20__%2C%20date%3A%20__%29." target="_blank" rel="noopener">Message us on WhatsApp</a></p></div>
-                  <div class="phone"><p class="block-text-6"><a class="block-text-6-a" href="https://wa.me/6591045582?text=Hi%20Mimi%27s%20Sweet%20Bakery%2C%20we%27d%20like%20to%20ask%20about%20an%20order%20%28what%3A%20__%2C%20quantity%3A%20__%2C%20date%3A%20__%29." target="_blank" rel="noopener">+65 9104 5582</a></p></div>
+                  <div class="email"><p class="block-text-6"><a class="block-text-6-a" href="https://wa.me/6591045582?text=Hi%20Mimi%21%20I%20have%20a%20question." target="_blank" rel="noopener">Message us on WhatsApp</a></p></div>
+                  <div class="phone"><p class="block-text-6"><a class="block-text-6-a" href="https://wa.me/6591045582?text=Hi%20Mimi%21%20I%20have%20a%20question." target="_blank" rel="noopener">+65 9104 5582</a></p></div>
                 </div>
               </div>
               <div class="block-text-3">
                 <div class="block-text-4"><p class="block-text-5">/Address</p></div>
-                <div class="block-text-4"><p class="block-text-6">How Sun, Singapore. Home bakery, orders by WhatsApp.</p></div>
+                <div class="block-text-4"><p class="block-text-6">Home-baked in Singapore. Preorder 1st to 14th, delivered in the last week of the month.</p></div>
               </div>
             </div>
           </div>
@@ -381,7 +495,7 @@
           <div class="social"></div>
           <div class="block-bottom-wrap-div">
             <div class="block-text-10">
-              <div class="block-text-11"><p class="block-text-9">Mimi&#39;s Sweet Bakery</p></div>
+              <div class="block-text-11"><p class="block-text-9" style="display:flex;align-items:center;gap:8px"><img class="wm-logo" src="img/logo.png" alt="" width="28" height="28">Mimi&#39;s Sweet Bakery</p></div><button type="button" class="mm-foot-btn" id="psst" aria-controls="secret" aria-expanded="false">Psst. Curious what&#39;s baking next?</button>
             </div>
             <div class="block-text-12">
               <div class="block-text-12-div">
@@ -397,5 +511,6 @@
   </div></div>
 </div>
 <script src="js/site.js"></script>
+<script src="js/order.js"></script>
 </body>
 </html>
