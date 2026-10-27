@@ -1,0 +1,3 @@
+/* Self-hosted fonts (latin): Lobster Two Bold (matches the logo lettering) and Nunito Sans (body). No CDN. */
+@font-face { font-family: "Lobster Two"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/lobster-two-700.woff2") format("woff2"); }
+@font-face { font-family: "Nunito Sans"; font-style: normal; font-weight: 200 1000; font-display: swap; src: url("../fonts/nunito-sans-400.woff2") format("woff2"); }
