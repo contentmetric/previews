@@ -154,3 +154,23 @@ h1, h2, h3, [class*="heading"], .cd-lead { word-break: keep-all; text-wrap: bala
   .tablet-text-2 { font-size: 14px; }
   .mobile-light { gap: 6px; }
 }
+
+/* --- language switcher (中文 / EN) and English-only bits ---------------------------------------------------------- */
+.cd-lang { display: inline-flex; align-items: center; flex: 0 0 auto; gap: 2px; padding: 3px; margin-right: 14px; border: 1px solid rgba(255, 255, 255, 0.55); border-radius: 999px; background: rgba(255, 255, 255, 0.08); }
+.cd-lang a { display: inline-flex; align-items: center; justify-content: center; min-width: 46px; height: 36px; padding: 0 12px; box-sizing: border-box; border-radius: 999px; font: 500 14px/1 Figtree, sans-serif; letter-spacing: 0.04em; color: #fff; text-decoration: none; }
+.cd-lang a[aria-current="true"] { background: #fff; color: #2B3A35; }
+.cd-lang a:not([aria-current="true"]):hover { background: rgba(255, 255, 255, 0.2); }
+.cd-lang a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.cd-trans { margin: -6px 0 0; font: 400 15px/1.7 Figtree, sans-serif; color: rgba(43, 58, 53, 0.82); }
+.cd-trans b { font-weight: 500; letter-spacing: 0.02em; }
+@media (max-width: 809.98px) { .cd-lang { margin-right: 10px; } .cd-lang a { min-width: 40px; height: 34px; padding: 0 9px; font-size: 13px; } }
+@media (max-width: 440px) { .cd-lang { margin-right: 8px; } .cd-lang a { min-width: 36px; height: 32px; padding: 0 8px; } .tablet-text-2 { display: none; } }
+@media (max-width: 1199.98px) { .right-div { display: flex; align-items: center; } }
+.default-right > .cd-lang { margin-right: 0; }
+html[lang="en"] .heroslider-heading-span, html[lang="en"] .heroslider-heading-2-span { display: inline-block; white-space: nowrap; }
+/* scrolled header is white: the white logo and the pill switch to dark */
+html.is-scrolled #main > section[name="Header"] a[href="#top"] img { filter: invert(1); }
+html.is-scrolled .cd-lang { border-color: rgba(43, 58, 53, 0.35); background: rgba(43, 58, 53, 0.05); }
+html.is-scrolled .cd-lang a { color: #2B3A35; }
+html.is-scrolled .cd-lang a[aria-current="true"] { background: #2B3A35; color: #fff; }
+html.is-scrolled .cd-lang a:not([aria-current="true"]):hover { background: rgba(43, 58, 53, 0.1); }

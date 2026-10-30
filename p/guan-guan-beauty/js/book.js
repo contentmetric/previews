@@ -7,7 +7,9 @@
   if (!form) return;
   var svc = document.getElementById("bkService"), date = document.getElementById("bkDate"), time = document.getElementById("bkTime");
   var go = document.getElementById("bookGo"), prev = document.getElementById("bkPreview");
+  var ZH = document.documentElement.lang.indexOf("zh") === 0;
   var WEEK = ["日", "一", "二", "三", "四", "五", "六"];
+  var DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   for (var h = 10; h < 20; h++) {
     [":00", ":30"].forEach(function (m) {
@@ -26,13 +28,14 @@
   date.value = sgDate(1);
 
   function build() {
-    var lines = ["你好 GG Beauty，我想预约：", "护理：" + svc.value];
+    var lines = ZH ? ["你好 GG Beauty，我想预约：", "护理：" + svc.value] : ["Hi GG Beauty, I'd like to book:", "Treatment: " + svc.value];
     if (date.value) {
       var d = new Date(date.value + "T00:00:00Z");
-      lines.push("日期：" + (d.getUTCMonth() + 1) + "月" + d.getUTCDate() + "日（周" + WEEK[d.getUTCDay()] + "）");
+      lines.push(ZH ? "日期：" + (d.getUTCMonth() + 1) + "月" + d.getUTCDate() + "日（周" + WEEK[d.getUTCDay()] + "）"
+                    : "Date: " + DAYS[d.getUTCDay()] + ", " + d.getUTCDate() + " " + MONTHS[d.getUTCMonth()]);
     }
-    if (time.value) lines.push("时间：" + time.value);
-    lines.push("请问有位吗？谢谢！");
+    if (time.value) lines.push((ZH ? "时间：" : "Time: ") + time.value);
+    lines.push(ZH ? "请问有位吗？谢谢！" : "Is there a slot available? Thank you!");
     var text = lines.join("\n");
     go.href = "https://wa.me/" + NUMBER + "?text=" + encodeURIComponent(text);
     prev.textContent = text;

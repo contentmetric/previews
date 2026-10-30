@@ -9,16 +9,17 @@
   m.className = "cp-menu";
   m.id = "cp-menu";
   m.setAttribute("role", "dialog");
-  m.setAttribute("aria-label", "菜单");
+  var ZH = root.lang.indexOf("zh") === 0;
+  m.setAttribute("aria-label", ZH ? "菜单" : "Menu");
   var links = Array.prototype.map.call(drawer.querySelectorAll(".drawer-item a"), function (a) {
     return '<a href="' + a.getAttribute("href") + '">' + a.textContent.trim() + "</a>";
   }).join("");
   var cta = drawer.querySelector(".drawer-cta");
   m.innerHTML =
     '<div class="cp-menu-top"><span class="cp-menu-brand">GG Beauty<small>Guan Guan Beauty</small></span>' +
-    '<button type="button" class="cp-menu-x" aria-label="关闭菜单"><span></span><span></span></button></div>' +
+    '<button type="button" class="cp-menu-x" aria-label="' + (ZH ? "关闭菜单" : "Close menu") + '"><span></span><span></span></button></div>' +
     '<nav class="cp-menu-links">' + links + "</nav>" +
-    '<a class="cp-menu-cta" href="' + (cta ? cta.getAttribute("href") : "#") + '" target="_blank" rel="noopener">WhatsApp 预约</a>';
+    '<a class="cp-menu-cta" href="' + (cta ? cta.getAttribute("href") : "#") + '" target="_blank" rel="noopener">' + (cta ? cta.textContent.trim() : "WhatsApp") + "</a>";
   document.body.appendChild(m);
   var close = function () { root.classList.remove("menu-open"); };
   m.querySelector(".cp-menu-x").addEventListener("click", close);
