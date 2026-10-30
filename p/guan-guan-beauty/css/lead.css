@@ -135,3 +135,22 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
 .cd-foot-text { max-width: 640px; }
 h1, h2, h3, .cd-lead { text-wrap: balance; }
 h1, h2, h3, [class*="heading"], .cd-lead { word-break: keep-all; text-wrap: balance; }
+
+/* --- real logo (the studio's Facebook profile picture, trimmed and made transparent) ------------------------------- */
+.default-group-3, .group-3, .tablet-group-3 { width: 62px; height: 46px; }
+.about-icon-3 { width: 56px; height: 42px; }
+.about-icon-3-div .default-img { width: 56px; height: 42px; object-fit: contain; }
+.cd-foot-brand { flex-direction: column; align-items: flex-start; gap: 12px; }
+.cd-foot-logo { display: block; width: 260px; max-width: 100%; height: auto; }
+.cd-foot-name { font-size: 24px; }
+.group-3 { aspect-ratio: auto; }
+@media (max-width: 809.98px) {
+  .group-3 { width: 52px; height: 39px; }
+  .tablet-text-2 { font-size: 16px; }
+  .mobile-light { gap: 8px; }
+}
+@media (max-width: 440px) {
+  .group-3 { width: 44px; height: 33px; }
+  .tablet-text-2 { font-size: 14px; }
+  .mobile-light { gap: 6px; }
+}
