@@ -15,8 +15,9 @@
     return '<a href="' + a.getAttribute("href") + '">' + a.textContent.trim() + "</a>";
   }).join("");
   var cta = drawer.querySelector(".drawer-cta");
+  var logo = document.querySelector('#main a[href="#top"] img');
   m.innerHTML =
-    '<div class="cp-menu-top"><span class="cp-menu-brand">GG Beauty<small>Guan Guan Beauty</small></span>' +
+    '<div class="cp-menu-top"><span class="cp-menu-lockup">' + (logo ? '<img class="cp-menu-logo" src="' + logo.src + '" alt="" width="46" height="35">' : "") + '<span class="cp-menu-brand">GG Beauty<small>Guan Guan Beauty</small></span></span>' +
     '<button type="button" class="cp-menu-x" aria-label="' + (ZH ? "关闭菜单" : "Close menu") + '"><span></span><span></span></button></div>' +
     '<nav class="cp-menu-links">' + links + "</nav>" +
     '<a class="cp-menu-cta" href="' + (cta ? cta.getAttribute("href") : "#") + '" target="_blank" rel="noopener">' + (cta ? cta.textContent.trim() : "WhatsApp") + "</a>";

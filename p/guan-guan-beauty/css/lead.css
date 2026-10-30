@@ -122,6 +122,8 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
   html.menu-open #main > section.tablet .drawer { display: none !important; }
   html.menu-open .cp-menu { display: flex; flex-direction: column; position: fixed; inset: 0; z-index: 99999; box-sizing: border-box; padding: 20px 24px 32px; background: #2B3A35; color: #F6F1E8; overflow-y: auto; }
   .cp-menu-top { display: flex; align-items: center; justify-content: space-between; height: 52px; }
+  .cp-menu-lockup { display: flex; align-items: center; gap: 12px; }
+  .cp-menu-logo { display: block; width: 46px; height: 35px; }
   .cp-menu-brand { display: flex; flex-direction: column; font: 400 26px/1.05 Fraunces, serif; color: #F6F1E8; }
   .cp-menu-brand small { margin-top: 4px; font: 500 9px/1 Figtree, sans-serif; letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.8; }
   .cp-menu-x { position: relative; width: 48px; height: 48px; border: 0; border-radius: 50%; background: rgba(246, 241, 232, 0.12); cursor: pointer; }
