@@ -1,0 +1,137 @@
+/* Guan Guan Beauty preview: the page-specific layer on top of the the template base. Loaded last.
+   Palette (see the BRAND-TOKENS file): deep green #2B3A35, cream #F6F1E8, sage #BFD0BB, jade #4F7261. */
+:root { --ink: #2B3A35; --cream: #F6F1E8; --sand: #BFD0BB; --clay: #4F7261; --line: #DDE5D8; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* --- 1. the logo lockup: emblem image + live words ("GG Beauty" over "Guan Guan Beauty") ------------------ */
+.default-text-3, .tablet-text-2, .tablet-text-4 { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.05; white-space: nowrap; }
+.default-text-3 small, .tablet-text-2 small, .tablet-text-4 small {
+  display: block; margin-top: 3px; font-family: Figtree, sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.3em;
+  text-transform: uppercase; line-height: 1; color: inherit; opacity: 0.85;
+}
+/* the template swaps every header image for a dark flower mark once the page scrolls; ours stays the emblem */
+html.is-scrolled #main > section[name="Header"] img { content: normal; }
+/* keep the clay accent for the scrolled header button, white words on it */
+html.is-scrolled #main > section[name="Header"] .default-default-right-div .white p { color: #fff; }
+
+/* anchors are plain links; no template underline */
+a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-white, a.default-default-2, a.drawer-cta { text-decoration-line: none; }
+
+/* --- 2. about: the badge is gone, so the small icon bar uses the emblem ---------------------------- */
+.about-icon-3-div .default-img { width: 31px; height: 30px; object-fit: contain; }
+
+/* --- 3. shared bits for the sections added below ------------------------------------------------ */
+.cd-wrap { width: 100%; max-width: 1410px; padding: 0 20px; margin: 0 auto; }
+.cd-kicker { margin: 0 0 14px; font: 500 15px/1.1 Figtree, sans-serif; letter-spacing: 0.04em; text-transform: uppercase; color: var(--clay); }
+.cd-h2 { margin: 0; font: 400 52px/1.1 Fraunces, serif; letter-spacing: -0.01em; color: var(--ink); }
+.cd-h3 { margin: 0; font: 400 34px/1.15 Fraunces, serif; color: var(--ink); }
+.cd-h4 { margin: 0 0 8px; font: 400 24px/1.2 Fraunces, serif; color: var(--ink); }
+.cd-lead { margin: 18px 0 0; max-width: 560px; font: 400 17px/1.7 Figtree, sans-serif; color: var(--ink); }
+.cd-text { margin: 0; font: 400 15px/1.73 Figtree, sans-serif; color: var(--ink); }
+.cd-btn {
+  display: inline-flex; align-items: center; gap: 12px; align-self: flex-start; padding: 0 30px; height: 52px; border-radius: 120px;
+  background: var(--clay); color: #fff; font: 500 15px/1 Figtree, sans-serif; cursor: pointer; transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cd-btn:hover { background: var(--ink); }
+.cd-btn-light { background: #fff; color: var(--ink); }
+.cd-btn-light:hover { background: var(--sand); color: var(--ink); }
+.cd-btn svg { flex: 0 0 auto; }
+
+/* --- 6. footer: no newsletter form, no address we do not know ------------------------------------ */
+.cd-foot { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; padding: 90px 0 70px; }
+.cd-foot-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: #fff; }
+.cd-foot-name { display: flex; flex-direction: column; font: 400 34px/1.05 Fraunces, serif; color: #fff; }
+.cd-foot-name small { margin-top: 5px; font: 500 11px/1 Figtree, sans-serif; letter-spacing: 0.34em; text-transform: uppercase; opacity: 0.85; }
+.cd-foot-text { margin: 0; max-width: 480px; font: 400 16px/1.7 Figtree, sans-serif; color: rgba(255, 255, 255, 0.85); }
+.cd-foot-links { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 6px 0 0; padding: 0; list-style: none; }
+.cd-foot-links a { font: 400 15px/1.4 Figtree, sans-serif; color: rgba(255, 255, 255, 0.85); text-decoration: none; }
+.cd-foot-links a:hover { color: #fff; text-decoration: underline; }
+
+/* --- 8. the call-to-action band grows with its words (the template's was a fixed 70vh / 50vh with a shorter line) ----- */
+.cta-section-cta-section { height: auto; min-height: 70vh; padding: 90px 0; }
+.cta-section-container-2 { height: auto; flex: 0 0 auto; }
+@media (max-width: 1199.98px) { .cta-section-cta-section { height: auto; min-height: 50vh; padding: 80px 0; } }
+@media (max-width: 809.98px) { .cta-section-cta-section { padding: 64px 0; } }
+
+/* hero sub-line: keep the longer line to a readable measure */
+[class^="heroslider-experience-ultimate"] > p { max-width: 760px; margin-left: auto; margin-right: auto; text-wrap: balance; }
+.heroslider-white-2 p, .heroslider-white p { white-space: nowrap; max-width: none; margin: 0; }
+
+/* --- Guan Guan Beauty sections: services, booking picker, reviews, tablet and phone --------------------------------- */
+.cd-wrap { box-sizing: border-box; }
+.cd-h2, .cd-h3, .cd-h4 { letter-spacing: 0; line-height: 1.25; }
+.cd-kicker { letter-spacing: 0.12em; }
+.cd-services { width: 100%; background: #fff; padding: 110px 0; }
+.cd-head { margin-bottom: 56px; }
+.cd-svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.cd-svc { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 34px 32px 32px; border-radius: 28px; background: var(--cream); }
+.cd-svc .cd-num { flex: none; font: 400 36px/1 Fraunces, serif; color: var(--clay); }
+.cd-svc .cd-text { flex: 1; }
+.cd-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--clay); font: 500 15px/1.2 Figtree, sans-serif; color: var(--clay); text-decoration: none; }
+.cd-link:hover { color: var(--ink); border-color: var(--ink); }
+
+.cd-book { scroll-margin-top: 30px; width: 100%; background: #E2EBDF; padding: 110px 0; }
+.cd-book-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 80px; align-items: center; }
+.cd-book-img { border-radius: 28px; overflow: hidden; aspect-ratio: 4 / 5; }
+.cd-book-img img { width: 100%; height: 100%; object-fit: cover; }
+.cd-book-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.cd-book-copy .cd-head { margin-bottom: 32px; }
+.cd-form { display: flex; flex-direction: column; gap: 18px; width: 100%; padding: 32px; box-sizing: border-box; border-radius: 24px; background: #fff; }
+.cd-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.cd-field { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.cd-field span { font: 500 14px/1.2 Figtree, sans-serif; color: var(--ink); }
+.cd-field select, .cd-field input { width: 100%; box-sizing: border-box; height: 52px; padding: 0 16px; border: 1px solid var(--sand); border-radius: 14px; background: var(--cream); color: var(--ink); font: 400 16px/1 Figtree, sans-serif; }
+.cd-field select:focus, .cd-field input:focus { outline: 2px solid var(--clay); outline-offset: 1px; }
+.cd-form .cd-btn { align-self: stretch; justify-content: center; }
+.cd-form .cd-small { margin: 0; white-space: pre-line; min-height: 1.6em; }
+
+.cd-reviews { width: 100%; background: var(--cream); padding: 110px 0; }
+.cd-quote-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.cd-quote { display: flex; flex-direction: column; gap: 22px; margin: 0; padding: 34px 32px; border-radius: 28px; background: #fff; }
+.cd-quote blockquote { margin: 0; flex: 1; font-size: 16px; line-height: 1.8; }
+.cd-quote figcaption { font: 500 13px/1.2 Figtree, sans-serif; color: var(--clay); letter-spacing: 0.04em; }
+
+.cd-foot-note { margin: 0; font: 400 13px/1.6 Figtree, sans-serif; color: rgba(255, 255, 255, 0.7); }
+
+@media (max-width: 1199.98px) {
+  .cd-services, .cd-book, .cd-reviews { padding: 90px 0; }
+  .cd-h2 { font-size: 44px; }
+  .cd-svc-grid, .cd-quote-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cd-book-grid { gap: 48px; }
+}
+@media (max-width: 809.98px) {
+  .cd-services, .cd-book, .cd-reviews { padding: 64px 0; }
+  .cd-h2 { font-size: 32px; }
+  .cd-h3 { font-size: 28px; }
+  .cd-head { margin-bottom: 36px; }
+  .cd-svc-grid, .cd-quote-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .cd-svc, .cd-quote { padding: 26px 22px; }
+  .cd-book-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .cd-book-img { aspect-ratio: 3 / 2; }
+  .cd-form { padding: 22px 18px; }
+  .cd-row { grid-template-columns: minmax(0, 1fr); }
+  .cd-foot { padding: 60px 0 40px; }
+  .cd-btn { height: 48px; padding: 0 24px; }
+}
+
+/* --- full-screen menu (tablet / phone): lives on <body>, shown while <html> has menu-open --------------------------- */
+.cp-menu { display: none; }
+@media (max-width: 1199.98px) {
+  html.menu-open { overflow: hidden; }
+  html.menu-open #main > section.tablet .drawer { display: none !important; }
+  html.menu-open .cp-menu { display: flex; flex-direction: column; position: fixed; inset: 0; z-index: 99999; box-sizing: border-box; padding: 20px 24px 32px; background: #2B3A35; color: #F6F1E8; overflow-y: auto; }
+  .cp-menu-top { display: flex; align-items: center; justify-content: space-between; height: 52px; }
+  .cp-menu-brand { display: flex; flex-direction: column; font: 400 26px/1.05 Fraunces, serif; color: #F6F1E8; }
+  .cp-menu-brand small { margin-top: 4px; font: 500 9px/1 Figtree, sans-serif; letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.8; }
+  .cp-menu-x { position: relative; width: 48px; height: 48px; border: 0; border-radius: 50%; background: rgba(246, 241, 232, 0.12); cursor: pointer; }
+  .cp-menu-x span { position: absolute; left: 14px; top: 23px; width: 20px; height: 2px; background: #F6F1E8; }
+  .cp-menu-x span:first-child { transform: rotate(45deg); }
+  .cp-menu-x span:last-child { transform: rotate(-45deg); }
+  .cp-menu-links { display: flex; flex-direction: column; flex: 1; justify-content: center; gap: 6px; padding: 24px 0; }
+  .cp-menu-links a { padding: 12px 0; border-bottom: 1px solid rgba(246, 241, 232, 0.16); font: 400 32px/1.3 Fraunces, serif; color: #F6F1E8; text-decoration: none; }
+  .cp-menu-cta { display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 120px; background: #F6F1E8; color: #2B3A35; font: 500 17px/1 Figtree, sans-serif; text-decoration: none; }
+}
+.cd-foot-text { max-width: 640px; }
+h1, h2, h3, .cd-lead { text-wrap: balance; }
+h1, h2, h3, [class*="heading"], .cd-lead { word-break: keep-all; text-wrap: balance; }
