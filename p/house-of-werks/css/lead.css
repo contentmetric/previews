@@ -4,6 +4,13 @@
 .hw-more span { font:500 16px/1.4 Satoshi, Inter, sans-serif; color:#c4c4c4; }
 .hw-more i { font-style:normal; display:inline-flex; width:36px; height:36px; border-radius:50%; background:#efebe3; color:#1a1a17; align-items:center; justify-content:center; font-size:18px; margin-top:6px; }
 .hw-more:hover { background:#000; }
+.site-header.is-open .about, .site-header.is-open .block-text-3 { display:flex !important; }
+.site-header.is-open .block-text-2 { display:block !important; font-size:24px; line-height:1.2; color:#efebe3; }
+.site-header.is-open .block-text-4 { display:block !important; }
+.site-header.is-open .header-menu-block { gap:6px; }
+.site-header.is-open .header-menu-block a { min-height:52px; padding-inline:20px; justify-content:center; background:transparent; }
+.site-header.is-open .header-button-block { padding-top:26px; }
+.site-header.is-open .header-menu-block a.active .block-text-2 { color:#fff; }
 @media (max-width: 809.98px) {
   .hw-more { display:none; }
   .text-div { display:block !important; font-size:26px; letter-spacing:-0.5px; font-weight:500; line-height:1.2; margin-top:8px; }

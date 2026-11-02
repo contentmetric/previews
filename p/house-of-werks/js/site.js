@@ -45,4 +45,7 @@
     card.addEventListener("click", toggle);
     card.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
   });
+
+  // in-page links close the phone menu
+  document.querySelectorAll('.site-header a[href^="#"]').forEach((l) => l.addEventListener("click", () => { const b = document.querySelector(".site-header.is-open .humberger-block"); if (b) b.click(); }));
 })();
