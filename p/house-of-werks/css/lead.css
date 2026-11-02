@@ -1,0 +1,13 @@
+/* House of Werks: sixth gallery tile */
+.hw-more { display:flex; flex-direction:column; justify-content:flex-end; gap:10px; width:100%; min-height:260px; padding:28px; border-radius:16px; background:#1a1a17; color:#efebe3; text-decoration:none; box-sizing:border-box; }
+.hw-more b { font:700 28px/1.15 Satoshi, Inter, sans-serif; letter-spacing:-0.01em; }
+.hw-more span { font:500 16px/1.4 Satoshi, Inter, sans-serif; color:#c4c4c4; }
+.hw-more i { font-style:normal; display:inline-flex; width:36px; height:36px; border-radius:50%; background:#efebe3; color:#1a1a17; align-items:center; justify-content:center; font-size:18px; margin-top:6px; }
+.hw-more:hover { background:#000; }
+@media (max-width: 809.98px) {
+  .hw-more { display:none; }
+  .text-div { display:block !important; font-size:26px; letter-spacing:-0.5px; font-weight:500; line-height:1.2; margin-top:8px; }
+  .banner-image-div .img { object-position:62% 50%; }
+  .site-header .logo-block .block-text { font-size:22px; }
+  .header-logo-with-humberger-block { width:100% !important; justify-content:space-between !important; }
+}
