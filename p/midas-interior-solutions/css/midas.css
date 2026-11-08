@@ -35,3 +35,21 @@
 .contact-text-2-a, .desktop-desktop-text-3-a { color:inherit; text-decoration:none; }
 @media (max-width:809px){ .desktop-links { width:100%; flex-wrap:wrap; gap:28px 32px; justify-content:flex-start; } .pages, .socials { width:auto; flex:0 0 auto; } .socials-div, .desktop-desktop-text-3-a { text-wrap-mode:wrap; } }
 @media (max-width:809px){ .text-cta-div-div { font-size:0; } .hero-heading { margin-top:40px; } }
+
+/* deep content: labels, Q&A, about prose */
+.project-content-div strong, .project-project-content strong, .midas-prose strong { font-weight:600; color:inherit; }
+.midas-qas { display:flex; flex-direction:column; width:100%; border-top:1px solid rgba(0,0,0,.12); }
+.midas-qa { border-bottom:1px solid rgba(0,0,0,.12); padding:18px 0; }
+.midas-q { cursor:pointer; list-style:none; font-family:"Inter Display",sans-serif; font-weight:500; font-size:19px; line-height:1.35; letter-spacing:-.2px; padding-right:32px; position:relative; }
+.midas-q::-webkit-details-marker { display:none; }
+.midas-q::after { content:"+"; position:absolute; right:0; top:-2px; font-size:24px; font-weight:300; color:#a87850; }
+.midas-qa[open] .midas-q::after { content:"\2212"; }
+.midas-qa .about-text { margin-top:12px; }
+.midas-prose { display:flex; flex-direction:column; gap:16px; text-align:left; max-width:760px; }
+.midas-prose .project-content-div-ul, .midas-prose .project-content-div-ol { padding-left:20px; display:flex; flex-direction:column; gap:8px; }
+/* detail pages are dark: Q&A text + rules, numbered steps */
+.project-content-div .midas-q, .midas-prose .midas-q { color:#fff; }
+.project-content-div .midas-qas, .project-content-div .midas-qa { border-color:rgba(255,255,255,.16); }
+.project-content-div-ol { list-style:decimal; padding-left:22px; }
+.project-content-div-ol > li { display:list-item; }
+.project-content-div-ol > li::marker { color:#a87850; font-family:"Inter Display",sans-serif; }
