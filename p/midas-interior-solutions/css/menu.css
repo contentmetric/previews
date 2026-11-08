@@ -1,0 +1,43 @@
+/* Phone menu overlay (decoded from the open state of the original menu at 390px). */
+.menu-close { display:none; }
+.menu-close-i { display:none; }
+.menu-close-svg { display:none; }
+.menu-links { display:none; }
+.menu-link-item { display:none; }
+.menu-link-div { display:none; }
+.menu-link-span { display:none; }
+.menu-link-a { display:none; }
+.menu-actions { display:none; }
+.menu-actions-item { display:none; }
+.menu-action { display:none; }
+.menu-action-div { display:none; }
+.menu-action-i { display:none; }
+.menu-action-svg { display:none; }
+
+@media (max-width: 809.98px) {
+  .menu-close { cursor:pointer; z-index:2; width:24px; height:24px; position:absolute; top:24px; right:44px; flex:0 0 auto; display:revert; }
+  .menu-close-i { display:contents; }
+  .menu-close-svg { user-select:none; width:100%; height:100%; display:inline-block; fill:rgb(255, 255, 255); flex-shrink:0; }
+  .menu-links { flex-direction:column; align-content:flex-start; justify-content:center; align-items:flex-start; width:min-content; height:min-content; list-style-position:initial; list-style-image:initial; list-style-type:none; display:flex; position:relative; padding:0px; margin:0px; gap:0px; flex:0 0 auto; }
+  .menu-link-item { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; z-index:2; width:auto; height:auto; position:relative; flex:0 0 auto; }
+  .menu-link-div { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:nowrap; font-family:"Inter Display", sans-serif; font-style:normal; font-weight:300; color:rgb(255, 255, 255); font-size:44px; letter-spacing:-0.88px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:120%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; display:revert; }
+  .menu-link-span { padding:0px; margin:0px; -webkit-text-fill-color:transparent; background-clip:text; display:inline-block; background-image:linear-gradient(276deg, rgb(255, 255, 255) 0%, rgba(166, 166, 166, 0.96) 100%); }
+  .menu-link-a { border-radius:0px; corner-shape:round; padding:0px; font-family:"Inter Display", sans-serif; font-style:normal; font-weight:300; font-size:44px; text-transform:none; cursor:pointer; color:rgb(255, 255, 255); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(0, 0, 0, 0); display:revert; }
+  .menu-actions { z-index:1; align-items:center; height:min-content; display:flex; position:absolute; top:24px; left:44px; width:min-content; padding:0px; gap:10px; flex:0 0 auto; place-content:center; overflow:hidden; }
+  .menu-actions-item { width:auto; height:auto; position:relative; flex:0 0 auto; display:revert; }
+  .menu-action { cursor:pointer; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:0px; gap:10px; place-content:center; overflow:hidden; }
+  .menu-action-div { width:24px; height:24px; position:relative; flex:0 0 auto; display:revert; }
+  .menu-action-i { display:contents; }
+  .menu-action-svg { user-select:none; width:100%; height:100%; display:inline-block; fill:rgb(204, 204, 204); flex-shrink:0; }
+}
+
+/* overlay root: fixed, full screen, 80% black with 10px blur, links bottom-left (measured open state) */
+.menu-overlay { display: none; }
+@media (max-width: 809.98px) {
+  .menu-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; display: none; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 64px; gap: 10px; background: rgba(0,0,0,.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); overflow: hidden; }
+  .menu-overlay.is-open, .menu-overlay.is-closing { display: flex; }
+  .menu-close { left: auto; }
+  .menu-close { top: 24px; right: 44px; }
+}
+
+.menu-close { background: none; border: 0; padding: 0; margin: 0; color: inherit; font: inherit; }

@@ -1,0 +1,38 @@
+/* services page styles (generated). */
+.banner { flex-direction:column; align-items:center; width:100%; max-width:1100px; height:100vh; max-height:800px; display:flex; position:relative; mask-image:linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%); -webkit-mask-position-x:0%; -webkit-mask-position-y:0%; mask-size:auto; mask-repeat:repeat; mask-origin:border-box; mask-clip:border-box; mask-composite:add; mask-mode:match-source; padding:0px; gap:0px; flex:0 0 auto; place-content:center; overflow:hidden; }
+.banner-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; z-index:2; width:100%; height:auto; position:relative; flex:0 0 auto; }
+.banner-banner-div { pointer-events:none; z-index:1; height:600px; position:absolute; top:54px; left:0px; right:0px; opacity:0.3; transform:perspective(1200px) rotate(-10deg) rotateX(30deg); flex:0 0 auto; }
+.banner-banner-div-section { display:flex; width:100%; height:100%; max-width:100%; max-height:100%; place-items:center; margin:0px; padding:10px; list-style-type:none; mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%); overflow:hidden; }
+.banner-banner-div-ul { display:flex; width:100%; height:100%; max-width:100%; max-height:100%; place-items:center; margin:0; padding:0; list-style-type:none; text-indent:none; gap:44px; position:relative; transform:translateX(-0px); }
+.service-image { flex-direction:column; align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; display:flex; position:relative; flex-shrink:0; padding:0px; gap:0px; }
+.service-image-div { z-index:1; flex-wrap:wrap; align-items:flex-start; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:0px; flex:0 0 auto; place-content:flex-start; }
+.service-image-div::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgb(33, 33, 33); }
+.service-image-div-div { width:400px; height:500px; position:relative; flex:0 0 auto; }
+.banner-base { align-items:center; display:flex; position:relative; height:100%; width:100%; padding:0px; gap:10px; place-content:center; overflow:hidden; }
+.banner-service-image { flex-direction:column; align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; display:flex; position:relative; flex-shrink:0; padding:0px; gap:0px; }
+.banner-service-image-div { z-index:1; flex-wrap:wrap; align-items:flex-start; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:0px; flex:0 0 auto; place-content:flex-start; }
+.banner-service-image-div::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgb(33, 33, 33); }
+.banner-banner-service-image-div { width:400px; height:500px; position:relative; flex:0 0 auto; }
+.ul { flex-direction:column; align-content:center; justify-content:flex-start; align-items:center; width:100%; max-width:1100px; height:min-content; list-style-position:initial; list-style-image:initial; list-style-type:none; display:flex; position:relative; padding:0px 24px; margin:0px; gap:44px; flex:0 0 auto; }
+.ul-li { z-index:1; flex-wrap:wrap; align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; padding:0px 0px 44px; gap:44px; flex:0 0 auto; place-content:flex-start; }
+.ul-li::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgb(34, 34, 34); }
+.ul-li-div { display:contents; }
+.ul-li-div-div { width:500px; height:300px; position:relative; flex:0 0 auto; }
+
+@media (max-width: 1199.98px) {
+  .banner { order:1; }
+  .ul { order:2; padding:0px 64px; }
+  .ul-li-div-div { width:300px; height:200px; }
+}
+
+@media (max-width: 809.98px) {
+  .banner { order:initial; }
+  .banner-banner-div-li { display:none; }
+  .banner-service-image { display:none; }
+  .banner-service-image-div { display:none; }
+  .banner-banner-service-image-div { display:none; }
+  .ul { padding:0px 44px; order:initial; }
+  .ul-li { flex-direction:column; align-items:center; padding:0px; gap:24px; place-content:center; }
+  .ul-li::after { content:none; }
+  .ul-li-div-div { width:100%; height:auto; }
+}

@@ -1,0 +1,37 @@
+/* Midas additions on top of the Havencraft shell */
+.logo { width:auto; overflow:visible; }
+.desktop-logo.midas-logo { display:flex; align-items:center; gap:10px; width:auto; height:auto; aspect-ratio:auto; color:#fff; fill:#fff; }
+.midas-mark { display:block; width:32px; height:28px; flex:0 0 auto; }
+.midas-mark svg { display:block; width:100%; height:100%; }
+.midas-word { font-family:"Inter Display",sans-serif; font-weight:500; font-size:16px; letter-spacing:-.2px; color:#fff; white-space:nowrap; line-height:1; }
+.desktop-logo-3 { width:32px; height:28px; aspect-ratio:auto; fill:#fff; }
+.desktop-logo-2 { gap:12px; }
+@media (max-width:809px){ .midas-word { font-size:14px; } .midas-mark { width:28px; height:25px; } }
+@media (max-width:420px){ .midas-word { font-size:12.5px; } .midas-logo { gap:8px; } }
+
+/* process */
+.midas-process { width:100%; max-width:1052px; margin:0 auto; padding:120px 0; box-sizing:border-box; color:#fff; display:flex; flex-direction:column; gap:48px; }
+.midas-process-head { display:flex; flex-direction:column; gap:16px; }
+.midas-h { margin:0; }
+.midas-steps { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+.midas-step { border-top:1px solid #222; padding-top:20px; display:flex; flex-direction:column; gap:12px; }
+.midas-step-n { font-family:"Inter Display",sans-serif; font-size:16px; color:#a87850; }
+.midas-step-h { font-family:"Inter Display",sans-serif; font-weight:500; font-size:24px; letter-spacing:-.5px; margin:0; color:#fff; }
+.midas-step-p { font-family:"Inter",sans-serif; font-size:16px; line-height:1.5; margin:0; color:#ccc; }
+.midas-process-cta, .midas-foot-wa .default, .midas-process-cta .default { }
+.midas-process-cta .default { width:260px; height:56px; text-decoration:none; }
+@media (max-width:1023px){ .midas-steps { grid-template-columns:repeat(2,1fr); } .midas-process { padding:96px 32px; } }
+@media (max-width:809px){ .midas-steps { grid-template-columns:1fr; } .midas-process { padding:72px 20px; } .midas-process-cta .default { width:100%; } }
+
+/* buttons */
+.midas-foot-wa { display:flex; flex-direction:column; gap:16px; align-items:flex-start; }
+.midas-foot-wa .default { width:220px; height:48px; text-decoration:none; }
+.midas-btn { display:inline-flex !important; width:auto !important; height:52px !important; padding:0 28px !important; text-decoration:none; }
+.midas-about-cta { margin-top:24px; }
+.midas-wa-card { margin-top:40px; display:flex; flex-direction:column; gap:20px; align-items:flex-start; }
+.midas-big { width:100% !important; max-width:560px; height:84px !important; text-decoration:none; }
+.midas-big .desktop-text-5 { font-size:22px; }
+@media (max-width:809px){ .midas-big { height:72px !important; } .midas-big .desktop-text-5 { font-size:18px; text-wrap:wrap; text-align:center; } }
+.contact-text-2-a, .desktop-desktop-text-3-a { color:inherit; text-decoration:none; }
+@media (max-width:809px){ .desktop-links { width:100%; flex-wrap:wrap; gap:28px 32px; justify-content:flex-start; } .pages, .socials { width:auto; flex:0 0 auto; } .socials-div, .desktop-desktop-text-3-a { text-wrap-mode:wrap; } }
+@media (max-width:809px){ .text-cta-div-div { font-size:0; } .hero-heading { margin-top:40px; } }

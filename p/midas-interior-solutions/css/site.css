@@ -1,0 +1,53 @@
+/* Havencraft hand CSS: the reset the reference runs on top of the browser defaults, plus the page shell. */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font: 12px sans-serif; background: rgb(0, 0, 0); color: rgb(0, 0, 0); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* Page shell, measured on the reference: the layout root is a centred flex column (black, at least one screen tall). */
+#main { position: relative; width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; background: rgb(0, 0, 0); }
+#main > main { display: contents; }
+/* The header floats over the page: fixed, full width, 64px tall, above everything (z-index 10). */
+.site-header { position: fixed; top: 0; left: 0; width: 100%; height: 64px; z-index: 10; display: block; }
+
+/* Per-breakpoint text variants (the converter emits .cp-tv where the copy's text differs by breakpoint). */
+.cp-tv .cp-tv-p { display: none; }
+@media (max-width: 809.98px) {
+  .cp-tv .cp-tv-d { display: none; }
+  .cp-tv .cp-tv-p { display: inline; }
+}
+
+body.gap-64 #main { gap: 64px; }
+body.gap-10 #main { gap: 10px; }
+
+/* FAQ accordion: instant open/close (measured: closed row 80px, open 173px at 1440), chevron -90deg -> 90deg */
+.faq-answer { display: none; width: 100%; padding: 0 24px 24px 44px; box-sizing: border-box; overflow: hidden; }
+.faq-answer p { margin: 0; color: #ccc; font-family: "Inter Display", sans-serif; font-size: 18px; line-height: 27px; }
+[data-faq] { cursor: pointer; padding: 0 12px; box-sizing: border-box; position: relative; overflow: hidden; }
+[data-faq]::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-bottom: 1px solid rgb(20,20,20); }
+[data-faq] .closed, [data-faq] .mobile-closed { padding-left: 0; padding-right: 0; }
+[data-faq] .closed::after { display: none; }
+[data-faq].is-open .faq-answer { display: block; }
+[data-faq].is-open .faq-s-question, [data-faq].is-open .question { padding-bottom: 12px; }
+[data-faq] .faq-s-icon-chevron, [data-faq] .icon-chevron { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+[data-faq].is-open .faq-s-icon-chevron, [data-faq].is-open .icon-chevron { transform: rotate(90deg); }
+@media (max-width: 809.98px) { .faq-answer { padding: 0 24px 12px 36px; } [data-faq] { padding: 0; } }
+
+/* Hover states (measured on the original) */
+.text-a { text-decoration: none; }
+.text-a:hover { text-decoration: underline; }
+.site-header .base-div-div svg { transition: fill .2s ease; }
+.site-header .base:hover svg { fill: #fff !important; }
+.hero-base-2 { transition: box-shadow .5s cubic-bezier(.2,.8,.2,1); }
+.hero-base-2:hover { box-shadow: 0 0 0 5px rgba(255,255,255,.4); }
+.default { transition: background-color .2s ease; }
+.default:hover { background-color: rgba(255,255,255,.8) !important; }
+[class$="cover-figure"] { transform: scale(1.05); transition: transform .4s cubic-bezier(.2,1.2,.4,1); }
+a:hover > [class$="cover-figure"], [class$="cover"]:hover > [class$="cover-figure"] { transform: scale(1); }
+
+/* current page: underlined link (footer list) */
+.is-current { text-decoration: underline !important; }
+/* newsletter field */
+.desktop-actions-div { background: rgb(28, 28, 28); }
+input::placeholder, textarea::placeholder { color: rgb(138, 138, 138); opacity: 1; }
