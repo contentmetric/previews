@@ -25,6 +25,8 @@ body, #main { background: var(--hk-bg); color: var(--hk-ink); }
 /* hero */
 .n1-hero-and-steps { padding-top: 96px; gap: 36px; }
 .headline { padding: 0; }
+@media (min-width: 810px) { .headline .text-container { height: min-content; align-self: end; } }
+@media (min-width: 810px) and (max-width: 1199.98px) { .headline { gap: 24px; } }
 .heading { font-size: clamp(38px, 6vw, 96px); line-height: 1.06; letter-spacing: -.02em; color: var(--hk-ink); font-weight: 900; }
 .heading-span { display: block; color: var(--hk-accent); font-size: .78em; margin-top: 8px; letter-spacing: 0; line-height: 1.15; font-weight: 700; }
 .n1-hero-and-steps-text-3 { font-size: 20px; line-height: 1.5; font-weight: 400; color: var(--hk-ink); }
