@@ -210,7 +210,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 /* v5: banner picture, menu dropdown */
 .banner-image-div picture{display:contents}
 .banner-image-div::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(11,17,28,.55) 0,rgba(11,17,28,0) 26%)}
-@media (max-width:809.98px){.banner-image-div .img{object-position:68% 50%}}
+@media (max-width:809.98px){.banner-image-div .img{object-position:72% 50%}}
 .ihb-dd-panel{display:none}
 @media (min-width:1200px){
   .header-menu-main-block .header-menu-block,.header-menu-block-div.ihb-dd{position:static}
@@ -230,3 +230,13 @@ ul,ol{list-style:none;margin:0;padding:0}
   .ihb-dd-col a:not(.ihb-dd-head){display:none}
   .site-header.is-open .ihb-dd-panel a.ihb-dd-head{font:600 15px/1 var(--font);color:#fff;min-height:0;padding:10px 15px;border:1px solid rgba(255,255,255,.3);border-radius:999px;text-decoration:none}
 }
+
+/* v6: hero button shadow no longer clipped, 8 service cards with 4:3 photos */
+.banner-section .button-group,.banner-section .button-block{overflow:visible}
+.ihb-svc-grid{grid-template-columns:repeat(4,1fr)}
+.ihb-svc{display:flex;flex-direction:column}
+.ihb-svc img{aspect-ratio:4/3}
+.ihb-svc-body{display:flex;flex-direction:column;flex:1}
+.ihb-svc-link{margin-top:auto}
+@media (max-width:1023.98px){.ihb-svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:559.98px){.ihb-svc-grid{gap:12px}.ihb-svc-body{padding:12px}.ihb-svc h3{font-size:17px;line-height:1.25}.ihb-svc p,.ihb-svc-link{font-size:14px}}
