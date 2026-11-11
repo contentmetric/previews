@@ -3,8 +3,8 @@
   const root = document.documentElement;
 
   // Header scroll state: on once the page's header-trigger element has reached the top of the viewport.
-  const trigger = document.querySelector('[class*="header-trigger"]');
-  const headerState = () => root.classList.toggle('is-scrolled', trigger ? trigger.getBoundingClientRect().top <= 0 : scrollY > 0);
+  const trigger = document.querySelector('[data-header-trigger]') || document.querySelector('[class*="header-trigger"]');
+  const headerState = () => root.classList.toggle('is-scrolled', trigger ? trigger.getBoundingClientRect().top <= Number(trigger.dataset.offset || 0) : scrollY > 0);
   addEventListener('scroll', headerState, { passive: true });
   addEventListener('resize', headerState);
   headerState();

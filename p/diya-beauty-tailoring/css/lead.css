@@ -146,3 +146,7 @@ a.heroslider-white p, a.heroslider-white-2 p, a.cta-section-white p { white-spac
 footer.desktop { margin-top: -40px; z-index: 3; }
 /* black (not pink) overlay so the white words on the light photo read */
 .cta-section-cta-section .overlay { background: rgba(0, 0, 0, 0.5); }
+
+/* QA fix: drawer CTA text is white on the pink button (was dark brown, 2.58:1) */
+.drawer-cta { color: #fff; }
+.drawer-cta p { color: #fff !important; } /* beats the scrolled-header .white p rule */
