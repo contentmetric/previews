@@ -1,0 +1,147 @@
+/* Diya's Beauty preview: the page-specific layer on top of the template base. Loaded last.
+   Palette (BRAND-TOKENS file): pink #DE2A6C, deep pink #C8155A (buttons and small text), plum #9B2E56, blush #FCEAF0, body text #3A1F2A. */
+:root { --ink: #3A1F2A; --pink: #DE2A6C; --deep: #C8155A; --plum: #9B2E56; --blush: #FCEAF0; --line: #F4D6E2; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* --- 1. header and footer logo: the real round badge + live words --------------------------------- */
+.default-text-3, .tablet-text-2, .tablet-text-4 { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.05; white-space: nowrap; }
+.default-text-3 small, .tablet-text-2 small, .tablet-text-4 small {
+  display: block; margin-top: 3px; font-family: Figtree, sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; line-height: 1; color: inherit; opacity: 0.9;
+}
+section[name="Header"] img.img, section[name="Header"] img.tablet-img, section[name="Header"] img.default-img {
+  width: 100%; height: 100%; max-width: none; object-fit: contain; border-radius: 50%; display: block;
+}
+.group-3, .tablet-group-3, .default-group-3 { width: 56px; height: 56px; flex: 0 0 auto; }
+@media (max-width: 809.98px) {
+  .group-3, .tablet-group-3, .default-group-3 { width: 44px; height: 44px; }
+}
+html.is-scrolled #main > section[name="Header"] img { content: normal; }
+html.is-scrolled #main > section[name="Header"] .default-default-right-div .white p { color: #fff; }
+a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-white, a.default-default-2, a.drawer-cta { text-decoration-line: none; }
+
+/* --- 2. shared bits ---------------------------------------------------------------------------- */
+.cd-wrap { width: 100%; max-width: 1410px; padding: 0 20px; margin: 0 auto; box-sizing: border-box; }
+.cd-kicker { margin: 0 0 14px; font: 600 14px/1.1 Figtree, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: var(--deep); }
+.cd-h2 { margin: 0; font: 400 52px/1.1 Fraunces, serif; letter-spacing: -0.01em; color: var(--ink); }
+.cd-h4 { margin: 0 0 8px; font: 400 24px/1.2 Fraunces, serif; color: var(--ink); }
+.cd-lead { margin: 18px 0 0; max-width: 560px; font: 400 17px/1.7 Figtree, sans-serif; color: var(--ink); }
+.cd-text { margin: 0; font: 400 15px/1.73 Figtree, sans-serif; color: var(--ink); }
+.cd-btn {
+  display: inline-flex; align-items: center; gap: 12px; align-self: flex-start; padding: 0 26px; height: 50px; border-radius: 120px; box-sizing: border-box;
+  background: var(--deep); color: #fff; font: 500 15px/1 Figtree, sans-serif; cursor: pointer; white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
+}
+.cd-btn:hover { background: var(--plum); }
+.cd-btn svg { flex: 0 0 auto; }
+.cd-btn-light { background: #fff; color: var(--plum); }
+.cd-btn-light:hover { background: var(--blush); color: var(--plum); }
+.cd-head { margin-bottom: 56px; }
+.cd-head-center { text-align: center; }
+.cd-head-center .cd-lead { margin-left: auto; margin-right: auto; }
+.cd-stars { color: var(--deep); letter-spacing: 3px; font-size: 18px; line-height: 1; }
+
+/* --- 3. beauty: photo + four service rows ------------------------------------------------------- */
+.cd-beauty { width: 100%; background: #fff; padding: 110px 0; }
+.cd-split { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 80px; align-items: start; }
+.cd-split-img { position: sticky; top: 100px; border-radius: 28px; overflow: hidden; aspect-ratio: 4 / 5; }
+.cd-split-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cd-split-copy .cd-head { margin-bottom: 30px; }
+.cd-rows { margin: 0; padding: 0; list-style: none; }
+.cd-row { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 26px 0; border-top: 1px solid var(--line); }
+.cd-row:last-child { border-bottom: 1px solid var(--line); }
+.cd-row .cd-text { max-width: 440px; }
+
+/* --- 4. tailoring: four text cards on blush (no photo: we have no tailoring photo that is not someone else's) ------ */
+.cd-tailoring { width: 100%; background: var(--blush); padding: 110px 0; }
+.cd-tgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.cd-tcard { position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: flex-start; gap: 0; background: #fff; border-radius: 24px; padding: 41px 36px 38px; box-sizing: border-box; }
+.cd-tcard::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: var(--pink); }
+.cd-tcard .cd-text { margin-bottom: 26px; }
+.cd-tcard .cd-btn { margin-top: auto; }
+
+/* --- 5. reviews --------------------------------------------------------------------------------- */
+.cd-reviews { width: 100%; background: #fff; padding: 110px 0; }
+.cd-rating { margin: 18px 0 0; font: 500 18px/1.4 Figtree, sans-serif; color: var(--ink); }
+.cd-rgrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; }
+.cd-review { grid-column: span 2; margin: 0; padding: 30px 30px 32px; background: var(--blush); border-radius: 24px; display: flex; flex-direction: column; gap: 16px; box-sizing: border-box; }
+.cd-review:nth-child(4) { grid-column: 2 / span 2; }
+.cd-review:nth-child(5) { grid-column: 4 / span 2; }
+.cd-quote { margin: 0; font: 400 16px/1.7 Figtree, sans-serif; color: var(--ink); }
+.cd-who { margin-top: auto; font: 600 15px/1.3 Figtree, sans-serif; color: var(--plum); }
+
+/* --- 6. visit ----------------------------------------------------------------------------------- */
+.cd-visit { width: 100%; background: var(--blush); padding: 110px 0; }
+.cd-visit .cd-head { margin-bottom: 44px; }
+.cd-vgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.cd-vcard { display: flex; flex-direction: column; align-items: flex-start; gap: 0; background: #fff; border-radius: 24px; padding: 34px 34px 36px; box-sizing: border-box; }
+.cd-vcard .cd-text { margin-bottom: 22px; font-size: 16px; }
+.cd-vcard .cd-btn { margin-top: auto; }
+.cd-vcard:not(:has(.cd-btn)) .cd-text { margin-bottom: 0; }
+
+/* --- 7. footer: plum, no newsletter form, no social ----------------------------------------------- */
+footer.desktop, section.div > footer { background: var(--plum); }
+.cd-foot { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; padding: 90px 0 70px; }
+.cd-foot-brand { display: flex; align-items: center; gap: 28px; text-decoration: none; color: #fff; }
+.cd-foot-brand img { width: 160px; height: 160px; border-radius: 50%; flex: 0 0 auto; display: block; }
+.cd-foot-name { display: flex; flex-direction: column; font: 400 40px/1.05 Fraunces, serif; color: #fff; }
+.cd-foot-name small { margin-top: 8px; font: 500 12px/1.3 Figtree, sans-serif; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.9; }
+.cd-foot-text { margin: 0; max-width: 640px; font: 400 16px/1.7 Figtree, sans-serif; color: rgba(255, 255, 255, 0.92); }
+.cd-foot-links { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 6px 0 0; padding: 0; list-style: none; }
+.cd-foot-links a { font: 400 15px/1.4 Figtree, sans-serif; color: rgba(255, 255, 255, 0.92); text-decoration: none; }
+.cd-foot-links a:hover { color: #fff; text-decoration: underline; }
+.cd-foot-note { margin: 0; font: 400 13px/1.5 Figtree, sans-serif; color: rgba(255, 255, 255, 0.75); }
+
+/* --- 8. the call-to-action band grows with its words; no padding, so the photo (which fills the box) covers all of it ----- */
+.cta-section-cta-section { height: auto; min-height: max(60vh, 480px); padding: 0; }
+.cta-section-container-2 { height: auto; flex: 0 0 auto; padding-bottom: 40px; }
+@media (max-width: 1199.98px) { .cta-section-cta-section { height: auto; min-height: max(50vh, 460px); padding: 0; } }
+
+/* hero sub-line: keep it to a readable measure */
+.heroslider-text-2, .heroslider-text { max-width: 760px; margin-left: auto; margin-right: auto; text-wrap: balance; }
+
+/* --- 9. tablet and phone ------------------------------------------------------------------------ */
+@media (max-width: 1199.98px) {
+  .cd-beauty, .cd-tailoring, .cd-reviews, .cd-visit { padding: 90px 0; }
+  .cd-h2 { font-size: 44px; }
+  .cd-split { gap: 48px; }
+  .cd-rgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cd-review, .cd-review:nth-child(4), .cd-review:nth-child(5) { grid-column: auto; }
+  .cd-review:nth-child(5) { grid-column: 1 / -1; }
+  .cd-vgrid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 809.98px) {
+  .cd-beauty, .cd-tailoring, .cd-reviews, .cd-visit { padding: 64px 0; }
+  .cd-h2 { font-size: 34px; }
+  .cd-head { margin-bottom: 36px; }
+  .cd-split { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .cd-split-img { position: static; aspect-ratio: 3 / 2; }
+  .cd-row { flex-direction: column; align-items: flex-start; gap: 18px; padding: 24px 0; }
+  .cd-tgrid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .cd-tcard { padding: 33px 24px 30px; }
+  .cd-rgrid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .cd-review:nth-child(5) { grid-column: auto; }
+  .cd-review { padding: 26px 24px 28px; }
+  .cd-vcard { padding: 28px 24px 30px; }
+  .cd-btn { height: auto; min-height: 48px; padding: 12px 22px; line-height: 1.25; white-space: normal; }
+  .cd-foot { padding: 60px 0 40px; }
+  .cd-foot-brand { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .cd-foot-name { font-size: 32px; }
+}
+
+/* the template buttons are min-content wide, which squeezes our longer label: size them to the label */
+a.heroslider-white, a.heroslider-white-2, a.cta-section-white, a.primary { width: max-content; max-width: 100%; }
+a.heroslider-white p, a.heroslider-white-2 p, a.cta-section-white p { white-space: nowrap; }
+
+/* phone header: the Menu word, the badge and the name must all fit in the pill */
+@media (max-width: 809.98px) {
+  .tablet-text-2, .tablet-text-4 { font-size: 21px; }
+  .tablet-text-2 small, .tablet-text-4 small { display: none; }
+}
+
+/* the base left a 60-90px white strip under <main>; the rounded footer now tucks up over the closing photo instead */
+#main > main { padding-bottom: 0; }
+footer.desktop { margin-top: -40px; z-index: 3; }
+/* black (not pink) overlay so the white words on the light photo read */
+.cta-section-cta-section .overlay { background: rgba(0, 0, 0, 0.5); }
