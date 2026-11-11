@@ -1,17 +1,17 @@
 /* iHandyman Builders preview: brand tokens (BRAND-TOKENS.md) and the sections this lead needs.
    Loaded after the template css. build.py has already swapped the template's beige / near-black / gold for these colours. */
 :root{
-  --blue:#025BFB;        /* the logo */
-  --blue-deep:#0047C9;   /* button hover, small white text on blue */
-  --navy:#0B1B3A;        /* dark sections, footer, headings */
-  --ink:#1C2433;         /* body text */
-  --pale:#EAF1FF;        /* soft backgrounds */
+  --blue:#1F5FD0;        /* the logo */
+  --blue-deep:#E07A2E;   /* button hover, small white text on blue */
+  --navy:#222222;        /* dark sections, footer, headings */
+  --ink:#222222;         /* body text */
+  --pale:#FAF7F2;        /* soft backgrounds */
   --muted:rgba(28,36,51,.72);
   --on-dark:rgba(255,255,255,.78);
   --line:rgba(11,27,58,.14); --line-dark:rgba(255,255,255,.16);
   --font:Satoshi,Inter,system-ui,sans-serif;
   --sec:80px; --gut:40px;
-  --page:#EAF1FF; --page-bg:#EAF1FF; --ink-t:#0B1B3A;
+  --page:#FAF7F2; --page-bg:#FAF7F2; --ink-t:#222222;
 }
 @media (max-width:809.98px){:root{--sec:60px;--gut:20px}}
 body{font-family:var(--font);color:var(--ink);background:var(--pale)}
@@ -77,7 +77,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 
 /* ---------- eyebrows ---------- */
 .services-section-text-2,.services-section-text-4,.faq-text,.ihb-eyebrow,.result-section-text,.result-section-text-2{font:700 13px/1.4 var(--font)!important;letter-spacing:.14em!important;text-transform:uppercase;color:var(--blue-deep)!important}
-.result-section .result-section-text,.result-section .result-section-text-2,.our-guarantee-text .result-section-text,.our-guarantee-text .result-section-text-2,.ihb-hours-card .ihb-eyebrow{color:#8DB4FF!important}
+.result-section .result-section-text,.result-section .result-section-text-2,.our-guarantee-text .result-section-text,.our-guarantee-text .result-section-text-2,.ihb-hours-card .ihb-eyebrow{color:#F2A866!important}
 .cta-section .services-section-text-2,.cta-section .services-section-text-4{color:var(--blue-deep)!important}
 
 /* ---------- services ---------- */
@@ -133,7 +133,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 .ihb-rev{display:flex;flex-direction:column;gap:18px;padding:28px;border-radius:18px;background:#fff;border:1px solid var(--line)}
 .ihb-rev--lead{grid-row:span 2;background:var(--navy);color:#fff;border-color:transparent;padding:36px}
 .ihb-rev-stars{display:flex;gap:3px;color:var(--blue);font-size:17px;line-height:1}
-.ihb-rev--lead .ihb-rev-stars{color:#8DB4FF}
+.ihb-rev--lead .ihb-rev-stars{color:#F2A866}
 .ihb-rev-q{margin:0;display:flex;flex-direction:column;gap:12px;flex:1}
 .ihb-rev-q p{margin:0;font:500 16px/1.6 var(--font);color:var(--ink)}
 .ihb-rev--lead .ihb-rev-q p{font-size:20px;line-height:1.55;color:#fff}
@@ -154,7 +154,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 .ihb-hours-text{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:20px;padding:20px 40px 20px 0}
 .ihb-hours-text .ihb-eyebrow{margin:0}
 .ihb-hours-card{background:var(--navy);color:#fff;border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:22px}
-.ihb-card-label{margin:0;font:700 13px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:#8DB4FF}
+.ihb-card-label{margin:0;font:700 13px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:#F2A866}
 .ihb-hours-list li{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-top:1px solid var(--line-dark);font:500 18px/1.3 var(--font)}
 .ihb-hours-list li:first-child{border-top:0;padding-top:0}
 .ihb-day{color:var(--on-dark)}
@@ -188,3 +188,21 @@ ul,ol{list-style:none;margin:0;padding:0}
 /* card photos: square, capped at 460px tall on tablets (the template's 226px strip cut most of each tall phone photo) */
 .services-section-services-image{height:auto!important;aspect-ratio:1/1}
 @media (max-width:809.98px){.services-image{height:auto!important;aspect-ratio:1/1;max-height:460px}}
+
+/* v3 services grid */
+.ihb-services{padding:72px 0;background:#FAF7F2}
+.ihb-services .ihb-wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.ihb-services .ihb-eyebrow{color:#E07A2E;font-weight:700;letter-spacing:.02em}
+.ihb-services .ihb-h2{color:#222222;font-size:40px;line-height:1.15;margin:8px 0 12px}
+.ihb-services .ihb-sub{color:#444;font-size:18px;max-width:640px}
+.ihb-svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:28px 0}
+.ihb-svc{background:#fff;border:1px solid #e6e1d8;border-radius:12px;overflow:hidden}
+.ihb-svc img{display:block;width:100%;height:auto;aspect-ratio:415/226;object-fit:cover}
+.ihb-svc-body{padding:18px}
+.ihb-svc h3{color:#222222;font-size:22px;margin:0 0 8px}
+.ihb-svc p{color:#444;font-size:16px;line-height:1.5;margin:0 0 12px}
+.ihb-svc-link{color:#1F5FD0;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.ihb-svc-link:hover{color:#E07A2E}
+.ihb-services .ihb-photo-note{font-size:14px;color:#666}
+.ihb-btn{display:inline-block;background:#1F5FD0;color:#fff;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none}
+.ihb-btn:hover{background:#E07A2E}

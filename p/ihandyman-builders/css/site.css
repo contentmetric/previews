@@ -2,7 +2,7 @@
    Breakpoints: desktop >= 1200 (the default rules), tablet 810-1199.98, phone < 810. Notes: BUILD.md. */
 
 :root {
-  --page: #EAF1FF;
+  --page: #FAF7F2;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -25,8 +25,8 @@ button, input, textarea, select { font: inherit; }
 :root {
   --spring: linear(0, 0.0962, 0.2901, 0.4957, 0.6686, 0.8037, 0.8971, 0.9563, 0.9902, 1.0071, 1.0135, 1.0142, 1.0121, 1.0092, 1.0063, 1.004, 1.0023, 1.0011, 1.0004, 1, 1);
   --spring-t: 0.44s;
-  --ink: #0B1B3A;
-  --page-bg: #EAF1FF;
+  --ink: #222222;
+  --page-bg: #FAF7F2;
 }
 
 /* header: scrolled state (set by site.js once the page's trigger element reaches mid-screen) */
@@ -105,7 +105,7 @@ button, input, textarea, select { font: inherit; }
 .faq-a p { font: 500 16px/150% Satoshi, sans-serif; letter-spacing: -0.64px; color: #c4c4c4; }
 .faq-item.is-open .faq-card { background-color: var(--ink); }
 .faq-item.is-open .faq-q { color: #fff; }
-.faq-item.is-open .faq-icon { background-color: #EAF1FF; color: var(--ink); }
+.faq-item.is-open .faq-icon { background-color: #FAF7F2; color: var(--ink); }
 .faq-item.is-open .faq-icon .v { display: none; }
 .faq-item.is-open .faq-a { display: block; }
 
@@ -136,9 +136,9 @@ button, input, textarea, select { font: inherit; }
 /* contact form: service chips + inputs */
 .service-categories-div-label { transition: background-color .16s ease, color .16s ease, border-color .16s ease; }
 .service-categories-div-label img { transition: filter .16s; }
-.service-categories-div-label:hover, .service-categories-div-label:has(input:checked) { background: rgb(11, 27, 58); color: #fff; }
+.service-categories-div-label:hover, .service-categories-div-label:has(input:checked) { background: #222222; color: #fff; }
 .service-categories-div-label:hover img, .service-categories-div-label:has(input:checked) img { filter: brightness(0) invert(1); }
 .contact-right-bottom-input, .contact-section-contact-textarea { outline: none; }
 .contact-right-bottom-input::placeholder, .contact-section-contact-textarea::placeholder { color: rgb(153, 153, 153); opacity: 1; }
-.form-note { margin: 12px 0 0; font: 500 14px/1.4 Satoshi, sans-serif; color: rgb(11, 27, 58); }
+.form-note { margin: 12px 0 0; font: 500 14px/1.4 Satoshi, sans-serif; color: #222222; }
 .form-note[hidden] { display: none; }
