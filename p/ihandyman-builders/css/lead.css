@@ -101,7 +101,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 /* ---------- our work: one featured job ---------- */
 .ihb-job{display:grid!important;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;width:100%}
 .ihb-job-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.ihb-job-fig{margin:0;position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:var(--navy)}
+.ihb-job-fig{margin:0;position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:var(--navy)}
 .ihb-job-fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ihb-job-fig figcaption{position:absolute;left:12px;top:12px;padding:7px 14px;border-radius:999px;background:rgba(11,27,58,.82);color:#fff;font:600 14px/1.2 var(--font)}
 .ihb-job-text{display:flex;flex-direction:column;align-items:flex-start;gap:20px;color:#fff}
@@ -110,7 +110,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 .ihb-job-quote p{margin:0;font:500 17px/1.6 var(--font);color:var(--on-dark)}
 .ihb-job-by{margin:0;display:flex;align-items:center;gap:12px;font:500 15px/1.35 var(--font);color:var(--on-dark)}
 .ihb-job-by strong{color:#fff;font-weight:700}
-@media (max-width:1199.98px){.ihb-job{grid-template-columns:1fr;gap:28px}.ihb-job-fig{aspect-ratio:4/3}}
+@media (max-width:1199.98px){.ihb-job{grid-template-columns:1fr;gap:28px}}
 @media (max-width:809.98px){.ihb-job-photos{grid-template-columns:1fr;gap:12px}.ihb-job-title{font-size:25px}.ihb-job-quote p{font-size:16px}}
 
 /* ---------- why us ---------- */
@@ -122,7 +122,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 .why-choose-us-section-text-2{width:auto!important}
 .why-choose-us-image{height:clamp(240px,26vw,340px)!important}
 .why-choose-us-image .img{object-fit:cover}
-@media (max-width:1199.98px){.why-choose-us-image{max-width:none!important}}
+@media (max-width:1199.98px){.why-choose-us-image{max-width:none!important;height:auto!important;aspect-ratio:16/9}}
 
 /* ---------- reviews ---------- */
 .ihb-reviews{padding:var(--sec) 0}
@@ -185,3 +185,6 @@ ul,ol{list-style:none;margin:0;padding:0}
 .our-process-text .scroll-progress-timeline,.our-process-text .scroll-progress-timeline *{font-family:var(--font)}
 /* the template leaves centred section headings in a left-hand box below 810px; centre the box */
 @media (max-width:809.98px){:has(> h2.services-section-heading),:has(> h2.result-section-heading){align-self:center;margin-inline:auto}}
+/* card photos: square, capped at 460px tall on tablets (the template's 226px strip cut most of each tall phone photo) */
+.services-section-services-image{height:auto!important;aspect-ratio:1/1}
+@media (max-width:809.98px){.services-image{height:auto!important;aspect-ratio:1/1;max-height:460px}}
