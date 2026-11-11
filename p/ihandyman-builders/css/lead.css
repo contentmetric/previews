@@ -1,7 +1,7 @@
 /* iHandyman Builders preview: brand tokens (BRAND-TOKENS.md) and the sections this lead needs.
    Loaded after the template css. build.py has already swapped the template's beige / near-black / gold for these colours. */
 :root{
-  --blue:#1F5FD0;        /* the logo */
+  --blue:#025BFB;        /* the logo */
   --blue-deep:#E07A2E;   /* button hover, small white text on blue */
   --navy:#222222;        /* dark sections, footer, headings */
   --ink:#222222;         /* body text */
@@ -201,8 +201,8 @@ ul,ol{list-style:none;margin:0;padding:0}
 .ihb-svc-body{padding:18px}
 .ihb-svc h3{color:#222222;font-size:22px;margin:0 0 8px}
 .ihb-svc p{color:#444;font-size:16px;line-height:1.5;margin:0 0 12px}
-.ihb-svc-link{color:#1F5FD0;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.ihb-svc-link{color:#025BFB;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .ihb-svc-link:hover{color:#E07A2E}
 .ihb-services .ihb-photo-note{font-size:14px;color:#666}
-.ihb-btn{display:inline-block;background:#1F5FD0;color:#fff;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none}
+.ihb-btn{display:inline-block;background:#025BFB;color:#fff;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none}
 .ihb-btn:hover{background:#E07A2E}
