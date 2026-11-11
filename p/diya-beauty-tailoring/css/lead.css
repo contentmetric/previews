@@ -53,11 +53,11 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
 .cd-row:last-child { border-bottom: 1px solid var(--line); }
 .cd-row .cd-text { max-width: 440px; }
 
-/* --- 4. tailoring: four text cards on blush (no photo: we have no tailoring photo that is not someone else's) ------ */
+/* --- 4. tailoring: four cards on blush, each with a generic CC0 photo on top (sample photos, not theirs) ------------ */
 .cd-tailoring { width: 100%; background: var(--blush); padding: 110px 0; }
 .cd-tgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .cd-tcard { position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: flex-start; gap: 0; background: #fff; border-radius: 24px; padding: 41px 36px 38px; box-sizing: border-box; }
-.cd-tcard::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: var(--pink); }
+.cd-tcard-img { display: block; width: calc(100% + 72px); max-width: none; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: -41px -36px 30px; }
 .cd-tcard .cd-text { margin-bottom: 26px; }
 .cd-tcard .cd-btn { margin-top: auto; }
 
@@ -120,6 +120,7 @@ footer.desktop, section.div > footer { background: var(--plum); }
   .cd-row { flex-direction: column; align-items: flex-start; gap: 18px; padding: 24px 0; }
   .cd-tgrid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .cd-tcard { padding: 33px 24px 30px; }
+  .cd-tcard-img { width: calc(100% + 48px); margin: -33px -24px 24px; }
   .cd-rgrid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .cd-review:nth-child(5) { grid-column: auto; }
   .cd-review { padding: 26px 24px 28px; }
