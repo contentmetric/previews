@@ -1,0 +1,79 @@
+/* Fresh Pressed on the candy base: only what the brand tokens and the real content need. */
+:root { --fp-pink: #F480A4; --fp-deep: #C93A74; --fp-blush: #F8E3E8; --fp-text: #3A2A30; }
+
+/* header: logo 56px (44 on phones) + live-text name */
+.logo { width: 56px; aspect-ratio: 1 / 1; border-radius: 14px; transform: none; box-sizing: border-box; border: 3px solid var(--fp-deep); background: #fff; box-shadow: 3px 3px 0 var(--fp-deep); }
+.logo-mobile-open-button { align-items: center; gap: 12px; }
+.fp-brand { font-family: Fraunces, serif; font-style: italic; font-weight: 700; font-size: 24px; line-height: 1; color: var(--fp-deep); text-decoration: none; white-space: nowrap; }
+@media (max-width: 809.98px) {
+  .logo { width: 44px; }
+  .logo-mobile-open-button { gap: 8px; justify-content: flex-start; min-height: 82px; }
+  .fp-brand { font-size: 20px; margin-right: auto; }
+}
+
+/* hero buttons are links now */
+a.hero-section-button-3, a.hero-section-button-4, a.hero-section-button-5, a.hero-section-button-6 { text-decoration: none; color: inherit; }
+
+/* text colours on pink and blush: body text token */
+.hero-section-text-2, .hero-section-text-3, .about-text, .book-a-set-text-2, .reviews-section-text { color: var(--fp-text); }
+.book-a-set-heading-2 { color: var(--fp-deep); }
+
+/* reviews: five real reviews, wider cards, wrapping rows */
+.reviews-section-reviews-div { flex-wrap: wrap; justify-content: center; }
+.reviews-section-reviews-div > div { flex: 0 0 auto; }
+.reviews-section-desktop, .reviews-section-desktop-2, .reviews-section-desktop-3, .reviews-section-desktop-4 { width: 310px; }
+.reviews-section-heading-2 { font-size: 15px; font-weight: 600; line-height: 1.4; }
+.reviews-section-text { font-size: 15px; }
+.reviews-section-reviews-section-desktop-div { min-width: 0; }
+.reviews-section-reviews-section-desktop-div .reviews-section-text { text-wrap: wrap; }
+@media (max-width: 809.98px) {
+  .reviews-section-reviews-div { flex-direction: column; align-items: center; }
+  .reviews-section-reviews-div > div { display: flex; justify-content: center; width: 100%; }
+  .reviews-section-desktop, .reviews-section-desktop-2, .reviews-section-desktop-3, .reviews-section-desktop-4 { width: 100%; max-width: 330px; }
+}
+
+/* sets: label stays out of the way of the grid */
+.nail-sets-section-heading { text-wrap: balance; }
+
+/* prices card */
+.fp-prices { transform: rotate(2deg) !important; }
+.fp-prices .book-a-set-text-2 { text-wrap: wrap; }
+.fp-prices .book-a-set-book-a-set-div-7 { gap: 12px; padding: 2px 0; }
+.fp-note { font-style: italic; font-size: 14px; }
+
+/* footer: logo 160px, live-text wordmark */
+.logo-descr-div { width: 160px; height: 160px; aspect-ratio: 1 / 1; border-radius: 24px; overflow: hidden; }
+.logo-descr-div-div { border-radius: 24px; }
+.fp-big { margin: 0; width: 100%; text-align: center; font-family: Fraunces, serif; font-style: italic; font-weight: 700; color: var(--fp-blush); font-size: clamp(36px, 9.4vw, 140px); line-height: 1.1; white-space: nowrap; letter-spacing: -0.01em; }
+.block-block-content-div-div { height: auto; aspect-ratio: auto; }
+
+/* hero headline: 'Fresh Pressed' is longer than the template word; one line, size follows the screen so it never wraps onto the subtitle */
+.heading, .hero-section-hero-section-hero-div-4 { font-size: 140px; white-space: nowrap; }
+@media (max-width: 1199.98px) { .heading, .hero-section-hero-section-hero-div-4 { font-size: 100px; } }
+@media (max-width: 809.98px) { .heading, .hero-section-hero-section-hero-div-4 { font-size: min(80px, calc((100vw - 116px) / 6.6)); } .hero-section-hero-div { width: 100%; } }
+
+/* no Instagram glyph: the template's icon on the set pills is dropped */
+.nail-sets-section-nail-sets-section-div-5, .nail-sets-section-nail-sets-section-div-8, .nail-sets-section-nail-sets-section-div-10 { display: none; }
+
+/* footer 'Book now' was red on red in the template */
+.block-block-text-3-a { color: var(--fp-blush); }
+
+/* form note fills the empty block under the button */
+.fp-formnote { margin: 0; padding: 0 20px; max-width: 520px; font-family: "Hanken Grotesk", sans-serif; font-size: 16px; line-height: 1.5; color: var(--fp-blush); }
+
+/* tablet and up: the template gives the review wrappers 170px; our cards are wider */
+@media (min-width: 810px) {
+  .reviews-section-reviews-section-reviews-div-2, .reviews-section-reviews-section-reviews-div-3,
+  .reviews-section-reviews-section-reviews-div-4, .reviews-section-reviews-section-reviews-div-5 { width: 310px; }
+  .reviews-section-desktop, .reviews-section-desktop-2, .reviews-section-desktop-3, .reviews-section-desktop-4 { width: 100%; }
+}
+
+/* the template fixes this section at 624px on tablets; five real reviews are taller */
+.reviews-section { height: min-content; }
+
+/* phones: the template's button row and corner tags are fixed-size; shrink them with the screen so nothing is clipped or overlapping */
+.hero-section-hero-section-hero-div-6 { overflow: visible; }
+@media (max-width: 449.98px) { .hero-section-hero-section-hero-div-6, .by-tag, .tag-walk-ins, .tag-gel-chrome-d3, .tag-est-2021 { zoom: .9; } }
+@media (max-width: 399.98px) { .hero-section-hero-section-hero-div-6, .by-tag, .tag-walk-ins, .tag-gel-chrome-d3, .tag-est-2021 { zoom: .85; } }
+@media (max-width: 369.98px) { .hero-section-hero-section-hero-div-6, .by-tag, .tag-walk-ins, .tag-gel-chrome-d3, .tag-est-2021 { zoom: .78; } }
+@media (max-width: 339.98px) { .hero-section-hero-section-hero-div-6, .by-tag, .tag-walk-ins, .tag-gel-chrome-d3, .tag-est-2021 { zoom: .68; } }

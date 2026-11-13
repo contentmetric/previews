@@ -1,0 +1,64 @@
+/* Studio hand CSS: reset, page shell, top ticker, dotted background, hovers. */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: sans-serif; background: rgb(244, 128, 164); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, select, textarea, input { font: inherit; }
+#main { position: relative; width: 100%; min-height: 900px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 140px 64px 24px; gap: 46px; overflow: clip; background: rgb(244, 128, 164); }
+#main > main { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; width: 100%; padding: 42px; gap: 128px; }
+.spacer { width: 0; height: 0; }
+.bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden; background: rgb(248, 227, 232); pointer-events: none; }
+.bg svg { display: block; width: 100%; height: 100%; }
+#main > main, #main > .spacer, #main > section.block-div { position: relative; z-index: 1; }
+.ticker { position: fixed; top: 0; left: 0; width: 100%; height: 29px; z-index: 5; overflow-x: clip; background: rgb(201, 58, 116); color: rgb(248, 227, 232); font: 400 16px/1.55 "Hanken Grotesk", sans-serif; }
+.ticker ul { display: flex; align-items: center; gap: 14px; list-style: none; margin: 0; padding: 0; height: 100%; width: max-content; will-change: transform; }
+.ticker li { flex: none; white-space: nowrap; }
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 40px; }
+@media (max-width: 1199.98px) { #main { padding: 156px 32px 24px; } #main > main { padding: 32px; } .ticker { font-size: 19px; } }
+@media (max-width: 809.98px) { #main { padding: 114px 10px 24px; } #main > main { padding: 16px; } .ticker { font-size: 17px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+/* hero painted headline (js/polish.js hides it until the brush paints it) */
+.js .ccp-ink, .js .ccp-ovl { clip-path: polygon(0px 0px, 0px 0px, 0px 0px); }
+.ccp-ovl { z-index: 0; }
+@media (prefers-reduced-motion: reduce) { .js .ccp-ink { clip-path: none; } .ccp-ovl { display: none; } }
+.ticker { font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11"; }
+.nail-sets-section-canvas { display: block; }
+
+/* phone menu: the header panel grows from 96px to 417px (see js/menu.js) */
+.mnav { display: none; }
+@media (max-width: 809.98px) {
+  .div .desktop { border-radius: 32px; background-color: rgba(244, 128, 164, var(--mp, 0)); box-shadow: 4px 4px 0 0 rgba(201, 58, 116, var(--mp, 0)); padding-bottom: 0; }
+  .mnav { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 286px; flex: 0 0 auto; }
+  .mnav-a { transform: rotate(var(--r)); }
+  .mnav-link { display: flex; padding: 8px; text-decoration: none; }
+  .mnav-pill { position: relative; display: flex; align-items: center; height: 48px; padding: 0 18px; border-radius: 999px; box-shadow: 4px 4px 0 0 rgb(201, 58, 116); font: italic 700 16px/20px "Fraunces", serif; color: rgb(201, 58, 116); white-space: nowrap; }
+  .mnav-pill::after { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 2px solid rgb(201, 58, 116); pointer-events: none; }
+  .mnav-cream { background: rgb(248, 227, 232); }
+  .mnav-yellow { background: rgb(241, 204, 216); }
+  .mnav-red { background: rgb(201, 58, 116); color: rgb(248, 227, 232); }
+  .mobile-open-button .button { transform: rotate(calc(var(--mp, 0) * -7deg)); }
+}
+
+/* hovers: all are one spring (decoded from the copy: w 21.5/s, damping ratio 0.78, ~2% overshoot, settles in 0.45s) */
+:root { --spring: linear(0, 0.0657, 0.212, 0.3837, 0.5487, 0.6903, 0.8027, 0.8861, 0.9441, 0.9817, 1.0039, 1.0153, 1.0196, 1.0195, 1.0171, 1.0138, 1.0104, 1.0074, 1.0049, 1.003, 1.0016, 1.0007, 1); }
+.logo, .block-button, .block-button-2, .block-button-3, .block-button-4, .block-button-5, .block-button-6, .block-button-7,
+.block-desktop-2-div, .nail-sets-section-button-3, .nail-sets-section-button-4, .nail-sets-section-button-5, .default { transition: transform .45s var(--spring), box-shadow .45s var(--spring); }
+.logo:hover { transform: none; }
+.block-desktop-2:hover > .block-button, .block-desktop-2:hover > .block-button-2, .block-desktop-2:hover > .block-button-3,
+.block-desktop-4:hover > .block-button-4, .block-desktop-4:hover > .block-button-5, .block-desktop-4:hover > .block-button-6, .block-desktop-4:hover > .block-button-7 { transform: rotate(-7deg); box-shadow: 4px 3px 0 0 rgb(201, 58, 116); }
+.block-desktop-2:hover > .block-desktop-2-div { box-shadow: 2px 2px 0 0 rgb(201, 58, 116); }
+.nail-sets-section-button-3:hover, .nail-sets-section-button-4:hover, .nail-sets-section-button-5:hover { box-shadow: 2px 6px 0 1px rgb(201, 58, 116); }
+.default:hover { transform: rotate(-2deg); }
+.block-block-text-3-a { transition: color .2s ease; }
+.block-block-text-3-a:hover { color: rgb(244, 128, 164); }
+@media (prefers-reduced-motion: reduce) { .logo, .block-button, .block-button-2, .block-button-3, .block-button-4, .block-button-5, .block-button-6, .block-button-7, .block-desktop-2-div, .default { transition: none; } }
+
+/* booking form: the field wrappers carry the cream pill fill (it came from the template form variable) */
+.book-a-set-form label > div { background-color: rgb(248, 227, 232); }
+.book-a-set-form input::placeholder { color: rgba(201, 58, 116, 0.85); opacity: 1; }
+.book-a-set-form { font-size: 12px; }
+.service-div::before { content: ""; position: absolute; top: 0; bottom: 0; right: 0; width: 16px; box-sizing: content-box; padding: 0 12px 0 10px; pointer-events: none; background-color: rgb(153, 153, 153); -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><path d='M 3.5 6 L 8 10.5 L 12.5 6' fill='transparent' stroke-width='1.5' stroke='black' stroke-linecap='round' stroke-linejoin='round'/></svg>") 10px 50% / 16px no-repeat; mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><path d='M 3.5 6 L 8 10.5 L 12.5 6' fill='transparent' stroke-width='1.5' stroke='black' stroke-linecap='round' stroke-linejoin='round'/></svg>") 10px 50% / 16px no-repeat; }
+.date-div { position: relative; }
+.date-div-input::-webkit-calendar-picker-indicator { opacity: 0; position: absolute; top: 0; bottom: 0; right: 0; width: 16px; height: 100%; padding: 0; }
