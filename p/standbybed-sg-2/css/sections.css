@@ -1,0 +1,145 @@
+/* Generated section styles shared by several pages. Breakpoints: desktop default, tablet <= 1199.98px, phone <= 809.98px. */
+.div { display:contents; }
+.desktop { overflow:clip; height:min-content; flex-direction:column; align-items:flex-start; display:flex; position:relative; backdrop-filter:blur(14px); background-color:rgba(242, 239, 233, 0.86); width:100%; padding:0px; gap:0px; place-content:flex-start; }
+.bar { z-index:1; align-content:center; justify-content:flex-start; align-items:center; width:100%; height:80px; display:flex; position:relative; padding:0px 40px; gap:24px; flex:0 0 auto; }
+.logo-wrap { align-content:center; justify-content:flex-start; align-items:center; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:0px; flex:1 0 0px; }
+.logo { align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; }
+.company-logo { -webkit-mask:none; mask:none; aspect-ratio:4.1875 / 1; user-select:none; display:block; width:auto; height:20px; position:relative; flex:0 0 auto; }
+.nav { align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:36px; flex:0 0 auto; }
+.nav-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.text { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:nowrap; font-family:Inter, sans-serif; font-style:normal; font-weight:500; color:rgb(39, 56, 81); font-size:14px; letter-spacing:-0.07px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.3em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; }
+.text-a { border-radius:0px; corner-shape:round; padding:0px; font-family:Inter, sans-serif; font-style:normal; font-weight:500; font-size:14px; text-transform:none; cursor:pointer; color:rgb(39, 56, 81); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(39, 56, 81, 0); transition-behavior:normal; transition-duration:0.3s; transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1); transition-delay:0s; transition-property:color; }
+.actions { align-content:center; justify-content:flex-end; align-items:center; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:24px; flex:1 0 0px; }
+.phone { align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:0px; gap:8px; flex:0 0 auto; }
+.phone-svg { -webkit-mask:none; mask:none; aspect-ratio:1 / 1; display:block; width:16px; height:auto; position:relative; flex:0 0 auto; }
+.phone-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.block-text { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:nowrap; font-family:Inter, sans-serif; font-style:normal; font-weight:500; color:rgb(39, 56, 81); font-size:14px; letter-spacing:-0.07px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.3em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; }
+.actions-div { width:auto; height:auto; position:relative; flex:0 0 auto; }
+.dark { overflow:clip; cursor:pointer; height:min-content; align-items:center; width:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; background-color:rgb(39, 56, 81); border-radius:100px; padding:14px 22px; gap:10px; place-content:center; }
+.label { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.block-text-2 { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:nowrap; font-family:Inter, sans-serif; font-style:normal; font-weight:500; color:rgb(255, 255, 255); font-size:14px; letter-spacing:-0.07px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.3em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; }
+.dark-svg { -webkit-mask:none; mask:none; aspect-ratio:1 / 1; display:block; width:16px; height:auto; position:relative; flex:0 0 auto; }
+.menu-button { display:none; }
+.menu-button-svg { display:none; }
+.panel { display:none; }
+.inner { display:none; }
+.links { display:none; }
+.services-row { display:none; }
+.services-row-div { display:none; }
+.heading { display:none; }
+.projects-row { display:none; }
+.projects-row-div { display:none; }
+.about-row { display:none; }
+.about-row-div { display:none; }
+.contact-row { display:none; }
+.contact-row-div { display:none; }
+.contact { display:none; }
+.contact-div { display:none; }
+.block-text-3 { display:none; }
+.block-text-3-a { display:none; }
+.block-contact-div { display:none; }
+.block-text-4 { display:none; }
+.desktop-div { z-index:0; width:100px; height:100px; position:absolute; top:0px; left:calc(50% - 50px); opacity:0; flex:0 0 auto; }
+.desktop-div-div { position:relative; width:0; height:0; background-color:transparent; pointer-events:none; }
+.block-desktop { flex-direction:column; align-content:center; justify-content:flex-start; align-items:center; height:min-content; display:flex; position:relative; background-color:rgba(39, 56, 81, 0); width:100%; padding:140px 40px 32px; gap:0px; }
+.container { flex-direction:column; align-items:flex-start; width:100%; max-width:1520px; height:min-content; display:flex; position:relative; padding:0px; gap:140px; flex:0 0 auto; place-content:flex-start; }
+.top { align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; padding:0px; gap:40px; flex:0 0 auto; place-content:flex-start; }
+.brand { flex-direction:column; align-items:flex-start; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:40px; flex:1 0 0px; place-content:flex-start; }
+.block-logo { align-content:center; justify-content:flex-start; align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:0px; gap:12px; flex:0 0 auto; }
+.block-company-logo { -webkit-mask:none; mask:none; aspect-ratio:1 / 1; user-select:none; display:block; width:auto; height:40px; position:relative; flex:0 0 auto; }
+.brand-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:100%; max-width:500px; height:auto; position:relative; flex:0 0 auto; }
+.block-text-5 { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:wrap; font-family:Inter, sans-serif; font-style:normal; font-weight:400; color:rgba(39, 56, 81, 0.4); font-size:24px; letter-spacing:-0.36px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgba(39, 56, 81, 0.4); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.35em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgba(39, 56, 81, 0.4); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; }
+.block-text-5-span { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:wrap; font-family:Inter, sans-serif; font-style:normal; font-weight:400; color:rgb(39, 56, 81); font-size:24px; letter-spacing:-0.36px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.35em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; }
+.block-nav { flex-direction:column; align-items:flex-start; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:4px; flex:1 0 0px; place-content:flex-start; }
+.block-nav-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.block-text-6 { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:nowrap; font-family:Inter, sans-serif; font-style:normal; font-weight:400; color:rgb(39, 56, 81); font-size:24px; letter-spacing:-0.36px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.35em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; }
+.block-text-6-a { border-radius:0px; corner-shape:round; padding:0px; font-family:Inter, sans-serif; font-style:normal; font-weight:400; font-size:24px; text-transform:none; cursor:pointer; color:rgb(39, 56, 81); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(39, 56, 81, 0); transition-behavior:normal; transition-duration:0.3s; transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1); transition-delay:0s; transition-property:color; }
+.middle { align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; padding:0px; gap:40px; flex:0 0 auto; place-content:flex-start; }
+.studio { flex-direction:column; align-items:flex-start; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:4px; flex:1 0 0px; place-content:flex-start; }
+.studio-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.block-text-7 { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:nowrap; font-family:Inter, sans-serif; font-style:normal; font-weight:400; color:rgb(39, 56, 81); font-size:16px; letter-spacing:-0.16px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.55em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; }
+.block-studio-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; opacity:0.4; flex:0 0 auto; }
+.block-links { align-items:flex-start; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:40px; flex:1 0 0px; place-content:flex-start; }
+.services { flex-direction:column; align-items:flex-start; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:4px; flex:1 0 0px; place-content:flex-start; }
+.services-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.block-text-7-a { border-radius:0px; corner-shape:round; padding:0px; font-family:Inter, sans-serif; font-style:normal; font-weight:400; font-size:16px; text-transform:none; cursor:pointer; color:rgb(39, 56, 81); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(39, 56, 81, 0); transition-behavior:normal; transition-duration:0.3s; transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1); transition-delay:0s; transition-property:color; }
+.block-contact { flex-direction:column; align-items:flex-start; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:4px; flex:1 0 0px; place-content:flex-start; }
+.block-block-contact-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.legal { align-content:center; justify-content:space-between; align-items:center; width:100%; height:min-content; display:flex; position:relative; padding:0px; flex:0 0 auto; }
+.legal-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; opacity:0.4; flex:0 0 auto; }
+.block-text-8 { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:nowrap; font-family:Inter, sans-serif; font-style:normal; font-weight:400; color:rgb(39, 56, 81); font-size:13px; letter-spacing:normal; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.4em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; }
+.img { display:block; width:100%; height:100%; border-radius:inherit; object-position:center; object-fit:cover; }
+
+@media (max-width: 1199.98px) {
+  .bar { height:72px; padding:0px 24px; }
+  .phone { display:none; }
+  .phone-svg { display:none; }
+  .phone-div { display:none; }
+  .block-text { display:none; }
+  .block-desktop { padding:100px 24px 24px; }
+  .container { gap:96px; }
+  .block-company-logo { height:36px; }
+  .block-text-5 { font-size:22px; letter-spacing:-0.33px; }
+  .block-text-5-span { font-size:22px; letter-spacing:-0.33px; }
+  .block-text-6 { font-size:22px; letter-spacing:-0.33px; }
+  .block-text-6-a { font-size:22px; }
+  .block-links { width:min-content; gap:24px; flex:0 0 auto; }
+  .services { width:min-content; flex:0 0 auto; }
+  .block-contact { width:min-content; flex:0 0 auto; }
+}
+
+@media (max-width: 809.98px) {
+  .desktop { overflow:visible; }
+  .bar { padding:0px 16px; gap:12px; }
+  .company-logo { height:18px; }
+  .nav { display:none; }
+  .nav-div { display:none; }
+  .text { display:none; }
+  .text-a { display:none; }
+  .actions { gap:8px; }
+  .menu-button { cursor:pointer; align-items:center; width:44px; height:44px; display:flex; position:relative; background-color:rgb(228, 230, 233); border-radius:44px; padding:0px; gap:0px; flex:0 0 auto; place-content:center; }
+  .menu-button-svg { -webkit-mask:none; mask:none; aspect-ratio:1 / 1; display:block; width:20px; height:auto; position:relative; flex:0 0 auto; }
+  .panel { overflow:clip; flex-direction:column; align-items:flex-start; display:flex; position:absolute; top:0px; left:0px; right:0px; height:1px; background-color:rgb(244, 247, 250); padding:0px; flex:0 0 auto; place-content:flex-start; }
+  .inner { height:844px; flex-direction:column; align-content:flex-start; justify-content:space-between; align-items:flex-start; width:100%; display:flex; position:relative; padding:80px 16px 24px; flex:0 0 auto; }
+  .links { flex-direction:column; align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; padding:0px; gap:0px; flex:0 0 auto; place-content:flex-start; }
+  .links::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 0px 0px 0px; border-color:rgba(39, 56, 81, 0.15); }
+  .services-row { align-content:center; justify-content:flex-start; align-items:center; width:100%; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:18px 0px; gap:0px; flex:0 0 auto; }
+  .services-row::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgba(39, 56, 81, 0.15); }
+  .services-row-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; flex:1 0 0px; }
+  .heading { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:wrap; font-family:"Inter Display", sans-serif; font-style:normal; font-weight:500; color:rgb(39, 56, 81); font-size:32px; letter-spacing:-1.12px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; display:revert; }
+  .projects-row { align-content:center; justify-content:flex-start; align-items:center; width:100%; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:18px 0px; gap:0px; flex:0 0 auto; }
+  .projects-row::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgba(39, 56, 81, 0.15); }
+  .projects-row-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; flex:1 0 0px; }
+  .about-row { align-content:center; justify-content:flex-start; align-items:center; width:100%; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:18px 0px; gap:0px; flex:0 0 auto; }
+  .about-row::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgba(39, 56, 81, 0.15); }
+  .about-row-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; flex:1 0 0px; }
+  .contact-row { align-content:center; justify-content:flex-start; align-items:center; width:100%; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:18px 0px; gap:0px; flex:0 0 auto; }
+  .contact-row::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:0px 0px 1px 0px; border-color:rgba(39, 56, 81, 0.15); }
+  .contact-row-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; flex:1 0 0px; }
+  .contact { flex-direction:column; align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; padding:0px; gap:6px; flex:0 0 auto; place-content:flex-start; }
+  .contact-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:100%; height:auto; position:relative; flex:0 0 auto; }
+  .block-text-3 { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:wrap; font-family:Inter, sans-serif; font-style:normal; font-weight:500; color:rgb(39, 56, 81); font-size:16px; letter-spacing:-0.16px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.3em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; display:revert; }
+  .block-text-3-a { border-radius:0px; corner-shape:round; padding:0px; font-family:Inter, sans-serif; font-style:normal; font-weight:500; font-size:16px; text-transform:none; cursor:pointer; color:rgb(39, 56, 81); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(39, 56, 81, 0); transition-behavior:normal; transition-duration:0.3s; transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1); transition-delay:0s; transition-property:color; display:revert; }
+  .block-contact-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:100%; height:auto; position:relative; opacity:0.55; flex:0 0 auto; }
+  .block-text-4 { -webkit-font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; text-wrap:wrap; font-family:Inter, sans-serif; font-style:normal; font-weight:400; color:rgb(39, 56, 81); font-size:14px; letter-spacing:-0.07px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(39, 56, 81); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:1.55em; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(39, 56, 81); font-feature-settings:"blwf", "cv03", "cv04", "cv09", "cv11"; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(39, 56, 81, 0); margin:0px; display:revert; }
+  .block-desktop { padding:72px 16px 24px; }
+  .container { gap:64px; }
+  .top { flex-direction:column; gap:48px; }
+  .brand { width:100%; flex:0 0 auto; }
+  .block-company-logo { height:32px; }
+  .block-text-5 { font-size:20px; letter-spacing:-0.3px; }
+  .block-text-5-span { font-size:20px; letter-spacing:-0.3px; }
+  .block-nav { width:100%; flex:0 0 auto; }
+  .block-text-6 { font-size:20px; letter-spacing:-0.3px; }
+  .block-text-6-a { font-size:20px; }
+  .middle { flex-direction:column; }
+  .studio { width:100%; flex:0 0 auto; }
+  .block-text-7 { font-size:15px; letter-spacing:-0.15px; }
+  .block-links { width:100%; gap:40px; }
+  .services { width:1px; flex:1 0 0px; }
+  .block-text-7-a { font-size:15px; }
+  .block-contact { width:1px; flex:1 0 0px; }
+  .legal { justify-content:flex-start; }
+  .legal-div { text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; flex:1 0 0px; }
+  .block-text-8 { text-wrap:wrap; font-size:12px; }
+}

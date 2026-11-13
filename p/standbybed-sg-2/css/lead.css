@@ -1,0 +1,12 @@
+/* StandByBed overrides on the base */
+.company-logo, .block-company-logo { max-width: none !important; }
+.sbb-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.sbb-badges span { padding: 8px 14px; border-radius: 999px; background: #E4E6E9; color: #273851; font-size: 14px; font-weight: 500; }
+.sbb-avatar { width: 44px; height: 44px; border-radius: 50%; background: #0373CE; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; flex: none; }
+@media (max-width: 809.98px) { .company-logo { height: 24px !important; width: auto !important; } }
+.logo, .logo a, a.logo { width: auto !important; min-width: 0 !important; height: auto !important; }
+img.company-logo { width: 212px !important; height: 32px !important; }
+img.block-company-logo { width: 266px !important; height: 40px !important; }
+@media (max-width: 809.98px) { img.company-logo { width: 159px !important; height: 24px !important; } }
+.block-text-7 { white-space: normal !important; width: auto !important; max-width: 100%; }
+@media (max-width: 809.98px) { img.company-logo { width: 126px !important; height: 19px !important; } }
