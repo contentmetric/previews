@@ -77,7 +77,13 @@
     nav.addEventListener("click", function (e) { if (e.target.closest("a")) set(false); });
   })();
 
-  var form = $("form"); if (form) form.addEventListener("submit", function (e) { e.preventDefault(); });
+  // The contact form has no server: it opens WhatsApp to the shop with what the visitor typed
+  var form = $("#wa-form"); if (form) form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = form.elements, msg = "Hi BlindXpert, I'd like a quote." +
+      (f.name.value ? "\nName: " + f.name.value : "") + (f.phone.value ? "\nPhone: " + f.phone.value : "") + (f.note.value ? "\nMessage: " + f.note.value : "");
+    window.open("https://wa.me/" + form.dataset.wa + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  });
 
   // ---- 3. load entrance, 4. badge pulse ----
   if (!reduce) (function () {
