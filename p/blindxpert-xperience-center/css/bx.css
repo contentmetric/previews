@@ -1,7 +1,7 @@
-/* BlindXpert's full striped logo (newBlindXpertLogo.jpeg) in place of the template logo; 114px wide as on their own header */
-.logo-hamburger-div { aspect-ratio: 1050 / 600 !important; width: 114px !important; height: auto !important; }
-.desktop-logo-div { aspect-ratio: 1050 / 600 !important; width: 140px !important; height: auto !important; }
-.site-logo, .desktop-site-logo { aspect-ratio: 1050 / 600 !important; width: 100% !important; height: auto !important; image-rendering: auto !important; }
+/* BlindXpert's full striped logo (newBlindXpertLogo.jpeg, black made transparent so it sits on any dark bar) in place of the template logo; 114px wide as on their own header */
+.logo-hamburger-div { aspect-ratio: 1050 / 479 !important; width: 114px !important; height: auto !important; }
+.desktop-logo-div { aspect-ratio: 1050 / 479 !important; width: 140px !important; height: auto !important; }
+.site-logo, .desktop-site-logo { aspect-ratio: 1050 / 479 !important; width: 100% !important; height: auto !important; image-rendering: auto !important; }
 .bx-logo { display: block; width: 100%; height: auto; }
 @media (max-width: 809.98px) {
   .logo-hamburger-div { width: 84px !important; }
