@@ -1,0 +1,41 @@
+/* HairSTAR preview: the page-specific layer on top of the template base. Loaded last.
+   Palette (BRAND-TOKENS file): gold #DCAC5C, deep gold #8A6A2A, slate #54545C, ink #2E2E34, cream #F6F1E7. */
+:root { --gold: #DCAC5C; --deep: #8A6A2A; --slate: #54545C; --ink: #2E2E34; --cream: #F6F1E7; }
+html { scroll-padding-top: 90px; }
+
+/* header + footer name: live gold serif with a small gold star */
+.text { color: var(--gold) !important; display: inline-flex; align-items: center; gap: 10px; letter-spacing: 4px; }
+.hs-star { width: 0.62em; height: 0.62em; fill: var(--gold); flex: 0 0 auto; transform: translateY(-1px); }
+.hero-text-5 { color: var(--gold) !important; }
+.hero-text-5, .hero-text-5-span { font-size: min(210px, 15.2vw); letter-spacing: -4px; }
+.hero-text-5-span { font-size: inherit; letter-spacing: inherit; }
+
+/* shop front photo: their own sign, shown whole and untinted */
+.hs-shop { margin: 0; width: 100%; display: flex; flex-direction: column; gap: 18px; }
+.hs-shop img { width: 100%; height: auto; border-radius: 6px; display: block; }
+.hs-shop .editorial-note { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* small print under the footer links */
+.hs-note { margin: 0; font: 400 12px/1.5 "DM Sans", sans-serif; color: rgb(200, 194, 182); }
+
+a.button-find-your-new-feeling, a.button-book-your-appointment, a.sticky-book, a.button-discuss-this-service,
+a.button-meet-your-next-good, a.button-your-next-chapter, a.button-book-a-visit { text-decoration-line: none; }
+
+/* hero: the scroll hint sits under the floating button; hide it but keep its space so the hero button stays clear of it */
+.scroll-hint { visibility: hidden; }
+/* ribbon words must stay on one line so the strip scrolls cleanly */
+.ribbon-track-div, .ribbon-text { white-space: nowrap; text-wrap: nowrap; flex: 0 0 auto; }
+/* small illustration line under the welcome text */
+.hs-ill { margin: 0; font: 400 12px/1.5 "DM Sans", sans-serif; color: var(--slate); }
+/* phone: room between stacked blocks */
+@media (max-width: 809.98px) {
+  .section-head { gap: 20px; }
+  .footer-top { flex-direction: column; gap: 32px; }
+  .footer-top .brand, .footer-top .visit, .footer-top .hello { width: auto; }
+  .hs-shop .editorial-note { flex-direction: column; gap: 6px; }
+}
+@media (max-width: 1199.98px) {
+  .section-head { gap: 20px; }
+  .footer-top { gap: 32px; }
+  .footer-top .brand, .footer-top .visit, .footer-top .hello { width: auto; }
+}

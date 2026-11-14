@@ -1,0 +1,36 @@
+/* Base CSS: reset and page shell, measured on the reference. */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: sans-serif; font-size: 12px; background: rgb(46, 46, 52); color: rgb(0, 0, 0); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+#main { position: relative; width: 100%; }
+#main > main { position: relative; width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; overflow: clip; background: rgb(46, 46, 52); }
+.cp-tv .cp-tv-p { display: none; }
+@media (max-width: 809.98px) {
+  .cp-tv .cp-tv-d { display: none; }
+  .cp-tv .cp-tv-p { display: inline; }
+}
+html { scroll-behavior: smooth; }
+
+/* ---------- motion ---------- */
+/* scroll parallax images: the script sets "translate"; scale is fixed (the reference's y/scale style props) */
+#main .hero-photo, #main .atelier-photo-image { transform: none !important; scale: 1.16; will-change: translate; }
+#main .look-1-photo-image, #main .look-2-photo-image { transform: none !important; scale: 1.14; cursor: zoom-in; will-change: translate; transition: scale 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
+#main .look-1-photo-image:hover, #main .look-2-photo-image:hover { scale: 1.2; }
+/* ribbon: x 0% -> -50%, 28s linear, forever */
+#main .ribbon-track { transform: none !important; animation: ribbon 28s linear infinite; }
+@keyframes ribbon { from { transform: translateX(0%); } to { transform: translateX(-50%); } }
+/* buttons: whileHover y -3, whileTap y 0 scale .98, spring stiffness 400 damping 22 */
+.button-find-your-new-feeling, .button-book-your-appointment, .sticky-book { transition: transform 495ms linear(0, 0.0197, 0.0725, 0.1498, 0.2437, 0.3472, 0.4544, 0.5606, 0.6619, 0.7554, 0.8392, 0.9122, 0.9736, 1.0236, 1.0625, 1.0912, 1.1106, 1.1218, 1.1262, 1.1249, 1.1191, 1.1099, 1.0985, 1.0856, 1.0722, 1.0587, 1.0457, 1.0336, 1.0227, 1.0132, 1.0051, 0.9984, 0.9932, 0.9892, 0.9865, 0.9849, 0.9841, 0.9841, 0.9847, 0.9858, 0.9872, 0.9888, 0.9905, 0.9922, 0.9938, 0.9954, 0.9968, 0.9981, 0.9991, 1); }
+.button-find-your-new-feeling:hover, .button-book-your-appointment:hover, .sticky-book:hover { transform: translateY(-3px); }
+.button-find-your-new-feeling:active, .button-book-your-appointment:active, .sticky-book:active { transform: translateY(0) scale(0.98); }
+/* hero title characters: blur(10px) y 10 opacity 0 -> in, spring(bounce 0, 0.4s) */
+.js .fx-c { opacity: 0.001; filter: blur(10px); transform: translateY(10px); }
+.js.fx-go .fx-c { opacity: 1; filter: blur(0px); transform: none; transition: opacity 400ms linear(0, 0.011, 0.0399, 0.0811, 0.1305, 0.1849, 0.2418, 0.2993, 0.3561, 0.4111, 0.4637, 0.5134, 0.56, 0.6032, 0.6432, 0.6799, 0.7135, 0.7441, 0.7718, 0.7969, 0.8194, 0.8397, 0.858, 0.8743, 0.8888, 0.9018, 0.9133, 0.9236, 0.9327, 0.9408, 0.9479, 0.9543, 0.9598, 0.9648, 0.9691, 0.9729, 0.9763, 0.9792, 0.9818, 0.9841, 0.9861, 0.9879, 0.9894, 0.9908, 0.9919, 0.993, 0.9939, 0.9947, 0.9953, 0.9959, 0.9965, 0.9969, 0.9973, 0.9977, 0.998, 0.9982, 0.9985, 0.9987, 0.9988, 1), filter 400ms linear(0, 0.011, 0.0399, 0.0811, 0.1305, 0.1849, 0.2418, 0.2993, 0.3561, 0.4111, 0.4637, 0.5134, 0.56, 0.6032, 0.6432, 0.6799, 0.7135, 0.7441, 0.7718, 0.7969, 0.8194, 0.8397, 0.858, 0.8743, 0.8888, 0.9018, 0.9133, 0.9236, 0.9327, 0.9408, 0.9479, 0.9543, 0.9598, 0.9648, 0.9691, 0.9729, 0.9763, 0.9792, 0.9818, 0.9841, 0.9861, 0.9879, 0.9894, 0.9908, 0.9919, 0.993, 0.9939, 0.9947, 0.9953, 0.9959, 0.9965, 0.9969, 0.9973, 0.9977, 0.998, 0.9982, 0.9985, 0.9987, 0.9988, 1), transform 400ms linear(0, 0.011, 0.0399, 0.0811, 0.1305, 0.1849, 0.2418, 0.2993, 0.3561, 0.4111, 0.4637, 0.5134, 0.56, 0.6032, 0.6432, 0.6799, 0.7135, 0.7441, 0.7718, 0.7969, 0.8194, 0.8397, 0.858, 0.8743, 0.8888, 0.9018, 0.9133, 0.9236, 0.9327, 0.9408, 0.9479, 0.9543, 0.9598, 0.9648, 0.9691, 0.9729, 0.9763, 0.9792, 0.9818, 0.9841, 0.9861, 0.9879, 0.9894, 0.9908, 0.9919, 0.993, 0.9939, 0.9947, 0.9953, 0.9959, 0.9965, 0.9969, 0.9973, 0.9977, 0.998, 0.9982, 0.9985, 0.9987, 0.9988, 1); }
+@media (prefers-reduced-motion: reduce) {
+  #main .ribbon-track { animation: none; }
+  html { scroll-behavior: auto; }
+}
+#main > .nav { z-index: 1; }
+.sticky-book { z-index: 3; }
