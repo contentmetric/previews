@@ -1,0 +1,60 @@
+/* Refit base motion CSS. Pairs with js/site.js. Initial hidden states live under html.js (no JS = everything visible)
+   and only for people who have not asked for reduced motion. JS adds .mv-in when an element starts its entrance. */
+
+/* Lenis (the five rules from the Lenis package) */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
+
+/* Badge pulse ring (made by JS) */
+.mv-ring { position: absolute; inset: 0; border-radius: 10000px; background: rgb(255, 255, 255); opacity: 0; pointer-events: none; will-change: transform, opacity; }
+
+/* Buttons: the circle behind the arrow floods the button on hover, the arrow straightens, the label flips colour */
+.light p, .faqs-dark p { position: relative; z-index: 2; }
+.arrow-div, .faqs-arrow-div, .arrow-right, .faqs-arrow-right { transform-origin: 50% 50%; }
+@media (hover: hover) {
+  .light:hover .arrow-div, .faqs-dark:hover .faqs-arrow-div { transform: scale(10); }
+  .light:hover .arrow-right, .faqs-dark:hover .faqs-arrow-right { transform: rotate(0deg); }
+  .light:hover p { color: rgb(16, 16, 20); }
+  .faqs-dark:hover p { color: rgb(255, 255, 255); }
+  a.desktop-text-a:hover, a.contact-text-7-a:hover { color: rgb(255, 255, 255); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .arrow-div, .faqs-arrow-div, .arrow-right, .faqs-arrow-right { transition: transform var(--mv-btn-ms, 800ms) var(--mv-btn, cubic-bezier(.3, 1.3, .5, 1)); }
+  .light p, .faqs-dark p { transition: color var(--mv-col-ms, 700ms) var(--mv-col, ease-out); }
+  a.desktop-text-a, a.contact-text-7-a { transition: color .3s ease-in-out; }
+
+  /* Load entrance */
+  html.js .banner-background .image:not(.mv-in) { opacity: .001; }
+  html.js .banner-heading-span-span:not(.mv-in) { opacity: 0; transform: translateY(10px); }
+  html.js .banner .badge:not(.mv-in) { opacity: .001; transform: translateY(10px); }
+  html.js .banner-text-and-button-div:not(.mv-in), html.js .banner-text-and-button-div-2:not(.mv-in), html.js .banner .review:not(.mv-in) { opacity: .001; transform: translateY(40px); }
+
+  /* Scroll reveals (y 40, fade) */
+  html.js .about-title:not(.mv-in), html.js .about-content:not(.mv-in), html.js .header:not(.mv-in),
+  html.js .services-images:not(.mv-in), html.js .services-services:not(.mv-in),
+  html.js .first-open-tablet-mobile .images:not(.mv-in), html.js .first-open-tablet-mobile .services:not(.mv-in),
+  html.js .our-work-header:not(.mv-in), html.js .testimonials-header:not(.mv-in),
+  html.js .faqs-content:not(.mv-in), html.js .faqs-container-div-div:not(.mv-in),
+  html.js .contact-content:not(.mv-in), html.js .form-wrapper:not(.mv-in) { opacity: 0; transform: translateY(40px); }
+}
+
+/* Phone drawer: header grows (JS), the panel slides in, the bar fades, the three lines slide out and the cross slides in */
+@media (max-width: 809.98px) and (prefers-reduced-motion: no-preference) {
+  .navigation { transition: right .8s var(--mv-menu, cubic-bezier(.1, .9, .2, 1)); }
+  .logo-hamburger { transition: background-color .8s var(--mv-menu, cubic-bezier(.1, .9, .2, 1)); }
+  .closed-lines-div, .logo-hamburger-closed-lines-div, .logo-hamburger-closed-lines-div-2,
+  .open-lines-div, .logo-hamburger-open-lines-div { transition: transform .8s var(--mv-menu, cubic-bezier(.1, .9, .2, 1)); }
+}
+@media (max-width: 809.98px) {
+  .site-header-in { align-items: flex-start; } /* the bar stays at the top while the header grows to full height (same 50 px closed) */
+  .logo-hamburger { z-index: 10; } /* the burger stays above the open drawer (nav is z-index 9) so it can close it */
+  .site-header.mv-open .logo-hamburger { background-color: rgba(0, 0, 0, 0); }
+  .logo-hamburger-logo-hamburger-div.is-open .closed-lines-div, .logo-hamburger-logo-hamburger-div.is-open .logo-hamburger-closed-lines-div,
+  .logo-hamburger-logo-hamburger-div.is-open .logo-hamburger-closed-lines-div-2 { transform: translateX(-40px); }
+  .logo-hamburger-logo-hamburger-div.is-open .open-lines-div { transform: translateY(40px); }
+  .logo-hamburger-logo-hamburger-div.is-open .logo-hamburger-open-lines-div { transform: translateX(40px); }
+}

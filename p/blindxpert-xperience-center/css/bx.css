@@ -1,27 +1,62 @@
-/* BlindXpert wordmark in place of the template logo */
-.logo-hamburger-div { aspect-ratio: 518 / 90 !important; width: 170px !important; height: auto !important; }
-.desktop-logo-div { aspect-ratio: 518 / 90 !important; width: 220px !important; height: auto !important; }
-.site-logo, .desktop-site-logo { aspect-ratio: 518 / 90 !important; width: 100% !important; height: auto !important; image-rendering: auto !important; }
+/* BlindXpert's full striped logo (newBlindXpertLogo.jpeg) in place of the template logo; 114px wide as on their own header */
+.logo-hamburger-div { aspect-ratio: 1050 / 600 !important; width: 114px !important; height: auto !important; }
+.desktop-logo-div { aspect-ratio: 1050 / 600 !important; width: 140px !important; height: auto !important; }
+.site-logo, .desktop-site-logo { aspect-ratio: 1050 / 600 !important; width: 100% !important; height: auto !important; image-rendering: auto !important; }
 .bx-logo { display: block; width: 100%; height: auto; }
 @media (max-width: 809.98px) {
-  .logo-hamburger-div { width: 140px !important; }
-  .desktop-logo-div { width: 170px !important; }
+  .logo-hamburger-div { width: 84px !important; }
+  .desktop-logo-div { width: 114px !important; }
 }
+/* The header row keeps Refit's logo height (24px, phone 19px), so the bar and menu sit where Refit's do; the taller logo overflows it, centred */
+@media all {
+  .logo-hamburger-div { height: 24px !important; aspect-ratio: auto !important; display: flex !important; align-items: center; overflow: visible !important; }
+  .logo-hamburger-div > * { flex: none; }
+  .logo-hamburger { overflow: visible !important; }
+}
+@media (max-width: 809.98px) { .logo-hamburger-div { height: 19px !important; } }
 
-/* Second showroom line is shown on desktop too */
-.contact-text-6 { display: block !important; font-family: Manrope, sans-serif; font-size: 18px; line-height: 150%; color: rgb(208, 209, 219); margin: 0; }
+/* The form is shorter than the template's (no message box): keep the template's height */
+.form-wrapper { min-height: 566px; }
 
 /* WhatsApp form: visible fields and button */
 .contact-form input, .contact-form textarea { box-sizing: border-box; font: inherit; color: rgb(16, 16, 20); }
 .contact-contact-form-label-div, .contact-contact-form-label-div-2 { box-sizing: border-box; }
-.contact-contact-form-input { height: 44px !important; width: 100%; padding: 0 14px !important; border: 1px solid rgb(208, 209, 219) !important; border-radius: 6px; background: #fff !important; }
+/* The box is the wrapper (Refit's 49px field), so name and phone line up with the message box */
+.contact-contact-form-label-div { border: 1px solid rgb(208, 209, 219); background: #fff; }
+.contact-contact-form-input { width: 100%; padding: 0 !important; border: 0 !important; background: transparent !important; outline: none; }
 .contact-contact-form-textarea { width: 100%; min-height: 130px; padding: 12px 14px; border: 1px solid rgb(208, 209, 219); border-radius: 6px; background: #fff; resize: vertical; }
 .contact-form button { cursor: pointer; border: 0; background: rgb(16, 16, 20); width: 100%; border-radius: 6px; padding: 12px 18px 14px; display: flex; justify-content: center; }
 .contact-form button:hover { background: rgb(40, 40, 48); }
 
 .social-links svg { filter: invert(1); }
 
-/* phone hero: copy sits at the bottom of the photo card */
-@media (max-width: 1199.98px) { .banner { justify-content: flex-end !important; padding: 0 0 60px !important; } }
+/* FAQ list grows when a long answer opens, but never below the template's fixed height (home.css 449/729/968) */
+.faqs-container-div-div { height: auto !important; min-height: 699.578px; }
+@media (max-width: 1199.98px) { .faqs-container-div-div { min-height: 680px; } }
+@media (max-width: 809.98px) { .faqs-container-div-div { min-height: 864.062px; } }
 
-.faqs-container-div-div { height: auto !important; }
+/* The real Google review quotes are shorter than the template sample text: keep the template card heights (base heights per width, scratchpad mincss.cjs) */
+@media (min-width: 1200px) {
+  .sticky-container-1 .our-work-text-11 { min-height: 112px; }
+  .sticky-container-2 .our-work-text-20 { min-height: 84px; }
+  .sticky-container-3 .our-work-text-11 { min-height: 112px; }
+  .banner-text-5 { min-height: 104px; }
+}
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .sticky-container-1 .our-work-text-8 { min-height: 84px; }
+  .sticky-container-2 .our-work-text-17 { min-height: 84px; }
+  .sticky-container-3 .our-work-text-8 { min-height: 84px; }
+}
+@media (min-width: 600px) and (max-width: 809.98px) {
+  .sticky-container-1 .our-work-text-4 { min-height: 112px; }
+  .sticky-container-2 .our-work-text-14 { min-height: 112px; }
+  .sticky-container-3 .our-work-text-4 { min-height: 112px; }
+}
+@media (max-width: 599.98px) {
+  .sticky-container-1 .our-work-text-4 { min-height: 280px; }
+  .sticky-container-2 .our-work-text-14 { min-height: 280px; }
+  .sticky-container-3 .our-work-text-4 { min-height: 252px; }
+}
+
+/* Stat captions are shorter than the template ones: keep two lines on tablet */
+@media (min-width: 810px) and (max-width: 1199.98px) { .about-text-4 { min-height: 42px; } }

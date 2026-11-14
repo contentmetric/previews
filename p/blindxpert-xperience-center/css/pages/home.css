@@ -532,7 +532,7 @@
 .contact-form-input { font-family:sans-serif; font-size:12px; position:absolute; transform:scale(0); }
 
 @media (max-width: 1199.98px) {
-  .banner { align-content:center; justify-content:flex-end; padding:0px 0px 60px; place-content:initial; }
+  .banner { align-content:center; justify-content:flex-end; padding:0px 0px 60px; }
   .image-wrapper { flex:1 0 0px; }
   .image { gap:0px; }
   .overlay-bottom { z-index:1; background-image:linear-gradient(rgba(171, 171, 171, 0) 0%, rgb(16, 16, 20) 60%); background-position-x:initial; background-position-y:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial; width:100%; position:absolute; bottom:-2px; left:0px; background-color:rgb(16, 16, 20); height:unset; opacity:0.75; top:-1px; flex:0 0 auto; overflow:hidden; display:revert; }
