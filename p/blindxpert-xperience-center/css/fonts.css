@@ -1,0 +1,7 @@
+/* Self-hosted fonts: Manrope 300-700 and Plus Jakarta Sans 500 (one contact label). */
+@font-face { font-family: Manrope; src: url("../fonts/manrope-300.woff2") format("woff2"); font-display: swap; font-style: normal; font-weight: 300; }
+@font-face { font-family: Manrope; src: url("../fonts/manrope-400.woff2") format("woff2"); font-display: swap; font-style: normal; font-weight: 400; }
+@font-face { font-family: Manrope; src: url("../fonts/manrope-500.woff2") format("woff2"); font-display: swap; font-style: normal; font-weight: 500; }
+@font-face { font-family: Manrope; src: url("../fonts/manrope-600.woff2") format("woff2"); font-display: swap; font-style: normal; font-weight: 600; }
+@font-face { font-family: Manrope; src: url("../fonts/manrope-700.woff2") format("woff2"); font-display: swap; font-style: normal; font-weight: 700; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("../fonts/plus-jakarta-sans-500.woff2") format("woff2"); font-display: swap; font-style: normal; font-weight: 500; }

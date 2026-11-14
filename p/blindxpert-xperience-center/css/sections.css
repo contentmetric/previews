@@ -1,0 +1,78 @@
+/* Generated section styles shared by several pages. Breakpoints: desktop default, tablet <= 1199.98px, phone <= 809.98px. */
+.logo-hamburger { align-content:center; justify-content:flex-start; align-items:center; width:1px; height:min-content; display:flex; position:relative; backdrop-filter:none; background-color:rgba(0, 0, 0, 0); border-radius:0px; padding:0px; gap:10px; flex:1 0 0px; overflow:hidden; }
+.logo-hamburger-div { aspect-ratio:2.66667 / 1; height:23.9844px; width:64px; position:relative; flex:0 0 auto; }
+.logo { align-items:center; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; height:100%; width:100%; padding:0px; gap:10px; place-content:center; }
+.site-logo { aspect-ratio:2.66667 / 1; height:100%; width:63.9531px; position:relative; image-rendering:pixelated; fill:black; color:black; flex:0 0 auto; }
+.site-logo-div { width:100%; height:100%; aspect-ratio:inherit; }
+.site-logo-div-svg { display:block; width:100%; height:100%; }
+.logo-hamburger-logo-hamburger-div { display:none; }
+.closed { display:none; }
+.closed-lines { display:none; }
+.closed-lines-div { display:none; }
+.logo-hamburger-closed-lines-div { display:none; }
+.logo-hamburger-closed-lines-div-2 { display:none; }
+.open-lines { display:none; }
+.open-lines-div { display:none; }
+.logo-hamburger-open-lines-div { display:none; }
+.navigation { align-items:center; width:min-content; height:min-content; display:flex; position:relative; backdrop-filter:none; background-color:rgba(0, 0, 0, 0); padding:0px; gap:30px; flex:0 0 auto; place-content:center; overflow:hidden; }
+.nav-item { align-items:center; width:min-content; height:min-content; text-decoration-line:none; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; display:flex; position:relative; padding:10px; gap:10px; flex:0 0 auto; place-content:center; overflow:hidden; }
+.nav-item-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.text { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Manrope, sans-serif; font-style:normal; font-weight:500; color:rgb(255, 255, 255); font-size:18px; letter-spacing:-0.1px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:100%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; }
+.desktop { flex-direction:column; align-items:center; height:min-content; display:flex; position:relative; background-color:rgb(255, 255, 255); width:100%; padding:60px 0px 40px; gap:80px; place-content:center; overflow:hidden; }
+.background { z-index:1; position:absolute; top:0px; right:20px; bottom:0px; left:20px; background-color:rgb(16, 16, 20); border-top-left-radius:10px; border-top-right-radius:10px; flex:0 0 auto; }
+.container { z-index:1; flex-direction:column; align-items:flex-start; width:100%; max-width:1360px; height:min-content; display:flex; position:relative; padding:0px 40px; gap:60px; flex:0 0 auto; place-content:flex-start; }
+.top { align-content:flex-start; justify-content:space-between; align-items:flex-start; width:100%; height:min-content; display:flex; position:relative; padding:0px; flex:0 0 auto; }
+.desktop-logo { align-content:center; justify-content:flex-start; align-items:center; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:10px; flex:1 0 0px; }
+.desktop-logo-div { aspect-ratio:2.66667 / 1; height:39.3594px; width:105px; position:relative; flex:0 0 auto; }
+.desktop-site-logo { aspect-ratio:2.66667 / 1; height:100%; width:104.953px; position:relative; image-rendering:pixelated; fill:black; color:black; flex:0 0 auto; }
+.desktop-site-logo-div { width:100%; height:100%; aspect-ratio:inherit; }
+.desktop-site-logo-svg { display:block; width:100%; height:100%; }
+.links { flex-direction:column; align-items:flex-start; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:20px; flex:0 0 auto; place-content:flex-start; }
+.links-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; align-self:stretch; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.heading { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Manrope, sans-serif; font-style:normal; font-weight:500; color:rgb(255, 255, 255); font-size:24px; letter-spacing:-0.4px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:110%; text-align:left; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; }
+.desktop-links { align-items:flex-start; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:80px; flex:0 0 auto; place-content:flex-start; }
+.left-links { flex-direction:column; align-items:flex-start; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.left-links-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; min-width:120px; height:auto; position:relative; flex:0 0 auto; }
+.desktop-text { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Manrope, sans-serif; font-style:normal; font-weight:400; color:rgb(208, 209, 219); font-size:18px; letter-spacing:-0.1px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(208, 209, 219); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:150%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(208, 209, 219); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; }
+.desktop-text-a { border-radius:0px; corner-shape:round; padding:0px; font-family:Manrope, sans-serif; font-style:normal; font-weight:400; font-size:18px; text-transform:none; cursor:pointer; color:rgb(208, 209, 219); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(208, 209, 219); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(0, 0, 0, 0); transition-behavior:normal; transition-duration:0.4s; transition-timing-function:cubic-bezier(0.44, 0, 0.56, 1); transition-delay:0s; transition-property:color; }
+.right-links { flex-direction:column; align-items:flex-start; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:10px; flex:0 0 auto; place-content:flex-start; }
+.right-links-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; min-width:120px; height:auto; position:relative; flex:0 0 auto; }
+.bottom { align-content:center; justify-content:space-between; align-items:center; width:100%; height:min-content; display:flex; position:relative; padding:40px 0px 0px; flex:0 0 auto; }
+.bottom::after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; border-style:solid; border-width:1px 0px 0px 0px; border-color:rgb(34, 34, 34); }
+.bottom-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:wrap; word-break:break-word; overflow-wrap:break-word; width:1px; height:auto; position:relative; flex:1 0 0px; }
+.desktop-text-2 { -webkit-font-feature-settings:normal; text-wrap:wrap; font-family:Manrope, sans-serif; font-style:normal; font-weight:400; color:rgb(255, 255, 255); font-size:16px; letter-spacing:-0.1px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:130%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; }
+.bottom-right { align-content:center; justify-content:flex-end; align-items:center; width:1px; height:min-content; display:flex; position:relative; padding:0px; gap:10px; flex:1 0 0px; }
+.bottom-right-div { outline-color:initial; outline-style:none; outline-width:initial; flex-direction:column; justify-content:flex-start; display:flex; white-space-collapse:preserve; text-wrap-mode:nowrap; width:auto; height:auto; position:relative; flex:0 0 auto; }
+.desktop-text-3 { -webkit-font-feature-settings:normal; text-wrap:nowrap; font-family:Manrope, sans-serif; font-style:normal; font-weight:400; color:rgb(255, 255, 255); font-size:16px; letter-spacing:-0.1px; text-transform:none; text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; line-height:130%; text-align:start; -webkit-text-stroke-width:0px; -webkit-text-stroke-color:rgb(255, 255, 255); font-feature-settings:normal; font-variation-settings:normal; border-radius:0px; corner-shape:round; padding:0px; background-color:rgba(0, 0, 0, 0); margin:0px; }
+.desktop-text-3-a { border-radius:0px; corner-shape:round; padding:0px; font-family:Manrope, sans-serif; font-style:normal; font-weight:400; font-size:16px; text-transform:none; cursor:pointer; color:rgb(255, 255, 255); text-decoration-line:none; text-decoration-style:solid; text-decoration-color:rgb(255, 255, 255); text-decoration-thickness:auto; text-decoration-skip-ink:auto; text-underline-offset:auto; background-color:rgba(0, 0, 0, 0); }
+
+@media (max-width: 1199.98px) {
+  .navigation { gap:20px; }
+  .text { font-size:14px; }
+  .bottom { flex-direction:column; align-items:flex-start; gap:10px; place-content:flex-start; align-content:initial; justify-content:initial; }
+  .bottom-div { width:100%; flex:0 0 auto; }
+  .bottom-right { justify-content:flex-start; width:100%; flex:0 0 auto; }
+}
+
+@media (max-width: 809.98px) {
+  .logo-hamburger { justify-content:space-between; backdrop-filter:blur(10px); background-color:rgba(0, 0, 0, 0.6); border-radius:10px; padding:15px 20px; gap:unset; overflow:initial; }
+  .logo-hamburger-div { height:18.7344px; width:50px; }
+  .site-logo { width:49.9531px; }
+  .logo-hamburger-logo-hamburger-div { width:auto; height:auto; position:relative; flex:0 0 auto; display:revert; }
+  .closed { cursor:pointer; flex-direction:column; align-items:center; width:min-content; height:min-content; display:flex; position:relative; padding:0px; gap:7px; place-content:center; }
+  .closed-lines { flex-direction:column; align-items:center; width:40px; height:20px; display:flex; position:relative; padding:0px; gap:7px; flex:0 0 auto; place-content:center; overflow:hidden; }
+  .closed-lines-div { z-index:1; height:2px; position:absolute; top:0px; left:0px; right:0px; background-color:rgb(255, 255, 255); flex:0 0 auto; display:revert; }
+  .logo-hamburger-closed-lines-div { z-index:1; height:2px; position:absolute; top:calc(50% - 1px); left:0px; right:0px; background-color:rgb(255, 255, 255); flex:0 0 auto; display:revert; }
+  .logo-hamburger-closed-lines-div-2 { z-index:1; height:2px; position:absolute; bottom:0px; left:0px; right:0px; background-color:rgb(255, 255, 255); flex:0 0 auto; display:revert; }
+  .open-lines { z-index:1; align-items:center; display:flex; position:absolute; top:-10px; right:0px; bottom:-10px; left:0px; transform:rotate(45deg); padding:0px; gap:10px; flex:0 0 auto; place-content:center; overflow:hidden; }
+  .open-lines-div { z-index:1; width:2px; height:40px; position:absolute; top:-40px; right:19px; background-color:rgb(255, 255, 255); flex:0 0 auto; display:revert; }
+  .logo-hamburger-open-lines-div { z-index:1; width:40px; height:2px; position:absolute; top:19px; left:-40px; background-color:rgb(255, 255, 255); flex:0 0 auto; display:revert; }
+  .navigation { height:844px; z-index:9; flex-direction:column; align-items:flex-start; width:390px; position:absolute; top:0px; right:-390px; backdrop-filter:blur(10px); background-color:rgba(16, 16, 20, 0.6); padding:130px 60px 40px; place-content:flex-start; }
+  .nav-item { padding:10px 10px 10px 0px; }
+  .text { font-size:20px; letter-spacing:-0.5px; }
+  .desktop { padding:50px 0px 40px; }
+  .top { flex-direction:column; gap:30px; place-content:flex-start; align-content:initial; justify-content:initial; }
+  .desktop-logo { flex-direction:column; align-items:flex-start; width:100%; gap:20px; flex:0 0 auto; place-content:flex-start; align-content:initial; justify-content:initial; }
+  .desktop-logo-div { aspect-ratio:unset; width:64px; height:24px; }
+  .desktop-site-logo { width:64px; }
+}

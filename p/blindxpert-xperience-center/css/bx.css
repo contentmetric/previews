@@ -1,0 +1,27 @@
+/* BlindXpert wordmark in place of the template logo */
+.logo-hamburger-div { aspect-ratio: 518 / 90 !important; width: 170px !important; height: auto !important; }
+.desktop-logo-div { aspect-ratio: 518 / 90 !important; width: 220px !important; height: auto !important; }
+.site-logo, .desktop-site-logo { aspect-ratio: 518 / 90 !important; width: 100% !important; height: auto !important; image-rendering: auto !important; }
+.bx-logo { display: block; width: 100%; height: auto; }
+@media (max-width: 809.98px) {
+  .logo-hamburger-div { width: 140px !important; }
+  .desktop-logo-div { width: 170px !important; }
+}
+
+/* Second showroom line is shown on desktop too */
+.contact-text-6 { display: block !important; font-family: Manrope, sans-serif; font-size: 18px; line-height: 150%; color: rgb(208, 209, 219); margin: 0; }
+
+/* WhatsApp form: visible fields and button */
+.contact-form input, .contact-form textarea { box-sizing: border-box; font: inherit; color: rgb(16, 16, 20); }
+.contact-contact-form-label-div, .contact-contact-form-label-div-2 { box-sizing: border-box; }
+.contact-contact-form-input { height: 44px !important; width: 100%; padding: 0 14px !important; border: 1px solid rgb(208, 209, 219) !important; border-radius: 6px; background: #fff !important; }
+.contact-contact-form-textarea { width: 100%; min-height: 130px; padding: 12px 14px; border: 1px solid rgb(208, 209, 219); border-radius: 6px; background: #fff; resize: vertical; }
+.contact-form button { cursor: pointer; border: 0; background: rgb(16, 16, 20); width: 100%; border-radius: 6px; padding: 12px 18px 14px; display: flex; justify-content: center; }
+.contact-form button:hover { background: rgb(40, 40, 48); }
+
+.social-links svg { filter: invert(1); }
+
+/* phone hero: copy sits at the bottom of the photo card */
+@media (max-width: 1199.98px) { .banner { justify-content: flex-end !important; padding: 0 0 60px !important; } }
+
+.faqs-container-div-div { height: auto !important; }

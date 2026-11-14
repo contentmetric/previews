@@ -1,0 +1,30 @@
+/* Hand CSS: the reset the reference runs on top of the browser defaults, plus the page shell. */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: sans-serif; font-size: 12px; background: rgb(255, 255, 255); color: rgb(0, 0, 0); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* Page shell, measured on the reference: the layout root and <main> are relative flex columns. */
+#main { position: relative; width: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; background: rgb(255, 255, 255); }
+#main > main { position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 150px; }
+@media (max-width: 809.98px) { #main > main { gap: 100px; } }
+
+/* Header: an absolute bar over the hero (desktop and tablet), a fixed glass bar on the phone. */
+.site-header { position: absolute; top: 0; left: 0; width: 100%; z-index: 10; display: flex; justify-content: center; overflow: hidden; }
+.site-header-in { position: relative; width: 100%; max-width: 1360px; display: flex; align-items: center; justify-content: space-between; padding: 45px 40px 0; }
+@media (max-width: 809.98px) {
+  .site-header { position: fixed; }
+  .site-header-in { padding: 30px 30px 0; }
+}
+
+/* Footer wrapper: 10px above the footer card. */
+.footer-wrapper { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; padding: 10px 0 0; gap: 10px; }
+.footer-wrapper > * { flex: 1 1 auto; }
+
+/* Per-breakpoint text variants (the converter emits .cp-tv where the copy's text differs by breakpoint). */
+.cp-tv .cp-tv-p { display: none; }
+@media (max-width: 809.98px) {
+  .cp-tv .cp-tv-d { display: none; }
+  .cp-tv .cp-tv-p { display: inline; }
+}
