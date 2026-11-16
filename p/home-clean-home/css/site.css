@@ -15,6 +15,8 @@ html { scroll-behavior: smooth; }
 
 /* ---- header: desktop Services dropdown (measured on the reference: panel 238x300, radius 10, pad 24, gap 12, rises 24px while fading) ---- */
 .dd-wrap { position: relative; }
+/* the header boxes clip overflow; let the Services dropdown show below them */
+.desktop:has(.dd-wrap), .block-container:has(.dd-wrap), .block-content:has(.dd-wrap), .block-desktop:has(.dd-wrap) { overflow: visible; }
 .dd { position: absolute; left: 0; top: calc(100% + 25px); z-index: 20; display: flex; flex-direction: column; gap: 12px; width: max-content; padding: 24px; background: #fff; border-radius: 10px; box-shadow: 0 8px 32px rgba(41, 29, 23, .1); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(24px); transition: opacity .5s cubic-bezier(.2, .7, .2, 1), transform .5s cubic-bezier(.2, .7, .2, 1), visibility 0s .5s; }
 .dd::before { content: ""; position: absolute; left: 0; right: 0; top: -25px; height: 25px; }
 .dd-wrap.is-open .dd { opacity: 1; visibility: visible; pointer-events: auto; transform: none; transition-delay: 0s; }
