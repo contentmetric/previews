@@ -1,0 +1,8 @@
+
+@font-face { font-family: "Figtree"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/figtree-400.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/figtree-500.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/figtree-700.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/fraunces-400.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/fraunces-700.woff2") format("woff2"); }
+@font-face { font-family: "Figtree Placeholder"; src: local("Arial"); ascent-override: 93.79%; descent-override: 24.68%; line-gap-override: 0%; size-adjust: 101.29%; }
+@font-face { font-family: "Fraunces Placeholder"; src: local("Times New Roman"); ascent-override: 84.71%; descent-override: 22.09%; line-gap-override: 0%; size-adjust: 115.45%; }
