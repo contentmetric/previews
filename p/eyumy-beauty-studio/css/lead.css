@@ -11,6 +11,9 @@ section[name="Header"] img.img, section[name="Header"] img.tablet-img, section[n
   width: auto; height: 100%; max-width: none; display: block;
 }
 @media (max-width: 809.98px) { .group-3, .tablet-group-3, .default-group-3 { height: 40px; } }
+/* once scrolled the bar turns white and the template's own logo turns ink: do the same (white x invert .9 = #1A1A1A) */
+section[name="Header"] img { transition: filter 0.15s linear; }
+html.is-scrolled section[name="Header"] img { filter: invert(0.9); }
 a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-white, a.default-default-2, a.drawer-cta { text-decoration-line: none; }
 
 /* --- 2. shared bits ---------------------------------------------------------------------------- */
