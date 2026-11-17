@@ -4,13 +4,13 @@
 html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* --- 1. header and footer logo: their full logo picture on its own cream tile ------------------- */
+/* --- 1. header and footer logo: their full logo, reversed to white, straight on the dark bar ---- */
 .default-text-3, .tablet-text-2, .tablet-text-4 { display: none; }
-.group-3, .tablet-group-3, .default-group-3 { width: auto; height: 46px; flex: 0 0 auto; }
+.group-3, .tablet-group-3, .default-group-3 { width: auto; height: 50px; flex: 0 0 auto; }
 section[name="Header"] img.img, section[name="Header"] img.tablet-img, section[name="Header"] img.default-img {
-  width: auto; height: 100%; max-width: none; display: block; border-radius: 8px;
+  width: auto; height: 100%; max-width: none; display: block;
 }
-@media (max-width: 809.98px) { .group-3, .tablet-group-3, .default-group-3 { height: 38px; } }
+@media (max-width: 809.98px) { .group-3, .tablet-group-3, .default-group-3 { height: 40px; } }
 a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-white, a.default-default-2, a.drawer-cta { text-decoration-line: none; }
 
 /* --- 2. shared bits ---------------------------------------------------------------------------- */
@@ -76,7 +76,7 @@ a.cd-btn, a.primary, a.heroslider-white, a.heroslider-white-2, a.cta-section-whi
 footer.desktop, section.div > footer { background: var(--plum); }
 .cd-foot { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; padding: 90px 0 70px; }
 .cd-foot-brand { display: flex; align-items: center; gap: 28px; text-decoration: none; color: #fff; }
-.cd-foot-brand img { width: 260px; height: auto; border-radius: 14px; flex: 0 0 auto; display: block; }
+.cd-foot-brand img { width: 240px; height: auto; flex: 0 0 auto; display: block; }
 .cd-foot-name { display: flex; flex-direction: column; font: 400 40px/1.05 Fraunces, serif; color: #fff; }
 .cd-foot-name small { margin-top: 8px; font: 500 12px/1.3 Figtree, sans-serif; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.9; }
 .cd-foot-text { margin: 0; max-width: 640px; font: 400 16px/1.7 Figtree, sans-serif; color: rgba(255, 255, 255, 0.92); }
