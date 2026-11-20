@@ -1,0 +1,45 @@
+/* Royal Hair Exquisite Studio preview: the page-specific layer on top of the template base. Loaded last.
+   Palette (BRAND-TOKENS file): gold #E0B78A (replaces the base accent in the base CSS), deep gold #B58E6A. */
+:root { --gold: #E0B78A; --deep: #B58E6A; }
+html { scroll-padding-top: 90px; }
+
+/* their full logo, untinted and uncropped, in the header and the footer */
+.rh-logo { display: block; height: 74px; width: auto; max-width: none; }
+.rh-logo-foot { height: 96px; }
+.link-aur-a-div { display: block; }
+@media (max-width: 809.98px) {
+  .rh-logo { height: 58px; }
+  .rh-logo-foot { height: 88px; }
+}
+
+/* hero wordmark in their gold */
+.hero-text-5 { color: var(--gold) !important; }
+
+/* small print */
+.hs-note { margin: 0; font: 400 12px/1.5 "DM Sans", sans-serif; color: rgb(170, 156, 137); }
+.hs-ill { margin: 0; font: 400 12px/1.5 "DM Sans", sans-serif; color: rgb(110, 99, 87); }
+
+/* extra review quotes inside the existing quote block */
+.rh-more { display: flex; flex-direction: column; gap: 8px; margin-top: 0; align-items: center; text-align: center; }
+.rh-more-q { margin: 0; font: 400 15px/1.6 "DM Sans", sans-serif; color: rgb(170, 156, 137); max-width: 640px; }
+.rh-more-q span { color: var(--gold); letter-spacing: 1px; margin-left: 6px; }
+
+a.button-find-your-new-feeling, a.button-book-your-appointment, a.sticky-book, a.button-discuss-this-service,
+a.button-meet-your-next-good, a.button-your-next-chapter, a.button-book-a-visit, a.rh-note-link { text-decoration-line: none; }
+
+/* hero: the scroll hint sits under the floating button; hide it but keep its space */
+.scroll-hint { visibility: hidden; }
+
+/* the extra review lines sit inside the quote block; trim its padding so the block stays near the template height */
+.promise-inner { padding-top: 76px; padding-bottom: 76px; }
+@media (max-width: 809.98px) {
+  .promise-inner { padding-top: 52px; padding-bottom: 52px; gap: 24px; }
+  .rh-more-q { font-size: 14px; line-height: 1.5; }
+}
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .promise-inner { padding-top: 94px; padding-bottom: 94px; }
+}
+/* real service lines are shorter than the template sample text: keep the template row height on the phone */
+@media (max-width: 599.98px) {
+  .list-colour > a, .list-cut > a, .list-care > a { min-height: 140px; }
+}
