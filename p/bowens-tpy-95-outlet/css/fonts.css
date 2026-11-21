@@ -1,0 +1,9 @@
+/* Self-hosted, latin subsets: the same files the free template loads. */
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/inter-400.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/inter-500.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/inter-600.woff2") format("woff2"); }
+@font-face { font-family: "Inter Variable"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/inter-variable-400.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("../fonts/cormorant-normal-latin.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 500 600; font-display: swap; src: url("../fonts/cormorant-italic-latin.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/cormorant-italic-400.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond Variable"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/cormorant-variable-400.woff2") format("woff2"); }

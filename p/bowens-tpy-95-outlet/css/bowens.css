@@ -1,0 +1,19 @@
+/* Bowen's brand on Golden Crane: see BRAND-TOKENS.md */
+.bw-logo { display:block; height:46px; width:auto; }
+.bw-logo-foot { height:72px; }
+#yum-cha .hero-text { color:rgb(70, 80, 112); -webkit-text-stroke-color:rgb(70, 80, 112); }
+@media (max-width: 809.98px) { .bw-logo { height:40px; } .bw-logo-foot { height:64px; } }
+/* yellow buttons carry navy text and arrows */
+.primary .block-text-2, .block-primary .block-text-4, .block-primary-2 .block-text-21 { color:rgb(20, 28, 60); -webkit-text-stroke-color:rgb(20, 28, 60); }
+.primary svg path, .block-primary svg path, .block-primary-2 svg path { stroke:rgb(20, 28, 60); }
+.primary:hover, .block-primary:hover, .block-primary-2:hover { background-color:rgb(247, 242, 110); }
+.secondary:hover { background-color:rgba(241, 235, 37, 0.14); }
+/* the light pasta section: accent is Bowen's blue, button blue with white text */
+.yum-cha-teaser .signature-intro-text-2, .yum-cha-teaser .yum-cha-teaser-text-4, .yum-cha-teaser .yum-cha-teaser-text-6 { color:rgb(58, 85, 166); }
+.yum-cha-teaser .signature-intro-divider { background-color:rgb(58, 85, 166); }
+.yum-cha-teaser .block-primary-2 { background-color:rgb(58, 85, 166); }
+.yum-cha-teaser .block-primary-2:hover { background-color:rgb(243, 106, 38); }
+.yum-cha-teaser .block-primary-2 .block-text-21 { color:#fff; -webkit-text-stroke-color:#fff; }
+.yum-cha-teaser .block-primary-2 svg path { stroke:#fff; }
+/* the seal on the reviews: yellow with a navy character */
+.seal .guest-reviews-text-4 { color:rgb(20, 28, 60); }
